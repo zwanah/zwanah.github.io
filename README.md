@@ -1,34 +1,31 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.？
+<h2> Hey there! I'm Zhuoyue WAN. <img src="https://github.com/souvikguria98/souvikguria98/blob/master/Hi.gif" width="25"></h2>
+<img align="right" alt="GIF" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif" width="500"/>
 
+<h3> 👨🏻‍💻 About Me </h3>
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+- 🔭 &nbsp; I’m currently learning Data-Driven Modeling in HKUST.
+- 🎓 &nbsp; Studying Statistics, Computer Science and Mathematics.
+- 🌱 &nbsp; Enthusiast in Statistical Machine Learning and Medical Computer Vision.
+- 🏀 &nbsp; I believe, playing basketball can be the ultimate solution for any stress.
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file.
+<h3>🛠 Tech Stack</h3>
 
-### Instructions
+- 💻 &nbsp; Python | R | SPSS
+- 🛢 &nbsp; MySQL
+- 🔧 &nbsp; PyCharm | Visual Studio code
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-2. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right.
-3. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-4. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-5. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-6. Check status by going to the repository settings, in the "GitHub pages" section
-7. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+<br>
 
-See more info at https://academicpages.github.io/
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=zwanah&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40" alt="Zhuoyue WAN's Github Stats">
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+</br>
 
-1. Clone the repository and made updates as detailed above
-2. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-3. Run `bundle clean` to clean up the directory (no need to run `--force`)
-4. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-5. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=zwanah&layout=compact&text_color=daf7dc&bg_color=151515)](https://github.com/zwanah/github-readme-stats)
 
-# Changelog -- bugfixes and enhancements
+<h3> 🤝🏻 Connect with Me </h3>
 
-my name is wan zhuoyue.s
-
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
-
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+<p align="center">
+  <a href="https://www.instagram.com/wanzhuoyue/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>  
+  <a href="https://www.linkedin.com/in/ZhuoyueWAN/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/linkedin.png" width="50" /></a>
+  <a href="mailto:zwanah@connect.ust.hk" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="50" /></a>
+</p>
