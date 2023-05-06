@@ -50,6 +50,7 @@ Honors and Awards
 * May 2021: Second-class Scholarship, Chongqing University;
 * Dec. 2020: Advanced Individual of Scientific and Technological academic innovation, Chongqing University;
 * Jun. 2020: Third Prize, The 8th TipDM Cup Data Mining Challenge Committee;
+* Jan. 2020: Outstanding Student, Chongqing University;
 * Jan. 2019: Outstanding Student, Chongqing University;
 * Nov. 2018: Third-class Scholarship, Chongqing University;
 
