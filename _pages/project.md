@@ -27,3 +27,22 @@ Herd behavior, in which many investors adopt the same trading strategy or have t
 With a two-dimensional grid of 100×100, there can be 10000 investors participating in each round.
 </figcaption>
 </p>
+
+## [Association Rules and Prediction Rulesfor Financial Data Mining](https://zwanah.github.io/files/project3.pdf)
+
+We conducted an analysis of two stocks, namely AAPL and AMD, utilizing data sourced from Yahoo Finance. Daily returns were computed for both stocks. In the case of AAPL, the report examined the $w$-day Exponential Moving Average (EMA), Cumulative Distribution Function (CDF), and Probability Density Function (PDF). Mean-Variance Analysis was then applied to both AAPL and AMD to determine the optimal portfolio. Additionally, the study focused on association rules, with emphasis on four metrics: confidence, geometric mean, arithmetic mean, and rule power factor. The report concluded that geometric mean and rule power factor are better suited to assess association rule quality, as they consider both rule frequency and accuracy.
+
+## [Predicting Air Quality In India Based On Time Series Model](https://zwanah.github.io/files/project4.pdf)
+
+Air pollution poses a significant threat to human health. To address its negative impact, it is essential to quantify and predict air pollution levels and implement appropriate policies and measures. Since the AQI index serves as a measure for air pollution, this article aims to predict AQI using Time Series Models. Initially, we built a SARIMA model to train and predict Indian AQI. Subsequently, we developed an Intervention Model to modify the SARIMA model to account for the significant impact of COVID-19. Our experiments demonstrate that the Intervention Model leads to a substantial improvement in prediction accuracy, making the combination of the Intervention Model and the original SARIMA Model highly desirable. The MAPE for the Intervention Model was 26%.
+
+<p float="left" align="center">
+<img src="{{ site.url }}/images/project4.png" width="700" /> 
+<figcaption align="center">
+AQI Calculation Stream.
+</figcaption>
+</p>
+
+## [Multi-factor Stock Selection Strategy With Different Models](https://zwanah.github.io/files/project5.pdf)
+
+In our study, we aimed to address the limitations of traditional stock modeling techniques by incorporating a larger number of explanatory variables and utilizing a range of advanced modeling techniques, including Logistic Regression, Random Forest, SVM, LSTM, and ensemble methods such as voting and boosting. Our comprehensive set of quantitative trading models was evaluated using several performance indicators, such as Annual Return, Sharpe Ratio, Maximum Drawdown, and Win Rate. Our results indicate that Random Forest performed the best among the single-model trading approaches, while the multi-model combination based on Logistic Regression + Gradient Boost achieved the highest Annual Return and Win Rate. Moreover, the trading model based on Logistic Regression + Gradient Boost + Random Forest had the highest Sharpe Ratio and Maximum Drawdown. Our findings suggest that incorporating a larger number of factors and utilizing advanced modeling techniques can significantly improve the performance of quantitative trading models.
