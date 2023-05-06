@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-![1683343073512](image/about/1683343073512.png){: width="350px" style="float:left; padding-right:30px" }
+![1683343073512](image/about/1683343073512.png){: width="350px" style="float:left; padding-right:25px" }
 
 # About Me
 
