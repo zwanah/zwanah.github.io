@@ -14,9 +14,10 @@ The Baum Welch Algorithm is widely used for training the parameters of Hidden Ma
   <img src="{{ site.url }}/images/project1.png" width="700" />
   <br />
   <figcaption>
-    The advantage of the Distribution Based BW algorithm is that it can make use of the distributional information to make more accurate predictions, if we know the (emission) distribution family of each hidden state in advance. We did a lot of experiments with different combinations of $ \lambda_i $ and found out that the new BW algorithm can outperform the traditional BW algorithm in most cases, regarding estimating the transition matrix.
+    Distribution Based BW versus Traditional BW Predicted Transition Matrix
   </figcaption>
 </p>
+
 ## [Deep Probability Estimation](https://arxiv.org/abs/2111.10734)
 
 `<b>` ICML 2022 `</b>`
