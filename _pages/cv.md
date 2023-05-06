@@ -10,8 +10,8 @@ redirect_from:
 Education
 =========
 
-* B.S. in Statistics, Chongqing University, 2021
-* M.S. in Data-Driven Modeling, The Hong Kong University of Science and Technology, 2023
+* B.S. in Statistics, [Chongqing University](https://www.cqu.edu.cn/), 2021
+* M.S. in Data-Driven Modeling, [The Hong Kong University of Science and Technology](https://hkust.edu.hk/), 2023
 
 Research experience
 ===================
@@ -19,29 +19,31 @@ Research experience
 * Oct. 2022 - Now: Trustworthy Medical Image Classification
 
   * The Hong Kong University of Science and Technology
+  * Supervisor: Asst. Prof. [Hao Chen](https://cse.hkust.edu.hk/~jhc/)
   * Duties included:
     1. Contributed to the joint submission to ICCV 2023, providing rigorous and meticulous theoretical derivations of the method;
     2. Conducting research as a Research Assistant;
     3. Investigating topics such as debias,fairness,and long-tail data in Medical Computer Vision;
     4. Establishing a medical debias benchmark in mitigating bias in medical image classification;
-  * Supervisor: Asst. Prof. [Hao Chen](https://cse.hkust.edu.hk/~jhc/)
+
 * Sep. 2022 - Now: Medical Image Segmentation
 
   * The Hong Kong University of Science and Technology
+  * Supervisor: Prof. [Yang Xiang](https://www.math.hkust.edu.hk/~maxiang/)
   * Duties included:
     1. Reproducing a Medical Image Segmentation paper that includes an Elastic Interaction-Based Loss Function;
     2. Conducted multi-label segmentation in GI tract images for stomach, large bowel, and small bowel classes;
     3. Extended a two-dimensional loss function to its three-dimensional form;
     4. Applied the Elastic Interaction-Based loss function extension to a new domain;
     5. Reproducing a Retinal Image Restoration paper;
-  * Supervisor: Prof. [Yang Xiang](https://www.math.hkust.edu.hk/~maxiang/)
+
 * Sep. 2020 - Jun. 2021: Prediction of "High to turn" in the stock market
 
   * Chongqing University
+  * Supervisor: Prof. [Zhimin Zhang](http://sci.cqu.edu.cn/info/1329/4963.htm)
   * Duties included:
     1. Built theoretical models such as Stacked XGBoost, LightGBM, CatBoost, LR, RFC, and SVM models;
     2. Conducted analysis of "High to turn" phenomenon and utilized predictive modeling to forecast its occurrence;
-  * Supervisor: Prof. [Zhimin Zhang](http://sci.cqu.edu.cn/info/1329/4963.htm)
 
 Honors and Awards
 =================
