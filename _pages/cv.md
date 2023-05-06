@@ -21,11 +21,10 @@ Research experience
   * The Hong Kong University of Science and Technology
   * Supervisor: Asst. Prof. [Hao Chen](https://cse.hkust.edu.hk/~jhc/)
   * Duties included:
-    1. Contributed to the joint submission to ICCV 2023, providing rigorous and meticulous theoretical derivations of the method;
+    1. Contributed to the joint submission to **ICCV 2023**, providing rigorous and meticulous theoretical derivations of the method;
     2. Conducting research as a Research Assistant;
     3. Investigating topics such as debias,fairness,and long-tail data in Medical Computer Vision;
     4. Establishing a medical debias benchmark in mitigating bias in medical image classification;
-
 * Sep. 2022 - Now: Medical Image Segmentation
 
   * The Hong Kong University of Science and Technology
@@ -36,7 +35,6 @@ Research experience
     3. Extended a two-dimensional loss function to its three-dimensional form;
     4. Applied the Elastic Interaction-Based loss function extension to a new domain;
     5. Reproducing a Retinal Image Restoration paper;
-
 * Sep. 2020 - Jun. 2021: Prediction of "High to turn" in the stock market
 
   * Chongqing University
