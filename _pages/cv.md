@@ -1,6 +1,5 @@
 ---
 layout: archive
-title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -45,7 +44,7 @@ Research experience
   * Supervisor: Prof. [Zhimin Zhang](http://sci.cqu.edu.cn/info/1329/4963.htm)
 
 Honors and Awards
-===================
+=================
 
 * Nov. 2018: **Second Prize**, **The Chinese Mathematics Competitions**;
 * May 2021: Second-class Scholarship, Chongqing University;
