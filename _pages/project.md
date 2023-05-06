@@ -19,7 +19,7 @@ Distribution Based BW versus Traditional BW Predicted Transition Matrix
 
 ## [Herding model](https://zwanah.github.io/files/project2.pdf)
 
-Herd behavior, in which many investors adopt the same trading strategy or have the same preferences for a particular asset over a certain period, is a good explanation of "bounded rationality" in the real world. This project sets out over 80 rules containing three types of investors and three types of market news to simulate herd behavior in the real-world stock market. Based on the comparison of stock price, returns time series and investor behavior chart per round, we find that Herd Behavior will begin to highlight in the period of stock price acute fluctuations. A direct comparison is made with the daily closures of the Hang Seng index. Our stock sequences exhibit properties like actual market data.
+Herd behavior, in which many investors adopt the same trading strategy or have the same preferences for a particular asset over a certain period, is a good explanation of “bounded rationality” in the real world. This project sets out over 80 rules containing three types of investors and three types of market news to simulate herd behavior in the real-world stock market. Based on the comparison of stock price, returns time series and investor behavior chart per round, we find that Herd Behavior will begin to highlight in the period of stock price acute fluctuations. A direct comparison is made with the daily closures of the Hang Seng index. Our stock sequences exhibit properties like actual market data.
 
 <p float="left" align="center">
 <img src="{{ site.url }}/images/project2.png" width="700" /> 
@@ -30,7 +30,7 @@ With a two-dimensional grid of 100×100, there can be 10000 investors participat
 
 ## [Association Rules and Prediction Rulesfor Financial Data Mining](https://zwanah.github.io/files/project3.pdf)
 
-We conducted an analysis of two stocks, namely AAPL and AMD, utilizing data sourced from Yahoo Finance. Daily returns were computed for both stocks. In the case of AAPL, the report examined the $w$-day Exponential Moving Average (EMA), Cumulative Distribution Function (CDF), and Probability Density Function (PDF). Mean-Variance Analysis was then applied to both AAPL and AMD to determine the optimal portfolio. Additionally, the study focused on association rules, with emphasis on four metrics: confidence, geometric mean, arithmetic mean, and rule power factor. The report concluded that geometric mean and rule power factor are better suited to assess association rule quality, as they consider both rule frequency and accuracy.
+We analyzed two stocks, AAPL and AMD, using data sourced from Yahoo Finance. Daily returns were computed for both stocks. For AAPL, the report examined the w-day Exponential Moving Average (EMA), Cumulative Distribution Function (CDF), and Probability Density Function (PDF). Mean-Variance Analysis was then applied to both AAPL and AMD to determine the optimal portfolio. Additionally, the study focused on association rules, with emphasis on four metrics: confidence, geometric mean, arithmetic mean, and rule power factor. The report concluded that geometric mean and rule power factor are better suited to assess association rule quality, as they consider both rule frequency and accuracy.
 
 ## [Predicting Air Quality In India Based On Time Series Model](https://zwanah.github.io/files/project4.pdf)
 
