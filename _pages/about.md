@@ -12,6 +12,6 @@ redirect_from:
 # About Me
 
 * I am a MSc student of Data-Driven Modeling in HKUST.
-* My research primarily focuses on machine learning, with a specific emphasis on developing robust deep learning techniques that can handle imperfect datasets, including those with bias, long-tail distributions, spurious correlations, and other forms of irregularities. Additionally, I am interested in applying mathematical optimization methods to improve the performance and computational efficiency of deep learning algorithms. Beyond my research, I enjoy playing basketball and have won the Chongqing Championship of the CUBA second-level league while studying at [Chongqing University]().
+* My research primarily focuses on machine learning, with a specific emphasis on developing robust deep learning techniques that can handle imperfect datasets, including those with bias, long-tail distributions, spurious correlations, and other forms of irregularities. Additionally, I am interested in applying mathematical optimization methods to improve the performance and computational efficiency of deep learning algorithms. Beyond my research, I enjoy playing basketball and have won the Chongqing Championship of the CUBA second-level league while studying at [Chongqing University](https://cqu.edu.cn/).
 * Check out more information from my [CV](https://zwanah.github.io/files/CV_WAN_Zhuoyue.pdf).
 * Pronouns: he/him/his
