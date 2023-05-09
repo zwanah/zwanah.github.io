@@ -21,6 +21,7 @@ The game is played on a hexagonal board instead of a square board. Two players a
     <img src="{{ site.url }}/images/project0_3.png" width="300" />
   </div>
 </div>
+<figcaption align="center"> The black wins in the three games above in the hexagonal board. </figcaption>
 
 ## [An Improvement in Baum Welch Algorithm - A Case Study of HSI future](https://zwanah.github.io/files/project1.pdf)
 
