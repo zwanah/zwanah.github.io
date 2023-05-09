@@ -44,7 +44,7 @@ With a two-dimensional grid of 100×100, there can be 10000 investors participat
 </figcaption>
 </p>
 
-## [Association Rules and Prediction Rulesfor Financial Data Mining](https://zwanah.github.io/files/project3.pdf)
+## [Association Rules and Prediction Rules for Financial Data Mining](https://zwanah.github.io/files/project3.pdf)
 
 We analyzed two stocks, AAPL and AMD, using data sourced from Yahoo Finance. Daily returns were computed for both stocks. For AAPL, the report examined the w-day Exponential Moving Average (EMA), Cumulative Distribution Function (CDF), and Probability Density Function (PDF). Mean-Variance Analysis was then applied to both AAPL and AMD to determine the optimal portfolio. Additionally, the study focused on association rules, with emphasis on four metrics: confidence, geometric mean, arithmetic mean, and rule power factor. The report concluded that geometric mean and rule power factor are better suited to assess association rule quality, as they consider both rule frequency and accuracy.
 
