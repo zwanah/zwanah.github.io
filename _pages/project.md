@@ -5,6 +5,16 @@ permalink: /project/
 author_profile: true
 ---
 {% include base_path %}
+## [Portfolio Management Using Prediction Rules and Communication in Social Networks](https://zwanah.github.io/files/project6.pdf)
+
+In this study, we conduct a comprehensive analysis of Google stock (GOOGL) daily returns using the Yahoo Finance dataset. The dataset is preprocessed and partitioned into past and future segments in a 3:1 ratio, with various statistical methods applied, such as daily return calculations, autocorrelation function (ACF), partial autocorrelation function (PACF), and Dickey-Fuller stationarity testing. By constructing two Bayes detectors based on Logistic and Gaussian distributions and incorporating association rules, we develop investment strategies aimed at limiting trading frequency and reducing transaction costs. We assess the effectiveness of these strategies through simulation, taking into account factors such as risk-free interest, greed, efficient frontier, and adaptive greed. Overall, this study offers valuable insights into the daily returns of GOOGL and the potential for implementing profitable investment strategies.
+
+<p float="left" align="center">
+<img src="{{ site.url }}/images/project6.png" width="700" /> 
+<figcaption align="center">
+Performances of portfolios with different free-interest rates
+</figcaption>
+</p>
 
 ## [Five in a Row](https://github.com/zwanah/Five-in-a-Row)
 
