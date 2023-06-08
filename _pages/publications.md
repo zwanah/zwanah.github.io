@@ -4,12 +4,11 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-
 {% include base_path %}
 
 ## [Mitigating Dataset Bias for Trustworthy Medical Image Classification](https://zwanah.github.io/files/publication1.pdf)
 
-It will be released soon.
+Fine
 
 <p float="left" align="center">
 <img src="{{ site.url }}/images/publication1.png" width="400" /> 
