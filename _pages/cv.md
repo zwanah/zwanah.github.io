@@ -16,7 +16,7 @@ Education
 Research experience
 ===================
 
-* Oct. 2022 - Jun.2023: Trustworthy Medical Image Classification
+* Oct. 2022 - Jun. 2023: Trustworthy Medical Image Classification
 
   * The Hong Kong University of Science and Technology
   * Supervisor: Asst. Prof. [Hao Chen](https://cse.hkust.edu.hk/~jhc/)
@@ -25,7 +25,7 @@ Research experience
     2. Conducting research as a Research Assistant;
     3. Investigating topics such as debias,fairness,and long-tail data in Medical Computer Vision;
     4. Establishing a medical debias benchmark in mitigating bias in medical image classification;
-* Sep. 2022 - Jun.2023: Medical Image Segmentation
+* Sep. 2022 - Jun. 2023: Medical Image Segmentation
 
   * The Hong Kong University of Science and Technology
   * Supervisor: Prof. [Yang Xiang](https://www.math.hkust.edu.hk/~maxiang/)
@@ -34,7 +34,7 @@ Research experience
     2. Conducted multi-label segmentation in GI tract images for stomach, large bowel, and small bowel classes;
     3. Extended a two-dimensional loss function to its three-dimensional form;
     4. Successfully applied the Elastic Interaction-Based Loss Function for fine-tuning the Segment Anything model to vessel segmentation
-* Sep. 2020 - Jun. 2021: Prediction of "High to turn" in the stock market
+* Sep. 2020 - Jun. 2021: Prediction of "High Bonus" in the stock market
 
   * Chongqing University
   * Supervisor: Prof. [Zhimin Zhang](http://sci.cqu.edu.cn/info/1329/4963.htm)
