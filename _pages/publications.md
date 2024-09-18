@@ -5,6 +5,19 @@ permalink: /publications/
 author_profile: true
 ---
 {% include base_path %}
+
+
+## [DataVisT5: A Pre-trained Language Model for Jointly Understanding Text and Data Visualization](https://arxiv.org/abs/2408.07401)
+
+Data visualization (DV) is the fundamental and premise tool to improve the efficiency in conveying the insights behind the big data, which has been widely accepted in existing data-driven world. Task automation in DV, such as converting natural language queries to visualizations (i.e., text-to-vis), generating explanations from visualizations (i.e., vis-to-text), answering DV-related questions in free form (i.e. FeVisQA), and explicating tabular data (i.e., table-to-text), is vital for advancing the field. Despite their potential, the application of pre-trained language models (PLMs) like T5 and BERT in DV has been limited by high costs and challenges in handling cross-modal information, leading to few studies on PLMs for DV. We introduce \textbf{DataVisT5}, a novel PLM tailored for DV that enhances the T5 architecture through a hybrid objective pre-training and multi-task fine-tuning strategy, integrating text and DV datasets to effectively interpret cross-modal semantics. Extensive evaluations on public datasets show that DataVisT5 consistently outperforms current state-of-the-art models on various DV-related tasks. We anticipate that DataVisT5 will not only inspire further research on vertical PLMs but also expand the range of applications for PLMs.
+
+<p float="left" align="center">
+<img src="{{ site.url }}/images/DVT5.pdf" width="700" /> 
+<figcaption align="center">
+An illustration depicting the text-to-vis, vis-to-text, table-to-text, and free-form question-answering over data visualization problems, showcasing examples including a NL question, a DV query, a DVL visualization specification, a table description, a visualization chart, and four question-answer pairs.
+</figcaption>
+</p>
+
 ## [TransFlower: An Explainable Transformer-Based Model with Flow-to-Flow Attention for Commuting Flow Prediction](https://arxiv.org/abs/2402.15398)
 
 Understanding the link between urban planning and commuting flows is crucial for guiding urban development and policymaking. This research, bridging computer science and urban studies, addresses the challenge of integrating these fields with their distinct focuses. Traditional urban studies methods, like the gravity and radiation models, often underperform in complex scenarios due to their limited handling of multiple variables and reliance on overly simplistic and unrealistic assumptions, such as spatial isotropy. While deep learning models offer improved accuracy, their black-box nature poses a trade-off between performance and explainability -- both vital for analyzing complex societal phenomena like commuting flows. To address this, we introduce TransFlower, an explainable, transformer-based model employing flow-to-flow attention to predict urban commuting patterns. It features a geospatial encoder with an anisotropy-aware relative location encoder for nuanced flow representation. Following this, the transformer-based flow predictor enhances this by leveraging attention mechanisms to efficiently capture flow interactions. Our model outperforms existing methods by up to 30.8% Common Part of Commuters, offering insights into mobility dynamics crucial for urban planning and policy decisions.

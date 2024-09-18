@@ -11,8 +11,8 @@ redirect_from:
 
 # About Me
 
-* I am a MSc student of Data-Driven Modeling in [The Hong Kong University of Science and Technology](https://hkust.edu.hk/).
-* My research focuses on developing Pre-trained Language Model that can handle Data Visualization ralated tasks. I am also interested in applying mathematical optimization methods to improve the performance and computational efficiency of machine learning algorithms.
+* I am a MSc student of Data-Driven Modeling in [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) and will be enrolling in the [PolyU](https://www.polyu.edu.hk/tc/) Computing Ph.D. program in the spring of 2025.
+* My research focuses on developing Pre-trained Language Model that can handle Query Generation ralated tasks such as Text-to-SQL and Text-to-Visualization. I am also interested in applying mathematical optimization methods to improve the performance and computational efficiency of machine learning algorithms.
 * Outside of my research, I enjoy playing basketball and have won the Chongqing Championship of the CUBA second-level league while studying at [Chongqing University](https://www.cqu.edu.cn/).
 * Check out more information from my [CV](https://zwanah.github.io/files/CV_WAN_Zhuoyue.pdf).
 * Pronouns: he/him/his

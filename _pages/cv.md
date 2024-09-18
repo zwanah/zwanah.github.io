@@ -7,15 +7,24 @@ redirect_from:
 ---
 {% include base_path %}
 
-Education
-=========
+Education & Experience
+======================
 
 * B.S. in Statistics, [Chongqing University](https://www.cqu.edu.cn/), 2021
 * M.S. in Data-Driven Modeling, [The Hong Kong University of Science and Technology](https://hkust.edu.hk/), 2023
+* Research Assistant, [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), 2024
+* Incoming Ph.D., [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), 2025
 
 Research experience
 ===================
 
+* Oct. 2023 - Oct. 2024: PLM for Data Visualization
+
+  * The Hong Kong Polytechnic University
+  * Supervisor: Asst. Prof. [Zhang Chen Jason](https://www.zhangchen.info/)
+  * Duties included:
+    1. Conducting research as a Research Assistant;
+    2. Focused on developing pre-trained language models for handling Data Visualization related tasks;
 * Oct. 2022 - Jun. 2023: Trustworthy Medical Image Classification
 
   * The Hong Kong University of Science and Technology
