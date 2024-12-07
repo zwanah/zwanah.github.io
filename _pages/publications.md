@@ -21,7 +21,7 @@ An illustration depicting the text-to-vis, vis-to-text, table-to-text, and free-
 
 ## [Mind Your Questions! Towards Backdoor Attacks on Text-to-Visualization Models](https://arxiv.org/abs/2410.06782)
 
-**Authors:** Shuaimin Li, Yuanfeng Song, Xuanang Chen, Anni Peng, **Zhuoyue Wan**, Chen Jason Zhang, Raymond Chi-Wing Wong
+**Authors:** Shuaimin Li, Yuanfeng Song, Xuanang Chen, Anni Peng, **Zhuoyue Wan**, Chen Jason Zhang, Raymond Chi-Wing Wong  
 **Published on:** *arXiv preprint, 2024*
 
 
