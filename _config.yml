@@ -10,7 +10,7 @@ locale                   : "Hong Kong"
 title                    : "Zhuoyue WAN's Home"
 title_separator          : "-"
 name                     : &name "Zhuoyue WAN"
-description              : &description "Math to CVer"
+description              : &description "Math to DBer"
 url                      : https://zwanah.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "zwanah/zwanah.github.io"
@@ -86,7 +86,7 @@ author:
   location         : "Hong Kong"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : #"http://yourfullgooglescholarurl.com"
+  googlescholar    : https://scholar.google.com/citations?user=28rvyrEAAAAJ
   email            : "zwanah@connect.ust.hk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
