@@ -3,7 +3,7 @@
 
 <h3> 👨🏻‍💻 About Me </h3>
 
-- 🔭 &nbsp; I am currently an MSc student at HKUST and will be enrolling in the PolyU Computing Ph.D. program in the spring of 2025.
+- 🔭 &nbsp; I am currently a Ph.D.student at PolyU.
 - 🎓 &nbsp; Studying Computer Science, Statistics and Mathematics.
 - 🌱 &nbsp; Enthusiast in LLM for query generation and Crowdsourcing.
 - 🏀 &nbsp; I believe, playing basketball can be the ultimate solution for any stress.
