@@ -13,7 +13,7 @@ Education & Experience
 * B.S. in Statistics, [Chongqing University](https://www.cqu.edu.cn/), 2021
 * M.S. in Data-Driven Modeling, [The Hong Kong University of Science and Technology](https://hkust.edu.hk/), 2023
 * Research Assistant, [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), 2024
-* Incoming Ph.D., [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), 2025
+* Ph.D. in Computer Science, [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), 2025
 
 Research experience
 ===================
@@ -30,7 +30,7 @@ Research experience
   * The Hong Kong University of Science and Technology
   * Supervisor: Asst. Prof. [Hao Chen](https://cse.hkust.edu.hk/~jhc/)
   * Duties included:
-    1. Contributed to the joint submission to **ICCV 2023**, providing rigorous and meticulous theoretical derivations of the method;
+    1. Providing rigorous and meticulous theoretical derivations of the method;
     2. Conducting research as a Research Assistant;
     3. Investigating topics such as debias,fairness,and long-tail data in Medical Computer Vision;
     4. Establishing a medical debias benchmark in mitigating bias in medical image classification;
