@@ -10,7 +10,7 @@ author_profile: true
 ## [DataVisT5: A Pre-trained Language Model for Jointly Understanding Text and Data Visualization](https://arxiv.org/abs/2408.07401)
 
 **Authors:** **Zhuoyue Wan**, Yuanfeng Song, Shuaimin Li, Chen Jason Zhang, Raymond Chi-Wing Wong  
-**Accepted on:** *2025 International Conference on Data Engineering* **ICDE 2025**
+**Conference:** Accepted at *2025 International Conference on Data Engineering* (**ICDE 2025**, **CCF-A**)
 
 <p float="left" align="center">
 <img src="{{ site.url }}/images/DVT5.png" width="700" /> 

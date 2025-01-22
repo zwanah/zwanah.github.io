@@ -11,9 +11,9 @@ redirect_from:
 
 # About Me
 
-* I am a first-year Ph.D. student specializing in Computer Science at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/). Prior to this, I completed my Master's degree at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) and obtained my Bachelor of Science from [Chongqing University](https://www.cqu.edu.cn/).
-* My research focuses on developing Pre-trained Language Model that can handle Query Generation related tasks such as Text-to-SQL and Text-to-Visualization. I am also interested in applying mathematical optimization methods to improve the performance and computational efficiency of machine learning algorithms.
-* Outside of my research, I enjoy playing basketball and have won the Chongqing Championship of the CUBA second-level league while studying at [Chongqing University](https://www.cqu.edu.cn/).
+* I am a first-year Ph.D. student in Computer Science at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/). I previously earned my Master's degree from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) and my Bachelor of Science from [Chongqing University](https://www.cqu.edu.cn/).
+* My research centers on Natural Language Processing (NLP) for databases, with a particular focus on query generation tasks. I am also deeply interested in applying mathematical optimization techniques to improve the performance and computational efficiency of deep learning algorithms.
+* Beyond academics, I have a passion for basketball. During my time at [Chongqing University](https://www.cqu.edu.cn/), I had the honor of winning the Chongqing Championship in the CUBA second-level league.
 * Check out more information from my [CV](https://zwanah.github.io/files/CV_WAN_Zhuoyue.pdf).
 * Pronouns: he/him/his
 
