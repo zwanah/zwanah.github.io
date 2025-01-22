@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : https://scholar.google.com/citations?user=28rvyrEAAAAJ
-  email            : "zwanah@connect.ust.hk"
+  email            : "zhuoy.wan@connect.polyu.hk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -99,7 +99,7 @@ author:
   github           : "zwanah"
   google_plus      :
   keybase          :
-  instagram        : "wanzhuoyue"
+  instagram        : #"wanzhuoyue"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "ZhuoyueWAN"
