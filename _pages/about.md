@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-![1683343073512](image/about/shanghai_2024_12.jpg){: width="350px" style="float:left; padding-right:60px" }
+![1683343073512](image/about/HK_2025.png){: width="350px" style="float:left; padding-right:60px" }
 
 # About Me
 

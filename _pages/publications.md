@@ -19,6 +19,12 @@ An illustration depicting the text-to-vis, vis-to-text, table-to-text, and free-
 </figcaption>
 </p>
 
+## [Medical Image Debiasing by Learning Adaptive Agreement from a Biased Council](https://arxiv.org/abs/2401.11713)
+
+**Authors:** Luyang Luo, Xin Huang, Minghao Wang, **Zhuoyue Wan**, Hao Chen  
+**Published on:** *Medical Image Analysis 2025*
+
+
 ## [Mind Your Questions! Towards Backdoor Attacks on Text-to-Visualization Models](https://arxiv.org/abs/2410.06782)
 
 **Authors:** Shuaimin Li, Yuanfeng Song, Xuanang Chen, Anni Peng, **Zhuoyue Wan**, Chen Jason Zhang, Raymond Chi-Wing Wong  
@@ -28,10 +34,4 @@ An illustration depicting the text-to-vis, vis-to-text, table-to-text, and free-
 ## [TransFlower: An Explainable Transformer-Based Model with Flow-to-Flow Attention for Commuting Flow Prediction](https://arxiv.org/abs/2402.15398)
 
 **Authors:** Yan Luo, **Zhuoyue Wan**, Nemin Wu, Yuzhong Chen, Gengchen Mai, Fu-lai Chung, Kent Larson  
-**Published on:** *arXiv preprint, 2024*
-
-
-## [Medical Image Debiasing by Learning Adaptive Agreement from a Biased Council](https://arxiv.org/abs/2401.11713)
-
-**Authors:** Luyang Luo, Xin Huang, Minghao Wang, **Zhuoyue Wan**, Hao Chen  
 **Published on:** *arXiv preprint, 2024*
