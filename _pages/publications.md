@@ -18,9 +18,8 @@ author_profile: true
 
 ## [DataVisT5: A Pre-trained Language Model for Jointly Understanding Text and Data Visualization](https://arxiv.org/abs/2408.07401)
 
-**Zhuoyue Wan**, Yuanfeng Song, Shuaimin Li, Chen Jason Zhang, Raymond Chi-Wing Wong \\
+**Authors:** **Zhuoyue Wan**, Yuanfeng Song, Shuaimin Li, Chen Jason Zhang, Raymond Chi-Wing Wong \\
 **Conference:** Accepted at *2025 International Conference on Data Engineering* (**ICDE 2025**, **CCF-A**)
-
 
 ## [Medical Image Debiasing by Learning Adaptive Agreement from a Biased Council](https://arxiv.org/abs/2401.11713)
 
