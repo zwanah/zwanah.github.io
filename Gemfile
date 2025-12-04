@@ -18,6 +18,12 @@ gem "github-pages", group: :jekyll_plugins
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
+# Fix pathutil compatibility issue with Jekyll 3.9.0
+gem "pathutil", "0.9.0"
+
+# Webrick is required for Jekyll serve in Ruby 3.0+
+gem "webrick"
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"

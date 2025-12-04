@@ -1,1 +1,1 @@
-bundle exec jekyll liveserve
+bundle exec jekyll serve --no-watch --host 0.0.0.0
