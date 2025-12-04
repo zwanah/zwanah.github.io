@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Zhuoyue WAN's Home"
-# description              : "Ph.D. candidate in PolyU"
+description              : "Ph.D. candidate in PolyU"
 repository               : "zwanah/zwanah.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zhuoyue WAN"
   avatar           : "images/HK_2025.png"
-  bio              : "Ph.D. candidate in PolyU"
+  bio              : ""
   location         : "Hong Kong"
   employer         :
   pubmed           : 
