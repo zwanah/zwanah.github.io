@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-* I am a first-year Ph.D. candidate in Computer Science at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/). I previously earned my Master's degree from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) and my Bachelor of Science from [Chongqing University](https://www.cqu.edu.cn/).
+* I am a first-year Ph.D. candidate in Computer Science at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/) under the supervision of [Chen Jason Zhang](https://www.polyu.edu.hk/comp/people/academic-staff/prof-zhang-chen-jason/) and co-supervised by [Wen Hua](https://web.comp.polyu.edu.hk/wenhua/). I previously earned my Master's degree from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) and my Bachelor of Science from [Chongqing University](https://www.cqu.edu.cn/).
 * My research centers on Natural Language Processing (NLP) for Database, with a particular focus on query generation tasks. I am also deeply interested in leveraging mathematical optimization techniques to enhance the performance and reliability of deep learning algorithms.
 * Beyond academics, I have a passion for basketball. During my time at [Chongqing University](https://www.cqu.edu.cn/), I had the honor of winning the Chongqing Championship in the CUBA second-level league.
 * Pronouns: he/him/his
@@ -28,6 +28,8 @@ redirect_from:
 - *2025.11*: &nbsp;🎉🎉 Two papers (one first-author, one co-authored) accepted to ICDE 2026 (CCF-A). 
 - *2025.04*: &nbsp;🎉🎉 One co-authored paper accepted to Medical Image Analysis (JCR-Q1). 
 - *2024.12*: &nbsp;🎉🎉 One first-author paper accepted to ICDE 2025 (CCF-A).
+
+
 # 📝 Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDE 2026</div><img src='images/OsmT_framework.png' alt="OsmT" width="100%"></div></div>
