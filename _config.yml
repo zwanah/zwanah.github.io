@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Zhuoyue WAN's Home"
-description              : "Ph.D. candidate in PolyU"
+# description              : "Ph.D. candidate in PolyU"
 repository               : "zwanah/zwanah.github.io"
 google_scholar_stats_use_cdn : true
 
