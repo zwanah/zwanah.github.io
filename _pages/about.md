@@ -35,7 +35,7 @@ redirect_from:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDE 2026</div><img src='images/OsmT_framework.png' alt="OsmT" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**OsmT: Bridging OpenStreetMap Queries and Natural Language with Open-source Tag-aware Language Models**
+[**OsmT: Bridging OpenStreetMap Queries and Natural Language with Open-source Tag-aware Language Models**](https://arxiv.org/abs/2512.04738)
 
 **Authors:** **Zhuoyue Wan**, Wentao Hu, Chen Jason Zhang, Yuanfeng Song, Shuaimin Li, Ruiqiang Xiao, Xiao-Yong Wei, Raymond Chi-Wing Wong
 
