@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-* I am a first-year Ph.D. candidate in Computer Science at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/) under the supervision of [Chen Jason Zhang](https://www.polyu.edu.hk/comp/people/academic-staff/prof-zhang-chen-jason/) and co-supervised by [Wen Hua](https://web.comp.polyu.edu.hk/wenhua/). I previously earned my Master's degree from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) and my Bachelor of Science from [Chongqing University](https://www.cqu.edu.cn/).
+* I am a second-year Ph.D. candidate in Computer Science at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/) under the supervision of [Chen Jason Zhang](https://www.polyu.edu.hk/comp/people/academic-staff/prof-zhang-chen-jason/) and co-supervised by [Wen Hua](https://web.comp.polyu.edu.hk/wenhua/). I previously earned my Master's degree from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) and my Bachelor of Science from [Chongqing University](https://www.cqu.edu.cn/).
 * My research centers on Natural Language Processing (NLP) for Database, with a particular focus on query generation tasks. I am also deeply interested in leveraging mathematical optimization techniques to enhance the performance and reliability of deep learning algorithms.
 * Beyond academics, I have a passion for basketball. During my time at [Chongqing University](https://www.cqu.edu.cn/), I had the honor of winning the Chongqing Championship in the CUBA second-level league.
 * Pronouns: he/him/his
