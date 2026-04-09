@@ -8,6 +8,9 @@
 # Site Settings
 title                    : "Zhuoyue WAN's Home"
 description              : "Ph.D. candidate in PolyU"
+# Explicit URL fixes canonical / Open Graph / Twitter cards on GitHub Pages
+url                      : "https://zwanah.github.io"
+baseurl                  : ""
 repository               : "zwanah/zwanah.github.io"
 google_scholar_stats_use_cdn : true
 
