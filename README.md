@@ -15,7 +15,6 @@ I am a Ph.D. candidate in Computer Science at [The Hong Kong Polytechnic Univers
 This homepage is built using the [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io) template, which provides:
 
 - **Modern and Responsive Design**: Automatically adjusts for different screen sizes and viewports
-- **Google Scholar Integration**: Automatically updates citations using GitHub Actions
 - **SEO Optimized**: Helps search engines find and rank the homepage
 - **Beautiful and Simple**: Perfect for academic personal homepages
 
