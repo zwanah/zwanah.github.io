@@ -4,7 +4,7 @@ Welcome to my academic homepage! This is my personal website showcasing my resea
 
 ## About Me
 
-I am a Ph.D. candidate in Computer Science at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/). My research centers on Natural Language Processing (NLP) for Database, with a particular focus on query generation tasks. I am also deeply interested in leveraging mathematical optimization techniques to enhance the performance and reliability of deep learning algorithms.
+I am a Ph.D. candidate in Computer Science at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/). My research centers on Natural Language Processing (NLP) for Database, with a particular focus on data-centric tasks. I am also deeply interested in leveraging mathematical optimization techniques to enhance the performance and efficiency of Data Agent.
 
 ## Visit My Homepage
 
