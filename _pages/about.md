@@ -17,25 +17,16 @@ redirect_from:
 
 
 # 🔥 News
-- *2026.04*: &nbsp;🎉🎉 One co-authored paper accepted to ACL 2026 Findings. 
-- *2025.12*: &nbsp;🎉🎉 PhD Candidate status at The Hong Kong Polytechnic University (end of Year 1). 
-- *2025.11*: &nbsp;🎉🎉 Two papers (one first-author, one co-authored) accepted to ICDE 2026 (CCF-A). 
-- *2025.04*: &nbsp;🎉🎉 One co-authored paper accepted to Medical Image Analysis (JCR-Q1). 
-- *2024.12*: &nbsp;🎉🎉 One first-author paper accepted to ICDE 2025 (CCF-A).
+- *2026.04*: &nbsp;🎉🎉 Paper accepted to ACL 2026 Findings.
+- *2025.12*: &nbsp;🎉🎉 Promoted to PhD Candidate at The Hong Kong Polytechnic University.
+- *2025.11*: &nbsp;🎉🎉 Two papers accepted to ICDE 2026 (CCF-A).
+- *2025.04*: &nbsp;🎉🎉 Paper accepted to Medical Image Analysis (JCR-Q1).
+- *2024.12*: &nbsp;🎉🎉 Paper accepted to ICDE 2025 (CCF-A).
 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026 Findings</div><img src='images/SrDetection_framework.png' alt="SrDetection" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[**SrDetection: A Self-Referential Framework for Data Leakage Detection in Code Large Language Models**](https://openreview.net/pdf?id=fmJU3o4eNz)
-
-**Authors:** Shuaimin Li, Liyang Fan, Zeyang Li, **Zhuoyue Wan**, Yufang Lin, Shiwen Ni, Feiteng Fang, Hamid Alinejad-Rokny, Yuanfeng Song, Kun Jing, Chen Jason Zhang, Min Yang
-
-**Conference:** Accepted at *Findings of the Association for Computational Linguistics: ACL 2026* (**ACL 2026 Findings**)
-</div>
-</div>
+## Published Papers
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDE 2026</div><img src='images/OsmT_framework.png' alt="OsmT" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -43,17 +34,6 @@ redirect_from:
 [**OsmT: Bridging OpenStreetMap Queries and Natural Language with Open-source Tag-aware Language Models**](https://arxiv.org/abs/2512.04738)
 
 **Authors:** **Zhuoyue Wan**, Wentao Hu, Chen Jason Zhang, Yuanfeng Song, Shuaimin Li, Ruiqiang Xiao, Xiao-Yong Wei, Raymond Chi-Wing Wong
-
-**Conference:** Accepted at *2026 International Conference on Data Engineering* (**ICDE 2026**, **CCF-A**)
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDE 2026</div><img src='images/Vis_poisoning.png' alt="VisPoison" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[**VisPoison: An Effective Backdoor Attack Framework for Tabular Data Visualization Models**](https://arxiv.org/abs/2410.06782)
-
-**Authors:** Shuaimin Li, Yuanfeng Song, Xuanang Chen, Anni Peng, **Zhuoyue Wan**, Chen Jason Zhang, Raymond Chi-Wing Wong
 
 **Conference:** Accepted at *2026 International Conference on Data Engineering* (**ICDE 2026**, **CCF-A**)
 </div>
@@ -70,6 +50,28 @@ redirect_from:
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026 Findings</div><img src='images/SrDetection_framework.png' alt="SrDetection" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**SrDetection: A Self-Referential Framework for Data Leakage Detection in Code Large Language Models**](https://openreview.net/pdf?id=fmJU3o4eNz)
+
+**Authors:** Shuaimin Li, Liyang Fan, Zeyang Li, **Zhuoyue Wan**, Yufang Lin, Shiwen Ni, Feiteng Fang, Hamid Alinejad-Rokny, Yuanfeng Song, Kun Jing, Chen Jason Zhang, Min Yang
+
+**Conference:** Accepted at *Findings of the Association for Computational Linguistics: ACL 2026* (**ACL 2026 Findings**)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDE 2026</div><img src='images/Vis_poisoning.png' alt="VisPoison" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**VisPoison: An Effective Backdoor Attack Framework for Tabular Data Visualization Models**](https://arxiv.org/abs/2410.06782)
+
+**Authors:** Shuaimin Li, Yuanfeng Song, Xuanang Chen, Anni Peng, **Zhuoyue Wan**, Chen Jason Zhang, Raymond Chi-Wing Wong
+
+**Conference:** Accepted at *2026 International Conference on Data Engineering* (**ICDE 2026**, **CCF-A**)
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MIA 2025</div><img src='images/Debiased_Framework.png' alt="Medical Image Debiasing" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -78,6 +80,19 @@ redirect_from:
 **Authors:** Luyang Luo, Xin Huang, Minghao Wang, **Zhuoyue Wan**, Hao Chen
 
 **Journal:** *Medical Image Analysis 2025 (**MIA**, **JCR Q1**)*
+</div>
+</div>
+
+## Preprints
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint 2026</div><img src='images/DataClaw_IM_view.png' alt="DataClaw IM view" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**DataClaw: An Autonomous Data Agent with Instant Messaging Integration**](https://arxiv.org/abs/2604.24067v1)
+
+**Authors:** Huahang Li, Wentao Hu, **Zhuoyue Wan**, Chen Jason Zhang, Haoyang Li, Xiaoyong Wei
+
+**Preprint:** *arXiv preprint, 2026*
 </div>
 </div>
 
