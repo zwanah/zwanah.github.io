@@ -1,0 +1,15 @@
+<article class="publication pub-list-item with-thumbnail-expanded">
+  <a class="paper-figure pub-thumbnail-box" href="{{ paper.image | relative_url }}" data-figure-title="{{ paper.title | escape }}" data-figure-src="{{ paper.display | default: paper.image | relative_url }}" aria-label="Enlarge {{ paper.alt }} figure">
+    <span class="figure-stage"><img src="{{ paper.preview | default: paper.image | relative_url }}" alt="{{ paper.alt }} research figure" loading="lazy" decoding="async" width="{{ paper.preview_width | default: 800 }}" height="{{ paper.preview_height | default: 500 }}"></span>
+  </a>
+  <div class="paper-copy pub-content-wrapper">
+    <h3 class="pub-line-1 pub-title-text">{% if paper.url != '' %}<a href="{{ paper.url }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3>
+    <div class="authors">{{ paper.authors | markdownify }}</div>
+    <div class="publication-detail pub-line-3"><span>{{ paper.venue_name }}</span> <span class="pub-meta-tag tag-conference">{{ paper.venue_badge }}</span>{% if paper.ranking_badge %} <span class="pub-meta-tag tag-ranking">{{ paper.ranking_badge }}</span>{% endif %}</div>
+    <div class="paper-actions pub-line-4 pub-footer-row">
+      {% if paper.url != '' %}<a class="paper-link pub-link-btn" href="{{ paper.url }}">Read paper <span aria-hidden="true">↗</span><span class="sr-only">: {{ paper.title }}</span></a>{% endif %}
+      <a class="figure-link pub-link-btn" href="{{ paper.image | relative_url }}" data-figure-title="{{ paper.title | escape }}" data-figure-src="{{ paper.display | default: paper.image | relative_url }}">Expand figure <span aria-hidden="true">⤢</span><span class="sr-only">: {{ paper.title }}</span></a>
+      <span class="pub-logo-wrap"><img class="pub-venue-logo" src="{{ paper.logo | relative_url }}" alt="{{ paper.logo_alt | escape }}" title="{{ paper.logo_alt | escape }}" loading="lazy"></span>
+    </div>
+  </div>
+</article>

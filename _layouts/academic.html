@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include seo.html %}
+  <meta name="description" content="{{ page.excerpt | escape }}">
+  <meta name="theme-color" content="#f8f7f3">
+  <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/vendor/acanova/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header glass">
+    <div class="header-inner">
+      <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Zhuoyue Wan home">Zhuoyue Wan<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about-me">About</a>
+        <a href="#research">Research</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#honors">Honors</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="site-shell grid-layout">
+    <aside class="profile-sidebar profile-column" aria-label="Personal profile">
+      <div class="profile-card">
+        <img class="profile-portrait" src="{{ site.author.avatar | relative_url }}" alt="Zhuoyue Wan" width="260" height="300" fetchpriority="high">
+        <h1>Zhuoyue Wan</h1>
+        <p class="profile-names"><span lang="zh-Hans">万卓越</span><span class="name-divider">/</span> Russell</p>
+        <p class="profile-role">Ph.D. Candidate</p>
+        <p class="profile-affiliation">Department of Computing<br><a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University</a></p>
+        <p class="profile-location">Hong Kong <span>· he / him / his</span></p>
+        <div class="profile-links social-links" aria-label="Contact and academic profiles">
+          <a class="social-btn" href="mailto:{{ site.author.email }}" aria-label="Email" title="Email"><img src="{{ '/assets/images/icons/envelope.svg' | relative_url }}" alt="" width="26" height="26"></a><a class="social-btn" href="{{ site.author.googlescholar }}" aria-label="Scholar" title="Scholar"><img src="{{ '/assets/images/icons/graduation-cap.svg' | relative_url }}" alt="" width="26" height="26"></a><a class="social-btn" href="https://github.com/{{ site.author.github }}" aria-label="GitHub" title="GitHub"><img src="{{ '/assets/images/icons/github.svg' | relative_url }}" alt="" width="26" height="26"></a><a class="social-btn" href="https://www.linkedin.com/in/{{ site.author.linkedin }}" aria-label="LinkedIn" title="LinkedIn"><img src="{{ '/assets/images/icons/linkedin.svg' | relative_url }}" alt="" width="26" height="26"></a>
+        </div>
+      </div>
+      <section class="research-card" aria-labelledby="research-heading"><p class="group-label">💡 RESEARCH INTERESTS</p><h2 id="research-heading">NLP & Data</h2><ul><li><span class="topic-icon" aria-hidden="true" style="--topic-icon:url('{{ '/assets/images/icons/database.svg' | relative_url }}')"></span><span>NLP for Databases</span></li><li><span class="topic-icon" aria-hidden="true" style="--topic-icon:url('{{ '/assets/images/icons/layer-group.svg' | relative_url }}')"></span><span>Pre-training Data Curation</span></li><li><span class="topic-icon" aria-hidden="true" style="--topic-icon:url('{{ '/assets/images/icons/robot.svg' | relative_url }}')"></span><span>Data Agents & Optimization</span></li></ul></section>
+    </aside>
+    <main id="main" class="site-main content-column">{{ content }}</main>
+  </div>
+  <footer class="site-footer">
+    <span>Zhuoyue Wan · 万卓越 · Russell</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+  <dialog class="figure-dialog" aria-labelledby="figure-dialog-title">
+    <div class="figure-dialog-header"><h2 id="figure-dialog-title">Research figure</h2><button class="figure-dialog-close" type="button" autofocus>Close <span aria-hidden="true">×</span></button></div>
+    <div class="figure-dialog-image"><img alt=""></div>
+    <div class="figure-dialog-footer"><a class="figure-original">Open original image ↗</a></div>
+  </dialog>
+  <script src="{{ '/assets/js/academic.js' | relative_url }}?v=4" defer></script>
+  {% if site.google_analytics_id %}{% include analytics.html %}{% endif %}
+</body>
+</html>
