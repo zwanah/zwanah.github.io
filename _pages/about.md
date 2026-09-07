@@ -100,7 +100,7 @@ My research centers on Natural Language Processing (NLP) for Database, with a pa
       <section class="contact-panel" aria-labelledby="visitors-heading">
         <div class="panel-heading"><h3 id="visitors-heading">Visitor Statistics</h3></div>
         <div class="visitor-widget contact-visual"><script async type="text/javascript" id="mapmyvisitors" src="{{ '/assets/vendor/mapmyvisitors/map.js' | relative_url }}?d=BaqRYnYzdyYOpYiBOwrZApLSRdeRj8OmuhxCm4DJgSo&amp;cl=ffffff&amp;w=300"></script><noscript><p>Enable JavaScript to view visitor statistics.</p></noscript></div>
-        <div class="panel-footer"><p class="visitor-status" role="status">Visitor data is temporarily unavailable.</p>
+        <div class="panel-footer"><p class="visitor-status" role="status">Loading visitor statistics…</p>
         <p class="visitor-credit">Visitor map by <a href="https://mapmyvisitors.com/web/1c821">MapMyVisitors</a></p></div>
       </section>
     </div>

@@ -38,10 +38,15 @@
   const widget = document.querySelector('.visitor-widget');
   const status = document.querySelector('.visitor-status');
   if (!widget || !status) return;
+  let timedOut = false;
   const update = () => {
     const count = widget.querySelector('.mapmyvisitors-visitors');
     status.hidden = Boolean(count && /[0-9]/.test(count.textContent));
+    status.textContent = timedOut
+      ? 'Visitor statistics service could not be reached. Please try again later.'
+      : 'Loading visitor statistics…';
   };
+  setTimeout(() => { timedOut = true; update(); }, 15000);
   new MutationObserver(update).observe(widget, { childList: true, subtree: true, characterData: true });
   update();
 })();
