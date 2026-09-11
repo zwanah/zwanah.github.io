@@ -5,7 +5,7 @@
     "alt": "XOver framework",
     "title": "XOver: Execution-Calibrated Exemplar Contextualization for Multilingual Text-to-OverpassQL on OpenStreetMap",
     "url": "",
-    "authors": "Zhuoyue Wan, Jiaqi Fan, Hwanhee Kim, Chen Jason Zhang, Shuaimin Li, Yuanfeng Song, Haoyang Li, Xiao-Yong Wei, Raymond Chi-Wing Wong",
+    "authors": "**Zhuoyue Wan**, Jiaqi Fan, Hwanhee Kim, Chen Jason Zhang, Shuaimin Li, Yuanfeng Song, Haoyang Li, Xiao-Yong Wei, Raymond Chi-Wing Wong",
     "detail": "Accepted at *2027 International Conference on Data Engineering* (**ICDE 2027**, **CCF-A**)",
     "category": "published",
     "logo": "assets/images/venues/icde2026.png",
@@ -20,11 +20,11 @@
   },
   {
     "venue": "ICDE 2027",
-    "image": "images/CARGO.png",
+    "image": "images/Text2RLS.png",
     "alt": "Text-to-RLS framework",
     "title": "Text-to-RLS: Towards Constraint-Anchored Row-Level Security in Natural Language Database Interfaces",
     "url": "",
-    "authors": "Jiaqi Fan, Zhuoyue Wan, Chen Jason Zhang, Xiao-Yong Wei, Haoyang Li, Yuanfeng Song, Wangze Ni, Raymond Chi-Wing Wong",
+    "authors": "Jiaqi Fan, **Zhuoyue Wan**, Chen Jason Zhang, Xiao-Yong Wei, Haoyang Li, Yuanfeng Song, Wangze Ni, Raymond Chi-Wing Wong",
     "detail": "Accepted at *2027 International Conference on Data Engineering* (**ICDE 2027**, **CCF-A**)",
     "category": "published",
     "logo": "assets/images/venues/icde2026.png",
@@ -32,10 +32,10 @@
     "venue_name": "IEEE International Conference on Data Engineering",
     "venue_badge": "ICDE’27",
     "ranking_badge": "CCF-A",
-    "preview": "assets/images/papers/CARGO.webp",
+    "preview": "assets/images/papers/Text2RLS.webp",
     "preview_width": 1200,
-    "preview_height": 649,
-    "display": "assets/images/papers/CARGO-large.webp"
+    "preview_height": 423,
+    "display": "assets/images/papers/Text2RLS-large.webp"
   },
   {
     "venue": "SIGMOD 2027",

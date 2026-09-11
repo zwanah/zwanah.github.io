@@ -1,8 +1,8 @@
-# Add XOver and CARGO paper figures
+# Add XOver and replace CARGO with Text2RLS paper figures
 
 ## Goal
 
-Replace the two placeholder figures on the first two publication cards with the supplied XOver and CARGO PDFs, using the site's existing lightweight WebP preview/large-image pattern.
+Replace the two placeholder figures on the first two publication cards with the supplied XOver PDF and the current Text2RLS PDF, using the site's existing lightweight WebP preview/large-image pattern.
 
 ## Phases
 
@@ -14,6 +14,17 @@ Replace the two placeholder figures on the first two publication cards with the 
 ## Next Step
 
 Deliver the updated assets and publication mappings.
+
+## Follow-up: replace CARGO figure with Text2RLS PDF
+
+- [x] Inspect and visually render the replacement PDF.
+- [x] Create the original, preview, and display assets.
+- [x] Update the Text-to-RLS publication mapping and remove obsolete CARGO assets.
+- [x] Run final static validation and deliver.
+
+### Next Step
+
+Replacement verified; deliver the updated Text2RLS assets and mapping.
 
 ## Errors
 
