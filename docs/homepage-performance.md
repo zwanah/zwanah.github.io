@@ -6,7 +6,7 @@
 - Cards now use 1,200px-wide WebP previews totaling 2,346,538 bytes (95.3% smaller). Encoding is lossless after resizing. The modal uses a separate image up to 2,400px wide; original PNG download links remain available.
 - The portrait is now a 480px-wide, 43,826-byte WebP. The original portrait is retained.
 - Crimson Text, Inter, and Kalam Latin fonts are served locally, avoiding the external Google Fonts CSS import and font requests. Family licenses are stored with the fonts.
-- MapMyVisitors loads asynchronously on every visit. It is not deferred until the contact section, which would omit visitors who never scroll that far. The map's external provider can still be slow or unavailable.
+- MapMyVisitors is embedded directly from the provider in the page body using its supported fixed-width snippet. Scrolling does not control whether the script loads, so every normal page load attempts the request even when the visitor never reaches the contact section. The external provider can still be slow or unavailable.
 
 ## Repository and deployment cleanup
 

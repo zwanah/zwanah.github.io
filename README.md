@@ -11,7 +11,7 @@ Personal website of Zhuoyue Wan (万卓越), a Ph.D. candidate in Computer Scien
 - News: `_data/news.yml`
 - Profile and canonical domain: `_config.yml`
 - Layout and styles: `_layouts/academic.html`, `assets/css/academic.css`
-- Figure viewer, responsive sidebar, and visitor map loading: `assets/js/academic.js`
+- Figure viewer, responsive sidebar, and visitor-map status/scaling: `assets/js/academic.js`
 
 The site is built with Jekyll and published by GitHub Pages from `main`. `CNAME` sets the custom domain. For a local preview with the required Ruby dependencies installed, run `bundle install` and `bundle exec jekyll serve`.
 
@@ -19,7 +19,7 @@ The site is built with Jekyll and published by GitHub Pages from `main`. `CNAME`
 
 Publication cards use reduced-resolution WebP previews, and the figure viewer loads a larger WebP only on request. Original PNGs remain available through the viewer's original-image link. Keep `image` (original), `preview`, and `display` paths together when adding a paper. Use `preview_width` and `preview_height` for the thumbnail dimensions.
 
-Fonts are hosted locally with their licenses in `assets/fonts/homepage`. The campus map is lazy-loaded; MapMyVisitors loads asynchronously on every page visit so that visitors are counted even if they do not scroll to Contact. Visitor statistics depend on the external provider and display an unavailable message if no count is returned.
+Fonts are hosted locally with their licenses in `assets/fonts/homepage`. The campus map is lazy-loaded; MapMyVisitors uses the provider-hosted script directly on every page load, and scrolling does not gate the request. Visitor statistics depend on the external provider and display an unavailable message if no count is returned.
 
 ## Source credits
 

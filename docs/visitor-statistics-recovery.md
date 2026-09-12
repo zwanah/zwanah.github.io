@@ -43,4 +43,4 @@ The owner supplied a new MapMyVisitors embed for the canonical homepage `https:/
 
 ## Reset configuration (2026-09-12)
 
-The MapMyVisitors project was reset. The homepage now uses key `0Rpqiq9n6R9WC3DYQXr0-QOKrEZyMTOAF6jyn-qaZ9E` and links to statistics at https://mapmyvisitors.com/web/1c87a. The provider's responsive `w=a` option is passed through the existing local HTTPS compatibility script; the page layout still caps and scales the rendered map to 300px.
+The MapMyVisitors project was reset. The homepage now uses key `0Rpqiq9n6R9WC3DYQXr0-QOKrEZyMTOAF6jyn-qaZ9E` and links to statistics at https://mapmyvisitors.com/web/1c87a. It loads the provider-hosted HTTPS script directly, without `async`, using the fixed `w=300` option. This matches the widget layout and avoids running the archived local compatibility copy.

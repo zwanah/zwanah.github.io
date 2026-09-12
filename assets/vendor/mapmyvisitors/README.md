@@ -1,1 +1,1 @@
-Source: https://mapmyvisitors.com/map.js (provider embed, 2023-09-14 version). Local compatibility copy forces provider endpoints to HTTPS, so HTTP localhost previews use the same transport as the production site. Widget logic and site identifier are unchanged.
+Archived compatibility copy of https://mapmyvisitors.com/map.js (provider embed, 2023-09-14 version). The live homepage now loads the provider-hosted script directly so newly issued widget code uses the current implementation. This file is retained only for historical reference.
