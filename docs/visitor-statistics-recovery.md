@@ -40,3 +40,7 @@ Check the original service account or registration emails for the site ID above,
 ## Current configuration (2026-09-06)
 
 The owner supplied a new MapMyVisitors embed for the canonical homepage `https://wanzhuoyue.com`. The homepage now uses key `BaqRYnYzdyYOpYiBOwrZApLSRdeRj8OmuhxCm4DJgSo` and links to statistics at https://mapmyvisitors.com/web/1c821. The existing HTTPS compatibility script and 300px map layout are retained. This configuration change does not establish that previous visitor history was migrated.
+
+## Reset configuration (2026-09-12)
+
+The MapMyVisitors project was reset. The homepage now uses key `0Rpqiq9n6R9WC3DYQXr0-QOKrEZyMTOAF6jyn-qaZ9E` and links to statistics at https://mapmyvisitors.com/web/1c87a. The provider's responsive `w=a` option is passed through the existing local HTTPS compatibility script; the page layout still caps and scales the rendered map to 300px.
