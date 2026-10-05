@@ -247,3 +247,11 @@ body { background:var(--paper); font-size:15px; line-height:1.75; }
 
 .publication .pub-meta-tag.tag-conference { color:#526779; background:#f3f6f8; border-color:#d8e1e8; }
 .publication .pub-meta-tag.tag-ranking { color:#ad741f; background:#fffaf2; border-color:#efd4ac; white-space:nowrap; }
+
+/* Mobile actions share the card width; venue marks sit on their own row. */
+@media(max-width:700px) {
+  .publication .paper-actions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; align-items:center; }
+  .publication .paper-actions .pub-link-btn { width:100%; min-height:44px; justify-content:center; padding:8px; font-size:12px; text-align:center; }
+  .publication .paper-actions .figure-link:first-child { grid-column:1 / -1; }
+  .publication .paper-actions .pub-logo-wrap { grid-column:1 / -1; justify-self:end; margin-left:0; }
+}
