@@ -13,7 +13,7 @@ redirect_from:
   <div class="section-body biography" markdown="1">
 I am a second-year Ph.D. candidate in Computer Science at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/) under the supervision of Professor [Chen Jason Zhang](https://zhangchen.info/). I also work closely with Professor [Raymond Chi-Wing Wong](https://www.cse.ust.hk/~raywong/). I previously earned my Master's degree from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) and my Bachelor of Science from [Chongqing University](https://www.cqu.edu.cn/).
 
-My research centers on Natural Language Processing (NLP) for Database, with a particular focus on data-centric tasks. I am also interested in MLLM pre-training data construction, including efficient and automated data quality assessment models, data acquisition and curation, diversity assurance, noisy data cleaning, and coreset selection. In addition, I explore mathematical optimization techniques to enhance the performance and efficiency of Data Agents.
+My research centers on Natural Language Processing (NLP) for Data Management, with a particular focus on data-centric tasks. I am also interested in data preparation for LLM, including efficient and automated data quality assessment, data acquisition and curation, diversity assurance, noisy data cleaning, and coreset selection. In addition, I explore mathematical optimization techniques to enhance the performance and efficiency of Data Agents.
 
 <div class="collaboration-callout"><p>💡 <strong>I am seeking exchange or visiting research opportunities in 2027, as well as long-term research collaborators with shared interests.</strong> If you are interested in my work, please feel free to contact me via email: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p></div>
 
@@ -24,7 +24,7 @@ My research centers on Natural Language Processing (NLP) for Database, with a pa
   <div class="section-label section-header"><h2 id="thrust-heading"><span aria-hidden="true">🚀</span> Research Thrust</h2></div>
   <div class="research-thrusts">
     <article><h3>Natural Language Interfaces to Data</h3><p>Connecting natural language with databases, focusing on data-centric tasks including Text-to-SQL, Text-to-Visualization, and Text-to-OverpassQL.</p></article>
-    <article><h3>MLLM Pre-training Data Construction</h3><p>Efficient data acquisition and curation, with a focus on diversity, noisy data cleaning, and coreset selection.</p></article>
+    <article><h3>Data Preparation</h3><p>Efficient data preparation for LLM, with a focus on data quality assessment, acquisition and curation, diversity, noisy data cleaning, and coreset selection.</p></article>
     <article><h3>Data Agents & Optimization</h3><p>Exploring autonomous data agents and mathematical optimization to improve their performance and efficiency.</p></article>
   </div>
 </section>
