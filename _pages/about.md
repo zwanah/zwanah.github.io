@@ -2,7 +2,7 @@
 layout: academic
 permalink: /
 title: "Zhuoyue Wan"
-excerpt: "Ph.D. candidate at The Hong Kong Polytechnic University. Research in natural language processing for databases, data curation, and data agents."
+excerpt: "Ph.D. candidate at The Hong Kong Polytechnic University. Research in NLP for Data Management, spanning Natural Language Interfaces to Data, Data Preparation for LLM, and Data Agent & Optimization."
 redirect_from:
   - /about/
   - /about.html
@@ -13,7 +13,7 @@ redirect_from:
   <div class="section-body biography" markdown="1">
 I am a second-year Ph.D. candidate in Computer Science at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/) under the supervision of Professor [Chen Jason Zhang](https://zhangchen.info/). I also work closely with Professor [Raymond Chi-Wing Wong](https://www.cse.ust.hk/~raywong/). I previously earned my Master's degree from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) and my Bachelor of Science from [Chongqing University](https://www.cqu.edu.cn/).
 
-My research centers on Natural Language Processing (NLP) for Data Management, with a particular focus on data-centric tasks. I am also interested in Data Preparation for LLM, including efficient and automated data quality assessment, data acquisition and curation, diversity assurance, noisy data cleaning, and coreset selection. In addition, I explore mathematical optimization techniques to enhance the performance and efficiency of Data Agent.
+My research focuses on NLP for Data Management, with three main directions: Natural Language Interfaces to Data, Data Preparation for LLM, and Data Agent & Optimization.
 
 <div class="collaboration-callout"><p>💡 <strong>I am seeking exchange or visiting research opportunities in 2027, as well as long-term research collaborators with shared interests.</strong> If you are interested in my work, please feel free to contact me via email: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p></div>
 
@@ -21,11 +21,11 @@ My research centers on Natural Language Processing (NLP) for Data Management, wi
 </section>
 
 <section class="academic-section" id="research" aria-labelledby="thrust-heading">
-  <div class="section-label section-header"><h2 id="thrust-heading"><span aria-hidden="true">🚀</span> Research Thrust</h2></div>
+  <div class="section-label section-header"><h2 id="thrust-heading"><span aria-hidden="true">🚀</span> Research Directions</h2></div>
   <div class="research-thrusts">
     <article><h3>Natural Language Interfaces to Data</h3><p>Connecting natural language with databases, focusing on data-centric tasks including Text-to-SQL, Text-to-Visualization, and Text-to-OverpassQL.</p></article>
-    <article><h3>Data Preparation</h3><p>Efficient data preparation for LLM, with a focus on data quality assessment, acquisition and curation, diversity, noisy data cleaning, and coreset selection.</p></article>
-    <article><h3>Data Agent & Optimization</h3><p>Exploring autonomous data agents and mathematical optimization to improve their performance and efficiency.</p></article>
+    <article><h3>Data Preparation for LLM</h3><p>Efficient and automated data quality assessment, data acquisition and curation, diversity assurance, noisy data cleaning, and coreset selection.</p></article>
+    <article><h3>Data Agent & Optimization</h3><p>Developing autonomous data agent systems and applying mathematical optimization to improve their performance and efficiency.</p></article>
   </div>
 </section>
 
