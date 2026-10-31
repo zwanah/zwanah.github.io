@@ -27,6 +27,9 @@ h1 { font:400 32px/1.2 var(--serif); letter-spacing:-.8px; }
 .profile-location { font-size:11px; color:var(--muted); margin-top:13px; }
 .profile-location span { color:#7e8680; }
 .profile-links { display:flex; justify-content:center; flex-wrap:wrap; gap:10px 18px; margin-top:19px; padding-top:17px; border-top:1px solid var(--line); font-size:11px; font-weight:600; }
+.profile-cv-link { display:inline-flex; align-items:center; justify-content:center; gap:7px; min-height:44px; margin-top:12px; padding:7px 19px; border:1px solid var(--line); border-radius:6px; background:#fff; color:var(--accent); font-size:13px; font-weight:600; }
+.profile-cv-link span { color:var(--muted); font-size:11px; font-weight:400; }
+.profile-cv-link:hover { border-color:var(--accent); text-decoration:none; }
 .research-card { padding:20px; margin-top:26px; border:1px solid #e2e8df; border-radius:7px; background:#f0f3ed; }
 .group-label { font:600 10px/1.6 var(--sans); letter-spacing:1.5px; color:var(--muted); margin-bottom:17px; }
 .research-card .group-label { font-size:9px; margin-bottom:7px; }
