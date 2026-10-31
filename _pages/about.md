@@ -35,14 +35,14 @@ My research centers on Natural Language Processing (NLP) for Data Management, wi
   <div class="section-body">
     <ul class="news-list">
       {% for item in site.data.news limit:4 %}
-      <li class="news-item"><time class="news-date" datetime="{{ item.date | replace: '.', '-' }}">{{ item.date }}</time><div class="news-content">{{ item.text | markdownify }}</div></li>
+      <li class="news-item"><time class="news-date" datetime="{{ item.date | replace: '.', '-' }}">{{ item.date }}</time><div class="news-content"><span class="news-icon" aria-hidden="true">{{ item.icon }}</span>{{ item.text | markdownify }}</div></li>
       {% endfor %}
     </ul>
     <details class="news-archive">
       <summary>Earlier updates <span aria-hidden="true">+</span></summary>
       <ul class="news-list">
         {% for item in site.data.news offset:4 %}
-        <li class="news-item"><time class="news-date" datetime="{{ item.date | replace: '.', '-' }}">{{ item.date }}</time><div class="news-content">{{ item.text | markdownify }}</div></li>
+        <li class="news-item"><time class="news-date" datetime="{{ item.date | replace: '.', '-' }}">{{ item.date }}</time><div class="news-content"><span class="news-icon" aria-hidden="true">{{ item.icon }}</span>{{ item.text | markdownify }}</div></li>
         {% endfor %}
       </ul>
     </details>
@@ -54,6 +54,13 @@ My research centers on Natural Language Processing (NLP) for Data Management, wi
   <span id="-publications" class="legacy-anchor"></span>
   <div class="section-label section-header"><h2 id="publications-heading"><span aria-hidden="true">📄</span> Publications</h2><a class="section-link" href="{{ site.author.googlescholar }}">Google Scholar ↗</a></div>
   <div class="section-body">
+    {% assign published_papers = site.data.publications | where: 'category', 'published' %}
+    {% assign first_author_count = 0 %}
+    {% for paper in published_papers %}
+      {% assign first_author = paper.authors | split: ',' | first | remove: '*' | strip %}
+      {% if first_author == 'Zhuoyue Wan' %}{% assign first_author_count = first_author_count | plus: 1 %}{% endif %}
+    {% endfor %}
+    <p class="publication-summary">I have <span class="publication-count">{{ published_papers | size }}</span> publications at SIGMOD, ICDE, ACL Findings, EMNLP Findings, and Medical Image Analysis, including <span class="publication-count">{{ first_author_count }}</span> first-author papers at <span class="publication-highlight">CCF-A</span> conferences.</p>
     <p class="group-label">PUBLISHED & ACCEPTED</p>
     {% for paper in site.data.publications %}{% if paper.category == 'published' %}{% include academic-paper.html %}{% endif %}{% endfor %}
     <h3 class="group-label preprint-heading">PREPRINTS</h3>
@@ -84,6 +91,30 @@ My research centers on Natural Language Processing (NLP) for Data Management, wi
     <div class="honor-item"><time class="honor-year" datetime="2019-01">Jan. 2019</time><div class="honor-content"><p>Outstanding Student, Chongqing University</p></div></div>
     <div class="honor-item"><time class="honor-year" datetime="2018-11">Nov. 2018</time><div class="honor-content"><p>Third-class Scholarship, Chongqing University</p></div></div>
   </div>
+</section>
+
+<section class="academic-section" id="teaching" aria-labelledby="teaching-heading">
+  <div class="section-label section-header"><h2 id="teaching-heading"><span aria-hidden="true">📚</span> Teaching Assistant</h2></div>
+  <p class="teaching-institution">The Hong Kong Polytechnic University</p>
+  <ul class="teaching-list">
+    {% assign teaching_courses = site.data.teaching | sort: 'date' | reverse %}
+    {% for course in teaching_courses %}
+    <li>
+      <div class="teaching-course-row"><h3>{{ course.title }} <span class="teaching-code">({{ course.code }})</span></h3><span class="teaching-term">{{ course.term }}</span></div>
+      <p class="teaching-details">With {{ course.instructor_title }} <a href="{{ course.instructor_url }}">{{ course.instructor }}</a> · {{ course.audience }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="academic-section" id="services" aria-labelledby="services-heading">
+  <div class="section-label section-header"><h2 id="services-heading"><span aria-hidden="true">🤝</span> Academic Services</h2></div>
+  <ul class="academic-service-list">
+    <li><strong>Program Committee Member:</strong> WSDM 2027.</li>
+    <li><strong>Conference Reviewer:</strong> WWW 2027.</li>
+    <li><strong>Journal Reviewer:</strong> International Journal of Applied Earth Observation and Geoinformation.</li>
+    <li><strong>Co-reviewer:</strong> ACL, VLDB, ICDE, EMNLP, ACM MM, AAAI.</li>
+  </ul>
 </section>
 
 <section class="academic-section contact-section" id="contact" aria-labelledby="contact-heading">
