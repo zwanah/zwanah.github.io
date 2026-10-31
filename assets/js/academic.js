@@ -1,3 +1,46 @@
+// Keep the full navigation available when JavaScript is unavailable.
+(() => {
+  const header = document.querySelector('.site-header');
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.site-nav');
+  if (!header || !toggle || !nav) return;
+  const compact = window.matchMedia('(max-width: 1100px)');
+  const setOpen = open => toggle.setAttribute('aria-expanded', String(open));
+  const close = () => {
+    if (compact.matches && nav.contains(document.activeElement)) toggle.focus({ preventScroll: true });
+    setOpen(false);
+  };
+  toggle.hidden = false;
+  header.classList.add('nav-ready');
+  toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+  nav.addEventListener('click', event => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link || !compact.matches || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    setOpen(false);
+    const target = document.getElementById(link.hash.slice(1));
+    if (target) {
+      target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: true });
+    }
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+      close();
+      toggle.focus({ preventScroll: true });
+    }
+  });
+  document.addEventListener('pointerdown', event => {
+    if (!header.contains(event.target)) close();
+  });
+  header.addEventListener('focusout', event => {
+    if (!header.contains(event.relatedTarget)) setOpen(false);
+  });
+  compact.addEventListener('change', () => {
+    close();
+    if (!compact.matches && document.activeElement === toggle) nav.querySelector('a').focus({ preventScroll: true });
+  });
+})();
+
 // Image links still work normally when JavaScript or <dialog> is unavailable.
 (() => {
   const dialog = document.querySelector('.figure-dialog');
