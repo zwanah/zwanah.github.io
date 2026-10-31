@@ -120,7 +120,7 @@ My research centers on Natural Language Processing (NLP) for Data Management, wi
 <section class="academic-section contact-section" id="contact" aria-labelledby="contact-heading">
   <div class="section-label section-header"><h2 id="contact-heading"><span aria-hidden="true">📍</span> Contact</h2></div>
   <div class="contact-card">
-    <div class="contact-address"><p class="group-label">UNIVERSITY ADDRESS</p><h3>The Hong Kong Polytechnic University</h3><p>Hung Hom, Kowloon, Hong Kong <span lang="zh-Hant">· 香港九龍紅磡</span></p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></div>
+    <div class="contact-address"><p class="group-label">Correspondence Address</p><h3>The Hong Kong Polytechnic University</h3><p>Hung Hom, Kowloon, Hong Kong <span lang="zh-Hant">· 香港九龍紅磡</span></p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></div>
     <div class="contact-panels">
       <section class="contact-panel" aria-labelledby="location-heading">
         <div class="panel-heading"><h3 id="location-heading">Address</h3></div>
