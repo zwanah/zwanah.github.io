@@ -301,6 +301,10 @@ body { background:var(--paper); font-size:15px; line-height:1.75; }
 .nav-toggle { display:none; }
 .research-card h2 a { color:inherit; }
 .research-jump { display:none; }
+@media screen and (min-width:1101px) {
+  .site-nav { gap:18px; }
+  .site-nav a { font-size:16px; font-weight:500; color:#475569; }
+}
 @media screen and (max-width:1100px) {
   html { scroll-padding-top:84px; }
   .site-header:not(.nav-ready) { position:static; }
