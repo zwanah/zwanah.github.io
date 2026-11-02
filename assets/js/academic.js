@@ -94,12 +94,13 @@
   update();
 })();
 
-// Scale the provider's complete 300px map, including markers and controls.
+// Fit the map and its markers uniformly inside the shared-height visual area.
 (() => {
   const frame = document.querySelector('.visitor-widget');
   if (!frame || typeof ResizeObserver === 'undefined') return;
   new ResizeObserver(entries => {
-    frame.style.setProperty('--visitor-scale', Math.min(1, entries[0].contentRect.width / 300));
+    const { width, height } = entries[0].contentRect;
+    frame.style.setProperty('--visitor-scale', Math.min(width / 300, Math.max(0, height - 32) / 147.06));
   }).observe(frame);
 })();
 

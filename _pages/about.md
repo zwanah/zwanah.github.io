@@ -125,7 +125,7 @@ My research centers on Natural Language Processing (NLP) for Data Management, wi
       <section class="contact-panel" aria-labelledby="location-heading">
         <div class="panel-heading"><h3 id="location-heading">Address</h3></div>
         <div class="contact-visual">
-        <iframe title="The Hong Kong Polytechnic University, Hung Hom campus map" src="https://www.google.com/maps?q=The+Hong+Kong+Polytechnic+University,+11+Yuk+Choi+Road&ll=22.3043,114.1796&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+        <iframe title="The Hong Kong Polytechnic University, Hung Hom campus map" src="https://www.google.com/maps?q=The+Hong+Kong+Polytechnic+University,+11+Yuk+Choi+Road&ll=22.3043,114.1796&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
         <div class="panel-footer"><a href="https://www.polyu.edu.hk/campus-map/">Open campus map ↗</a></div>
       </section>
       <section class="contact-panel" aria-labelledby="visitors-heading">

@@ -6,9 +6,13 @@
   {% include seo.html %}
   <meta name="description" content="{{ page.excerpt | escape }}">
   <meta name="theme-color" content="#f8f7f3">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}?v=cloud-moon-original-black" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon/favicon-32.png' | relative_url }}?v=cloud-moon-original-black">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon/cloud-moon.svg' | relative_url }}?v=cloud-moon-original-black">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/favicon/apple-touch-icon.png' | relative_url }}?v=cloud-moon-original-black">
   <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/vendor/acanova/styles.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}?v=20261102-map-align">
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -58,7 +62,7 @@
     <div class="figure-dialog-image"><img alt=""></div>
     <div class="figure-dialog-footer"><a class="figure-original">Open original image ↗</a></div>
   </dialog>
-  <script src="{{ '/assets/js/academic.js' | relative_url }}?v=6" defer></script>
+  <script src="{{ '/assets/js/academic.js' | relative_url }}?v=7" defer></script>
   {% if site.google_analytics_id %}{% include analytics.html %}{% endif %}
 </body>
 </html>

@@ -200,13 +200,13 @@ body { background:var(--paper); font-size:15px; line-height:1.75; }
 .honors-list .honor-item { grid-template-columns:100px minmax(0,1fr); gap:24px; margin-bottom:18px; }
 .honor-content p { font-size:14px; line-height:1.7; }
 .visitor-widget.contact-visual { align-items:center; justify-content:center; }
-.visitor-widget #mapmyvisitors-widget { width:300px !important; max-width:none; height:auto; flex-shrink:0; transform:scale(var(--visitor-scale,1)); transform-origin:center; }
-.visitor-widget .mapmyvisitors-map-container { height:auto; }
-.visitor-widget .mapmyvisitors-map { width:300px !important; height:147.06px !important; background-size:100% 100%; }
+.visitor-widget #mapmyvisitors-widget { display:block; width:100% !important; max-width:none; height:100%; flex-shrink:0; }
+.visitor-widget .mapmyvisitors-map-container { display:grid; grid-template-rows:16px 16px minmax(0,1fr); width:100%; height:100%; }
+.visitor-widget .mapmyvisitors-map { width:300px !important; height:147.06px !important; background-size:100% 100%; place-self:center; transform:scale(var(--visitor-scale,1)); transform-origin:center; }
 @media(max-width:520px) { .school-logo-container { width:80px; height:72px; padding:7px; } .education-item { gap:14px; } .timeline-content h3 { font-size:14px; } .timeline-content p { font-size:13px; } .honors-list .honor-item { grid-template-columns:82px minmax(0,1fr); gap:13px; } .honor-year { font-size:12px; } .honor-content p { font-size:13px; } .collaboration-callout { padding:16px; font-size:14px; } }
-/* Match the reference's compact, equally tall map windows. */
-.contact-panel { grid-template-rows:64px 180px 72px; }
-.contact-visual { height:180px; }
+/* Keep embedded maps above Google's 200px minimum without enlarging the cards. */
+.contact-panel { grid-template-rows:48px 220px 48px; }
+.contact-visual { height:220px; }
 
 /* Consistent template typography and naturally sized publication figures. */
 .biography { font:400 16px/1.7 var(--sans); }
@@ -310,7 +310,7 @@ body { background:var(--paper); font-size:15px; line-height:1.75; }
   .site-header:not(.nav-ready) { position:static; }
   .header-inner { min-height:65px; padding:10px 28px; flex-wrap:wrap; gap:8px 20px; }
   .site-header.nav-ready .header-inner { flex-wrap:nowrap; }
-  .nav-toggle:not([hidden]) { display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:44px; padding:0 12px; border:1px solid var(--line); border-radius:8px; background:transparent; color:var(--ink); font:500 13px/1 var(--sans); cursor:pointer; }
+  .nav-toggle:not([hidden]) { display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:44px; padding:0 12px; border:1px solid transparent; border-radius:8px; background:transparent; color:var(--ink); font:500 14px/1 var(--sans); cursor:pointer; }
   .nav-toggle-icon { position:relative; width:15px; height:12px; border-top:1.5px solid currentColor; border-bottom:1.5px solid currentColor; }
   .nav-toggle-icon::before { content:''; position:absolute; top:4px; left:0; width:100%; border-top:1.5px solid currentColor; }
   .nav-toggle[aria-expanded="true"] { background:#f5f5f4; }
@@ -320,14 +320,17 @@ body { background:var(--paper); font-size:15px; line-height:1.75; }
   .site-nav { width:100%; gap:4px 12px; }
   .site-nav a { display:flex; align-items:center; min-height:44px; padding:8px 12px; font-size:14px; color:#475569; border-radius:6px; }
   .site-nav a:hover,.site-nav a:focus-visible { background:#f5f5f4; }
-  .nav-ready .site-nav { display:none; position:absolute; top:100%; left:0; right:0; grid-template-columns:repeat(3,minmax(0,1fr)); gap:4px 12px; padding:12px 28px 16px; max-height:calc(100dvh - 65px); overflow-y:auto; background:#fff; border-bottom:1px solid var(--line); box-shadow:0 10px 18px #0f172a0a; }
+  .nav-ready .site-nav { display:none; position:absolute; top:calc(100% + 8px); left:auto; right:28px; width:280px; max-width:calc(100% - 40px); grid-template-columns:minmax(0,1fr); gap:0; padding:8px; max-height:calc(100dvh - 90px); overflow-y:auto; overscroll-behavior:contain; background:#fff; border:1px solid var(--line); border-radius:12px; box-shadow:0 12px 32px #0f172a14; }
+  .nav-ready .site-nav a { justify-content:space-between; font-size:15px; line-height:24px; padding:10px 14px; white-space:nowrap; }
+  .nav-ready .site-nav a[type="application/pdf"] { margin-top:6px; padding-top:14px; border-top:1px solid var(--line); border-radius:0 0 6px 6px; }
+  .nav-ready .site-nav a[type="application/pdf"]::after { content:"PDF"; color:var(--muted); font-size:11px; letter-spacing:.04em; }
   .nav-toggle[aria-expanded="true"] + .site-nav { display:grid; }
 }
 
 /* Bring the biography into the first phone viewport. */
 @media screen and (max-width:700px) {
   .header-inner { padding:10px 20px; }
-  .nav-ready .site-nav { grid-template-columns:repeat(2,minmax(0,1fr)); padding:12px 20px 16px; }
+  .nav-ready .site-nav { right:20px; }
   .site-shell { padding-top:24px; gap:28px; }
   .profile-card { display:grid; grid-template-columns:88px minmax(0,1fr); gap:8px 16px; text-align:left; align-items:start; }
   .profile-portrait { grid-column:1; grid-row:1; width:88px; height:112px; margin:0; border-radius:8px; }
