@@ -1,0 +1,23 @@
+- name: TACO
+  venue: SIGMOD 2027
+  path: /demos/taco/
+  paper_anchor: taco
+  title: Token-Aware Context Optimization
+  summary: Budget-aware example selection for natural language queries over OpenStreetMap.
+  description: Ask a question about places, adjust the token budget, and inspect the selected examples, generated OverpassQL, and map results.
+  features:
+    - Adjustable context budget
+    - Example selection and query inspection
+    - Interactive map results
+- name: XOver
+  venue: ICDE 2027
+  path: /demos/xover/
+  paper_anchor: xover
+  title: Multilingual Text-to-OverpassQL
+  summary: Multilingual map queries with execution-aware candidate selection and revision.
+  description: Ask in eight languages, choose 0–12 examples with the K-shot control, and compare three candidate queries before exploring the results on the map.
+  features:
+    - Queries in eight languages
+    - Adjustable K-shot example count
+    - Execution-aware candidate selection
+    - Query revision and map results

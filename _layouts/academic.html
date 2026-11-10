@@ -12,7 +12,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/favicon/apple-touch-icon.png' | relative_url }}?v=cloud-moon-original-black">
   <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/vendor/acanova/styles.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}?v=20261102-map-align">
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}?v=20261110-demos">
+  {% if page.directory %}<link rel="stylesheet" href="{{ "/demos/demos.css" | relative_url }}?v=20261110">{% endif %}
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -20,22 +21,24 @@
     <div class="header-inner">
       <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Zhuoyue Wan home">Zhuoyue Wan</a>
       <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" hidden><span>Menu</span><span class="nav-toggle-icon" aria-hidden="true"></span></button>
+      {% assign home_anchor = '' %}{% if page.directory %}{% assign home_anchor = '/' | relative_url %}{% endif %}
       <nav id="site-navigation" class="site-nav" aria-label="Main navigation">
-        <a href="#about-me">About</a>
-        <a href="#research">Research</a>
-        <a href="#news">News</a>
-        <a href="#publications">Publications</a>
-        <a href="{{ '/demos/' | relative_url }}">Demos</a>
-        <a href="#education">Education</a>
-        <a href="#honors">Honors</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="{{ home_anchor }}#about-me">About</a>
+        <a href="{{ home_anchor }}#research">Research</a>
+        <a href="{{ home_anchor }}#news">News</a>
+        <a href="{{ home_anchor }}#publications">Publications</a>
+        <a href="{{ home_anchor }}#education">Education</a>
+        <a href="{{ home_anchor }}#honors">Honors</a>
+        <a href="{{ home_anchor }}#teaching">Teaching</a>
+        <a href="{{ home_anchor }}#services">Services</a>
+        <a href="{{ '/demos/' | relative_url }}"{% if page.directory %} aria-current="page"{% endif %}>Demos</a>
+        <a href="{{ home_anchor }}#contact">Contact</a>
         <a href="{{ '/files/Zhuoyue_Wan_CV.pdf' | relative_url }}" type="application/pdf">CV</a>
       </nav>
     </div>
   </header>
-  <div class="site-shell grid-layout">
+  <div class="site-shell {% if page.directory %}directory-shell{% else %}grid-layout{% endif %}">
+    {% unless page.directory %}
     <aside class="profile-sidebar profile-column" aria-label="Personal profile">
       <div class="profile-card">
         <img class="profile-portrait" src="{{ site.author.avatar | relative_url }}" alt="Zhuoyue Wan" width="260" height="300" fetchpriority="high">
@@ -52,6 +55,7 @@
       </div>
       <section class="research-card" aria-labelledby="research-heading"><p class="group-label">💡 RESEARCH INTERESTS</p><h2 id="research-heading"><a href="#research">NLP for Data Management<span class="research-jump" aria-hidden="true"> ↓</span></a></h2><ul><li><span class="topic-icon" aria-hidden="true" style="--topic-icon:url('{{ '/assets/images/icons/database.svg' | relative_url }}')"></span><span>Natural Language Interfaces</span></li><li><span class="topic-icon" aria-hidden="true" style="--topic-icon:url('{{ '/assets/images/icons/layer-group.svg' | relative_url }}')"></span><span>Data Preparation for LLM</span></li><li><span class="topic-icon" aria-hidden="true" style="--topic-icon:url('{{ '/assets/images/icons/robot.svg' | relative_url }}')"></span><span>Data Agent & Optimization</span></li></ul></section>
     </aside>
+    {% endunless %}
     <main id="main" class="site-main content-column">{{ content }}</main>
   </div>
   <footer class="site-footer">
@@ -63,7 +67,7 @@
     <div class="figure-dialog-image"><img alt=""></div>
     <div class="figure-dialog-footer"><a class="figure-original">Open original image ↗</a></div>
   </dialog>
-  <script src="{{ '/assets/js/academic.js' | relative_url }}?v=7" defer></script>
+  <script src="{{ '/assets/js/academic.js' | relative_url }}?v=8" defer></script>
   {% if site.google_analytics_id %}{% include analytics.html %}{% endif %}
 </body>
 </html>

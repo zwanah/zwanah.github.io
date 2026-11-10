@@ -1,10 +1,11 @@
-<article class="publication pub-list-item publication-compact">
+<article{% if paper.demo_id %} id="paper-{{ paper.demo_id }}"{% endif %} class="publication pub-list-item publication-compact">
   <div class="paper-copy pub-content-wrapper">
     <h3 class="pub-line-1 pub-title-text">{% if paper.url != '' %}<a href="{{ paper.url }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3>
     <div class="authors">{{ paper.authors | markdownify }}</div>
     <div class="publication-detail pub-line-3"><span>{{ paper.venue_name }}</span> <span class="pub-meta-tag tag-conference">{{ paper.venue_badge }}</span>{% if paper.ranking_badge %} <span class="pub-meta-tag tag-ranking">{{ paper.ranking_badge }}</span>{% endif %}</div>
     <div class="paper-actions pub-line-4 pub-footer-row">
       {% if paper.url != '' %}<a class="paper-link pub-link-btn" href="{{ paper.url }}">Paper <span aria-hidden="true">↗</span><span class="sr-only">: {{ paper.title }}</span></a>{% endif %}
+      {% if paper.demo %}<a class="paper-link pub-link-btn" href="{{ paper.demo | relative_url }}">Demo <span aria-hidden="true">↗</span><span class="sr-only">: {{ paper.title }}</span></a>{% endif %}
       <a class="figure-link pub-link-btn" href="{{ paper.image | relative_url }}" data-figure-title="{{ paper.title | escape }}" data-figure-src="{{ paper.display | default: paper.image | relative_url }}">Figure <span aria-hidden="true">⤢</span><span class="sr-only">: {{ paper.title }}</span></a>
     </div>
   </div>

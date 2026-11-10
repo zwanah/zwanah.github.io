@@ -1,7 +1,28 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research Demos · Zhuoyue Wan</title><meta name="description" content="Explore TACO and XOver, two independent research demos for natural language interfaces to OpenStreetMap."><link rel="canonical" href="https://wanzhuoyue.com/demos/"><link rel="stylesheet" href="./demos.css"></head><body>
-<header><a href="/">Zhuoyue Wan</a><span>Research demos</span></header>
-<main><p class="eyebrow">Natural language × OpenStreetMap</p><h1>Two projects.<br>One place to explore.</h1><p class="intro">TACO and XOver explore different ways to translate natural language into OverpassQL. Each project has its own demo and research pipeline.</p>
-<div class="cards"><article class="card"><span class="badge">Live demo</span><h2>TACO Demo</h2><p>Set a token budget for in-context examples. Ask the map, inspect the selected examples and generated OverpassQL, and explore the returned places.</p><a class="button" href="./taco/">Open TACO Demo →</a></article>
-<article class="card"><span class="badge">Live demo · 8 languages</span><h2>XOver Demo</h2><p>Ask in 8 languages and choose 0–12 examples with the K-shot control. Inspect the selected examples, compare 3 candidate queries, and explore the result on the map.</p><a class="button secondary" href="./xover/">Open XOver Demo →</a></article></div></main>
-<footer>Independent research projects using OpenStreetMap data. <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a></footer></body></html>
+---
+layout: academic
+directory: true
+title: "Research Demos"
+excerpt: "Interactive research demos by Zhuoyue Wan: TACO and XOver, natural language interfaces to OpenStreetMap."
+permalink: /demos/
+---
+<div class="demo-directory">
+  <a class="directory-back" href="{{ '/' | relative_url }}#demos"><span aria-hidden="true">←</span> Back to homepage</a>
+  <header class="directory-intro">
+    <p class="group-label">NLP for Data Management</p>
+    <h1>Research Demos</h1>
+    <p>Explore natural language interfaces to OpenStreetMap. Try the systems behind my research, inspect the generated queries, and see the results on a map.</p>
+  </header>
+  <div class="demo-grid">
+    {% for demo in site.data.demos %}
+    <article class="demo-card" aria-labelledby="{{ demo.paper_anchor }}-heading">
+      <div class="demo-card-meta"><span class="group-label">Natural Language Interfaces</span><span class="demo-venue">{{ demo.venue }}</span></div>
+      <h2 id="{{ demo.paper_anchor }}-heading">{{ demo.name }}</h2>
+      <p class="demo-subtitle">{{ demo.title }}</p>
+      <p class="demo-description">{{ demo.description }}</p>
+      <ul class="demo-features">{% for feature in demo.features %}<li>{{ feature }}</li>{% endfor %}</ul>
+      <div class="demo-card-actions"><a class="demo-launch" href="{{ demo.path | relative_url }}">Open {{ demo.name }} demo <span aria-hidden="true">↗</span></a><a class="demo-paper" href="{{ '/' | relative_url }}#paper-{{ demo.paper_anchor }}">Related paper <span aria-hidden="true">→</span></a></div>
+    </article>
+    {% endfor %}
+  </div>
+  <p class="directory-note">These research demos use <a href="https://www.openstreetmap.org/copyright">OpenStreetMap data</a>. Each project has its own interactive workspace.</p>
+</div>

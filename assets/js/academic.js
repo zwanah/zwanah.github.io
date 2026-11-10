@@ -4,7 +4,7 @@
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.site-nav');
   if (!header || !toggle || !nav) return;
-  const compact = window.matchMedia('(max-width: 1100px)');
+  const compact = window.matchMedia('(max-width: 1200px)');
   const setOpen = open => toggle.setAttribute('aria-expanded', String(open));
   const close = () => {
     if (compact.matches && nav.contains(document.activeElement)) toggle.focus({ preventScroll: true });

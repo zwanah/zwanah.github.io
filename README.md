@@ -9,6 +9,8 @@ Personal website of Zhuoyue Wan (万卓越), a Ph.D. candidate in Computer Scien
 - Biography, research, education, honors, and contact: `_pages/about.md`
 - Publications and figure paths: `_data/publications.yml`
 - News: `_data/news.yml`
+- Demo summaries: `_data/demos.yml`; directory: `demos/index.html`, `demos/demos.css` (uses the shared academic layout)
+- Publication demo links: `demo` and `demo_id` in `_data/publications.yml`
 - Profile and canonical domain: `_config.yml`
 - Layout and styles: `_layouts/academic.html`, `assets/css/academic.css`
 - Figure viewer, responsive sidebar, and visitor-map status/scaling: `assets/js/academic.js`

@@ -117,6 +117,19 @@ My research centers on Natural Language Processing (NLP) for Data Management, wi
   </ul>
 </section>
 
+<section class="academic-section demos-section" id="demos" aria-labelledby="demos-heading">
+  <div class="section-label section-header"><h2 id="demos-heading"><span aria-hidden="true">🧩</span> Research Demos</h2><a class="section-link" href="{{ '/demos/' | relative_url }}">All demos <span aria-hidden="true">↗</span></a></div>
+  <p class="demos-intro">Explore natural language interfaces to OpenStreetMap through interactive research demos.</p>
+  <div class="demo-summary-list">
+    {% for demo in site.data.demos %}
+    <article class="demo-summary">
+      <div><h3><a href="{{ demo.path | relative_url }}">{{ demo.name }}</a><span class="demo-venue">{{ demo.venue }}</span></h3><p>{{ demo.summary }}</p></div>
+      <a class="demo-entry" href="{{ demo.path | relative_url }}">Try demo <span aria-hidden="true">↗</span><span class="sr-only">: {{ demo.name }}</span></a>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
 <section class="academic-section contact-section" id="contact" aria-labelledby="contact-heading">
   <div class="section-label section-header"><h2 id="contact-heading"><span aria-hidden="true">📍</span> Contact</h2></div>
   <div class="contact-card">
