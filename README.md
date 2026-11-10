@@ -27,6 +27,6 @@ The original Jekyll structure derives from [AcadHomepage](https://github.com/Ray
 
 ## Research demos
 
-`/demos/` links to independent TACO and XOver pages. TACO is live at `/demos/taco/`; XOver at `/demos/xover/` is explicitly marked as not yet interactive. The homepage navigation includes Demos.
+`/demos/` links to independent TACO and XOver pages. TACO is live at `/demos/taco/`; XOver is live at `/demos/xover/`, using its own multilingual retrieval and candidate-selection pipeline. Public files come from zwanah/XOver/demo/frontend. The homepage navigation includes Demos.
 
 The TACO public frontend is built from `zwanah/osm-scout`: run `python scripts/publish_demo.py --site-root /path/to/this/checkout` there, then inspect and commit the updated `demos/taco/` here. The source repository's Pages site redirects `/osm-scout/` to the canonical route. The existing Jekyll build copies these static files, with no change to homepage rendering or hosting configuration.

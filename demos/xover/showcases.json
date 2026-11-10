@@ -1,0 +1,82 @@
+[
+  {
+    "language": "en",
+    "question": "What cafes are in Martina Franca?",
+    "label": "Cafés in Martina Franca",
+    "center": [
+      40.705,
+      17.339
+    ],
+    "zoom": 14
+  },
+  {
+    "language": "zh",
+    "question": "马丁纳弗兰卡有哪些咖啡馆？",
+    "label": "Cafés in Martina Franca",
+    "center": [
+      40.705,
+      17.339
+    ],
+    "zoom": 14
+  },
+  {
+    "language": "yue",
+    "question": "馬丁納弗蘭卡有咩咖啡店？",
+    "label": "Cafés in Martina Franca",
+    "center": [
+      40.705,
+      17.339
+    ],
+    "zoom": 14
+  },
+  {
+    "language": "fr",
+    "question": "Quels sont les cafés à Martina Franca ?",
+    "label": "Cafés in Martina Franca",
+    "center": [
+      40.705,
+      17.339
+    ],
+    "zoom": 14
+  },
+  {
+    "language": "de",
+    "question": "Welche Cafés gibt es in Martina Franca?",
+    "label": "Cafés in Martina Franca",
+    "center": [
+      40.705,
+      17.339
+    ],
+    "zoom": 14
+  },
+  {
+    "language": "ja",
+    "question": "マルティーナ・フランカにはどのようなカフェがありますか？",
+    "label": "Cafés in Martina Franca",
+    "center": [
+      40.705,
+      17.339
+    ],
+    "zoom": 14
+  },
+  {
+    "language": "ko",
+    "question": "마르티나 프랑카에는 어떤 카페들이 있습니까?",
+    "label": "Cafés in Martina Franca",
+    "center": [
+      40.705,
+      17.339
+    ],
+    "zoom": 14
+  },
+  {
+    "language": "ru",
+    "question": "Какие кафе есть в Мартина-Франка?",
+    "label": "Cafés in Martina Franca",
+    "center": [
+      40.705,
+      17.339
+    ],
+    "zoom": 14
+  }
+]
