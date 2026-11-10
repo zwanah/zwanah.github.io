@@ -1,4 +1,4 @@
-import {initMap,setView,bbox,renderResults,clearResults,exportGeoJSON} from './map.js';
+import {initMap,setView,bbox,renderResults,clearResults,exportGeoJSON,fitResults} from './map.js';
 import {verificationToken} from './verification.js';
 const $=id=>document.getElementById(id);
 const API='https://osm-api.wanzhuoyue.com/api/xover';
@@ -51,3 +51,7 @@ $('ask').addEventListener('click',run);$('sample').addEventListener('click',samp
 try{initMap();setView([40.705,17.339],14);samples=await (await fetch(new URL('../showcases.json',import.meta.url))).json();sample();
  const response=await fetch(API+'/config',{signal:AbortSignal.timeout(15000)});if(!response.ok)throw new Error('Could not connect to XOver.');config=await response.json();if(!config.generation_available)throw new Error('XOver generation is currently unavailable.');$('ask').disabled=false;$('ask').textContent='Ask XOver';status('Ready. Select a language or write your own question.');
 }catch(error){status(error.message,true);$('ask').disabled=true;$('ask').textContent='Service unavailable';}
+
+$('fit-map').addEventListener('click',fitResults);
+$('about-link').addEventListener('click',e=>{e.preventDefault();$('about-dialog').showModal();});
+$('close-about').addEventListener('click',()=>$('about-dialog').close());

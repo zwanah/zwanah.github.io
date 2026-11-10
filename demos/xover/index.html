@@ -1,7 +1,55 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="XOver: multilingual questions, cross-lingual example selection, candidate execution and OpenStreetMap results."><title>XOver Demo · Ask across languages</title><link rel="canonical" href="https://wanzhuoyue.com/demos/xover/"><link rel="stylesheet" href="./assets/vendor/leaflet.css"><link rel="stylesheet" href="./assets/styles.css"><script src="./assets/vendor/leaflet.js" defer></script><script src="./assets/vendor/osmtogeojson.js" defer></script><script type="module" src="./assets/app.js"></script></head><body>
-<header><a class="brand" href="./"><span class="mark">X</span> XOver Demo</a><nav><a href="../">All demos</a><a href="https://github.com/zwanah/XOver" target="_blank" rel="noopener">Research code ↗</a></nav></header>
-<main><div class="intro"><span class="eyebrow">CROSS-LINGUAL TEXT-TO-OVERPASSQL</span><h1>Many languages.<br><em>One map.</em></h1><p>Ask in your language. Follow how XOver retrieves examples, compares candidate queries and finds places.</p></div>
-<div class="workspace"><section class="panel controls" aria-label="Ask XOver"><div class="label-row"><label for="language">Question language</label><span class="pill">8 languages</span></div><select id="language"><option value="en">English</option><option value="zh">中文</option><option value="yue">粵語</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="ru">Русский</option></select><label for="question">What would you like to find?</label><textarea id="question" rows="4" maxlength="2000" placeholder="Ask a question about OpenStreetMap…"></textarea><button id="sample" class="sample" type="button">Try cafés in Martina Franca ↗</button><div class="settings"><span><strong>6</strong> cross-lingual examples</span><span><strong>3</strong> candidate queries</span></div><button id="ask" class="primary" disabled>Connecting…</button><div id="turnstile-widget"></div><p id="status" role="status" aria-live="polite">Connecting to the project service…</p><ol id="stages" class="stages" aria-label="Query stages"></ol><p class="note">Example selection uses the multilingual ml_8x model and profile DPP. The interactive demo executes 3 candidates; the research experiments use 8. Results come from the project’s OSM snapshot, not a live world feed.</p></section>
-<section id="map-stage" class="panel map-stage" aria-label="Results map"><div class="map-top"><strong id="result-count">Explore OpenStreetMap</strong><span id="map-badge-text">OpenStreetMap</span></div><div id="map"></div><p id="map-empty" hidden></p><div class="map-bottom"><span id="result-info">Submit a question to see results.</span><button id="download" disabled>Export GeoJSON</button></div></section></div>
-<section id="results" class="results" hidden><div class="section-title"><h2>Inside this query</h2><span id="timing"></span></div><p id="provenance"></p><div class="details-grid"><details open><summary>Selected OverpassQL</summary><pre id="query"></pre><a id="turbo" target="_blank" rel="noopener">Open in Overpass Turbo ↗</a></details><details><summary id="examples-title">6 selected examples</summary><div id="examples"></div></details></div><h3>Candidate comparison</h3><div id="candidates" class="candidates"></div><details open><summary>Matching places</summary><div id="result-list"></div></details></section></main>
-<footer><span>XOver · Cross-lingual Text-to-OverpassQL</span><a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors · ODbL</a></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f8">
+  <meta name="description" content="Explore OpenStreetMap with natural language, inspect your OverpassQL, and see the places behind the answer. An interactive research demo.">
+  <title>XOver Demo · Ask the map</title>
+  <link rel="canonical" href="https://wanzhuoyue.com/demos/xover/">
+  <link rel="icon" href="./assets/scout.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/vendor/leaflet.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script defer src="./assets/vendor/leaflet.js"></script>
+  <script defer src="./assets/vendor/osmtogeojson.js"></script>
+  <script type="module" src="./assets/app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="./" aria-label="XOver Demo home"><img src="./assets/scout.svg" width="32" height="32" alt=""><span>XOver Demo</span></a>
+    <span class="header-divider" aria-hidden="true"></span><span class="workspace-name">Map workspace</span>
+    <nav aria-label="Project links"><span class="demo-pill"><i></i> OpenStreetMap</span><a href="/demos/">All demos</a><a href="#about" id="about-link">About</a><a id="repo-link" href="https://github.com/zwanah/XOver" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main class="workspace"><aside class="sidebar" aria-label="Questions and answers">
+      <div class="intro">
+        <div class="assistant-heading"><span class="assistant-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"/></svg></span><span>YOUR MAP ASSISTANT</span></div>
+        <h1>Ask the map.</h1>
+        <p>A question in words. An answer in places.</p>
+      </div>
+      <div class="sample-label">Try an example</div>
+      <div class="samples"><button id="sample" type="button" class="sample active"><span class="sample-icon" aria-hidden="true">☕</span><span class="sample-copy"><span class="sample-title">Cafés in Martina Franca</span><small>Italy · ask in your language</small></span><span class="sample-arrow" aria-hidden="true">↗</span></button></div>
+      <div class="composer"><label class="sr-only" for="question">Your question</label><textarea id="question" rows="2" maxlength="2000" placeholder="What would you like to find?"></textarea>
+      <div class="composer-budget"><div class="budget-heading"><label for="language">Question language</label><span class="panel-label">8 languages</span></div><select id="language"><option value="en">English</option><option value="zh">中文</option><option value="yue">粵語</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="ru">Русский</option></select><p class="budget-note">6 cross-lingual examples · 3 candidate queries</p></div>
+      <div class="composer-footer"><span>Search with natural language</span><button id="ask" type="button" class="button button-primary" disabled>Connecting…</button></div></div>
+      <div class="mode-line"><span class="mode-dot"></span><span>Cross-lingual queries</span><span class="mode-model">XOver</span></div>
+      <p id="status" role="status" aria-live="polite">Connecting to the project service…</p><ol id="stages" class="query-stages" aria-label="Query stages"></ol><div id="turnstile-widget"></div>
+      <section id="results" aria-busy="false" hidden><section class="answer-section"><div class="answer-card"><div class="answer-heading"><span class="eyebrow">✓ Search results</span><span class="answer-symbol">⌖</span></div><h2 id="result-count">Ready to explore</h2><p id="timing"></p><span>Project OSM snapshot</span></div><div class="answer-meta"><span>Places</span><span>SELECT TO EXPLORE ↗</span></div><div id="result-list" class="result-list" aria-label="Matching places"></div></section>
+      <div class="secondary-tools"><details class="tool-panel"><summary><span><span class="tool-symbol">&lt;/&gt;</span> Query code</span><span class="panel-label">OverpassQL ⌄</span></summary><div class="tool-content"><div class="editor"><div class="editor-toolbar">OverpassQL</div><pre id="query"></pre><div class="editor-foot"><span>Selected candidate</span><a id="turbo" target="_blank" rel="noopener">Open in Turbo ↗</a></div></div></div></details>
+      <details class="tool-panel"><summary><span><span class="tool-symbol">⚙</span> Research details</span><span class="panel-label">6 examples ⌄</span></summary><div class="tool-content"><h3 id="examples-title" class="context-heading">Selected examples</h3><p id="provenance" class="tool-description"></p><div id="examples" class="context-content"></div></div></details>
+      <details class="tool-panel"><summary><span><span class="tool-symbol">≋</span> Candidate comparison</span><span class="panel-label">3 candidates ⌄</span></summary><div class="tool-content"><div id="candidates"></div></div></details></div></section>
+      <footer class="sidebar-footer"><span class="footer-mark">⌁</span> Built on OpenStreetMap <span>Research demo</span></footer></aside>
+    <section class="map-workspace" aria-label="Map and results">
+      <div class="map-toolbar">
+        <div class="location-card"><span class="location-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.4"/></svg></span><div><span class="eyebrow map-eyebrow">EXPLORING</span><h2 id="place-title">Martina Franca, Italy <span id="place-type">Cafés</span></h2></div></div>
+        <button id="download" class="download-button" disabled>Export GeoJSON <span aria-hidden="true">↓</span></button>
+      </div>
+      <div class="map-stage" id="map-stage">
+        <div id="map" aria-label="Interactive OpenStreetMap map"></div>
+        <div class="map-badge"><span class="badge-dot"></span><span id="map-badge-text">OpenStreetMap</span></div>
+        <button id="fit-map" type="button" class="fit-map" aria-label="Fit map to results" title="Fit map to results"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m8 0h5v-5"/><circle cx="12" cy="12" r="3"/></svg></button>
+        <div class="map-empty" id="map-empty" hidden>No map features in this response.</div>
+      </div>
+      <div class="map-caption"><span><i class="legend-dot"></i> <span id="legend-label">Cafés</span></span><span id="result-info">Run the query against project OSM data</span></div>
+    </section>
+  </main>
+<dialog id="about-dialog" aria-labelledby="about-title"><button class="dialog-close" id="close-about" aria-label="Close about dialog">×</button><span class="eyebrow">ABOUT THE DEMO</span><h2 id="about-title">A little context.<br>A world to explore.</h2><p>XOver Demo translates multilingual questions into OverpassQL using cross-lingual example selection, candidate execution and conservative repair.</p><div class="about-flow"><span>Ask</span><b>→</b><span>Inspect</span><b>→</b><span>Explore</span></div><p>The demo uses six examples and three candidate queries. Research experiments use eight candidates. Historical selections and generated queries can be reused; their sources are displayed in Research details.</p><p>Results use the project’s OSM snapshot, not a live world feed. Valid empty results are not repaired.</p><p class="muted">An independent research project using OpenStreetMap data. Not affiliated with the OpenStreetMap Foundation.</p><a class="about-osm" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a></dialog></body></html>
