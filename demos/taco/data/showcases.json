@@ -1,0 +1,57 @@
+[
+  {
+    "id": "hamburg",
+    "question": "Find wheelchair-accessible cafés with outdoor seating in central Hamburg.",
+    "place": "Central Hamburg",
+    "center": [
+      53.55,
+      9.98
+    ],
+    "zoom": 12,
+    "query": "[out:json][timeout:25];\nnwr[\"amenity\"=\"cafe\"][\"outdoor_seating\"=\"yes\"][\"wheelchair\"=\"yes\"](53.50,9.90,53.60,10.06);\nout center tags 80;",
+    "label": "Accessible outdoor cafés",
+    "detail": "Hamburg · three tag filters",
+    "category": "Cafés · accessible & outdoors",
+    "snapshot": "hamburg-snapshot.json",
+    "snapshotDate": "2022-07-04",
+    "capability": "Multiple tag conditions (AND)",
+    "resultCount": 41
+  },
+  {
+    "id": "paris",
+    "question": "Find cafés with outdoor seating within 50 metres of a metro entrance in central Paris.",
+    "place": "Central Paris",
+    "center": [
+      48.8615,
+      2.3415
+    ],
+    "zoom": 14,
+    "query": "[out:json][timeout:25];\nnode[\"railway\"=\"subway_entrance\"](48.845,2.313,48.878,2.370)->.metro;\nnwr[\"amenity\"=\"cafe\"][\"outdoor_seating\"=\"yes\"](48.848,2.318,48.875,2.365)(around.metro:50);\nout center tags 80;",
+    "label": "Cafés near metro entrances",
+    "detail": "Paris · within 50 metres",
+    "category": "Cafés · near metro",
+    "snapshot": "paris-snapshot.json",
+    "snapshotDate": "2022-07-04",
+    "capability": "Spatial proximity to a named set",
+    "resultCount": 32
+  },
+  {
+    "id": "london",
+    "question": "In the current map view, show named parks and gardens, excluding those explicitly tagged private or no access.",
+    "place": "Bloomsbury and nearby central London",
+    "center": [
+      51.523,
+      -0.125
+    ],
+    "zoom": 14,
+    "query": "[out:json][timeout:25];\nnwr[\"leisure\"~\"^(park|garden)$\"][\"name\"](51.515,-0.145,51.531,-0.105)->.green;\nnwr.green[\"access\"~\"^(private|no)$\"]->.restricted;\n(.green; - .restricted;);\nout center tags 80;",
+    "label": "Parks & gardens, minus private",
+    "detail": "London · current view & exclusions",
+    "category": "Parks & gardens",
+    "snapshot": "london-snapshot.json",
+    "snapshotDate": "2022-07-04",
+    "capability": "Set difference and explicit exclusion",
+    "resultCount": 42,
+    "note": "Missing access tags and other access values are retained; this query does not certify public access."
+  }
+]

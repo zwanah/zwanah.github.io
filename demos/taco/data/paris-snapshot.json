@@ -1,0 +1,581 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.57.2 48842a1b",
+  "osm3s": {
+    "timestamp_osm_base": "2022-07-04T09:18:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 247696091,
+      "lat": 48.865451,
+      "lon": 2.3553243,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Les Arts et Métiers",
+        "name:fr": "Les Arts et Métiers",
+        "outdoor_seating": "yes",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 293982742,
+      "lat": 48.866725,
+      "lon": 2.3639036,
+      "tags": {
+        "addr:city": "Paris",
+        "addr:housenumber": "9",
+        "addr:postcode": "75003",
+        "addr:street": "Place de la République",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "bar": "yes",
+        "cuisine": "french",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Café République",
+        "name:fr": "Café République",
+        "opening_hours": "Mo-Th 06:30-02:00; Fr 06:30-04:00; Sa 06:30-05:00; Su 06:30-24:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:coins": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+33 1 42 72 31 44",
+        "website": "https://www.cafe-republique.com",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 676860092,
+      "lat": 48.8577895,
+      "lon": 2.3468656,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Le Zimmer",
+        "name:fr": "Le Zimmer",
+        "outdoor_seating": "yes",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "wikidata": "Q3228350"
+      }
+    },
+    {
+      "type": "node",
+      "id": 676860237,
+      "lat": 48.8595487,
+      "lon": 2.3473689,
+      "tags": {
+        "addr:city": "Paris",
+        "addr:housenumber": "4 bis",
+        "addr:postcode": "75001",
+        "addr:street": "Place Sainte-Opportune",
+        "amenity": "cafe",
+        "brewery": "La P'tite Mousse;Indian Pale Ale;Wendilus",
+        "contact:email": "lexcusebar@gmail.com",
+        "contact:phone": "+33 1 42 61 25 66",
+        "food": "yes",
+        "happy_hours": "Mo-Sa 17:00-21:00",
+        "indoor_seating": "yes",
+        "internet_access": "no",
+        "name": "L'Excuse",
+        "name:fr": "L'Excuse",
+        "opening_hours": "Mo-Sa 14:00-02:00",
+        "outdoor_seating": "yes",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 677805387,
+      "lat": 48.8597061,
+      "lon": 2.3469837,
+      "tags": {
+        "addr:city": "Paris",
+        "addr:housenumber": "1",
+        "addr:postcode": "75001",
+        "addr:street": "Place Sainte-Opportune",
+        "amenity": "cafe",
+        "cuisine": "french",
+        "food": "yes",
+        "indoor_seating": "yes",
+        "name": "Café Vigouroux",
+        "name:fr": "Café Vigouroux",
+        "opening_hours": "Mo-Fr 07:00-01:00; Sa 08:00-01:00; Su 10:00-22:00",
+        "outdoor_seating": "yes",
+        "phone": "+33 1 40 28 42 37",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 681677109,
+      "lat": 48.8629745,
+      "lon": 2.3357764,
+      "tags": {
+        "addr:city": "Paris",
+        "addr:housenumber": "157",
+        "addr:postcode": "75001",
+        "addr:street": "Rue Saint-Honoré",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Café de la Comédie",
+        "name:fr": "Café de la Comédie",
+        "outdoor_seating": "yes",
+        "phone": "+33142614001",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 681902192,
+      "lat": 48.8627666,
+      "lon": 2.337654,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Café Palais Royal",
+        "name:fr": "Café Palais Royal",
+        "outdoor_seating": "yes",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 699896986,
+      "lat": 48.8575096,
+      "lon": 2.3479041,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Le Sarah Bernhardt",
+        "name:fr": "Le Sarah Bernhardt",
+        "outdoor_seating": "yes",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 727742461,
+      "lat": 48.857189,
+      "lon": 2.347747,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Le Mistral",
+        "name:fr": "Le Mistral",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1490090138,
+      "lat": 48.8664355,
+      "lon": 2.3508945,
+      "tags": {
+        "amenity": "cafe",
+        "brewery": "Pelforth;Affligem;Heineken;sol",
+        "happy_hours": "Mo-Sa 16:00-21:30",
+        "indoor_seating": "yes",
+        "name": "Monkey",
+        "name:fr": "Monkey",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1528675432,
+      "lat": 48.857511,
+      "lon": 2.34665,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Au vieux Châtelet",
+        "name:fr": "Au Vieux Châtelet",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1821967153,
+      "lat": 48.8717988,
+      "lon": 2.342289,
+      "tags": {
+        "addr:city": "Paris",
+        "addr:housenumber": "8",
+        "addr:postcode": "75009",
+        "addr:street": "Boulevard Montmartre",
+        "amenity": "cafe",
+        "email": "contact@cafegrevin.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "Cafe Grevin",
+        "name": "Café Grévin",
+        "name:fr": "Café Grévin",
+        "opening_hours": "Th,Sa 11:00-22:00; Fr 11:00-02:00; Su-We 11:00-17:20",
+        "outdoor_seating": "yes",
+        "phone": "+33147708813",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2003233906,
+      "lat": 48.8636482,
+      "lon": 2.348932,
+      "tags": {
+        "addr:city": "Paris",
+        "addr:postcode": "75001",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Café Étienne",
+        "name:fr": "Café Étienne",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2234105653,
+      "lat": 48.8664197,
+      "lon": 2.3522955,
+      "tags": {
+        "addr:housenumber": "105",
+        "addr:postcode": "75002",
+        "addr:street": "Boulevard de Sébastopol",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Capitole Café",
+        "name:fr": "Capitole Café",
+        "outdoor_seating": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2383590679,
+      "lat": 48.8671746,
+      "lon": 2.3471539,
+      "tags": {
+        "access:covid19": "no",
+        "addr:city": "Paris",
+        "addr:housenumber": "21",
+        "addr:postcode": "75002",
+        "addr:street": "Rue des Petits Carreaux",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "delivery:covid19": "no",
+        "internet_access": "wlan",
+        "name": "Starbucks",
+        "name:fr": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Fr 07:30-20:00; Sa 08:30-20:00; Su 08:30-19:00",
+        "opening_hours:covid19": "Mo-Fr 07:30-20:00; Sa 08:30-20:00; Su 08:30-19:00",
+        "operator": "Starbucks",
+        "outdoor_seating": "yes",
+        "source": "survey 01/2019",
+        "takeaway": "yes",
+        "takeaway:covid19": "yes",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.starbucks.fr/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2822380202,
+      "lat": 48.873595,
+      "lon": 2.333148,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Le Ricaux",
+        "name:fr": "Le Ricaux",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3481946593,
+      "lat": 48.8575933,
+      "lon": 2.3463807,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Le Reynou",
+        "name:fr": "Le Reynou",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3980224353,
+      "lat": 48.8609356,
+      "lon": 2.3411543,
+      "tags": {
+        "addr:city": "Paris",
+        "addr:housenumber": "154",
+        "addr:postcode": "75001",
+        "addr:street": "Rue de Rivoli",
+        "amenity": "cafe",
+        "description": "Anciennement : La Colonnade (avant mai 2022)",
+        "indoor_seating": "yes",
+        "name": "Auguste",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4111880547,
+      "lat": 48.8604728,
+      "lon": 2.3466897,
+      "tags": {
+        "addr:city": "Paris",
+        "addr:housenumber": "12",
+        "addr:postcode": "75001",
+        "addr:street": "Rue de la Ferronnerie",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Maison Rouge",
+        "name:fr": "Maison Rouge",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4195724191,
+      "lat": 48.860028,
+      "lon": 2.3471471,
+      "tags": {
+        "addr:city": "Paris",
+        "addr:postcode": "75001",
+        "addr:street": "Rue Sainte-Opportune",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "L'Amazonial",
+        "name:fr": "L'Amazonial",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4813629438,
+      "lat": 48.8681915,
+      "lon": 2.361963,
+      "tags": {
+        "amenity": "cafe",
+        "changing_table": "no",
+        "cuisine": "coffee_shop",
+        "level": "0",
+        "name": "République of Coffee",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "toilets:disposal": "flush",
+        "toilets:position": "seated;urinal",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5223289716,
+      "lat": 48.8624574,
+      "lon": 2.3439689,
+      "tags": {
+        "addr:city": "Paris",
+        "addr:postcode": "75001",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "indoor": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "level": "-3",
+        "name": "Starbucks",
+        "name:fr": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Th 08:30-20:15, Fr-Sa 08:00-21:00, Su 10:00-20:15",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "source": "survey",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5712090155,
+      "lat": 48.8584369,
+      "lon": 2.3475417,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Tabac du Châtelet",
+        "name:fr": "Tabac du Châtelet",
+        "opening_hours:covid19": "open",
+        "outdoor_seating": "yes",
+        "source": "survey 06/2018",
+        "tobacco": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5916157563,
+      "lat": 48.8669718,
+      "lon": 2.3473866,
+      "tags": {
+        "alt_name": "Pouchkinette",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Café Pouchkine",
+        "outdoor_seating": "yes",
+        "survey:date": "2019-01-14",
+        "takeaway": "yes",
+        "website": "https://cafe-pouchkine.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7245550463,
+      "lat": 48.8594593,
+      "lon": 2.3472269,
+      "tags": {
+        "addr:city": "Paris",
+        "addr:housenumber": "2",
+        "addr:postcode": "75001",
+        "addr:street": "Place Sainte-Opportune",
+        "amenity": "cafe",
+        "cuisine": "french",
+        "indoor_seating": "yes",
+        "name": "Le Petit Opportun",
+        "name:fr": "Le Petit Opportun",
+        "outdoor_seating": "yes",
+        "phone": "+33 1 42 36 93 35",
+        "website": "https://www.facebook.com/pages/Le-petit-opportun/227196797424761"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7683284798,
+      "lat": 48.8592792,
+      "lon": 2.3469661,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "level": "0",
+        "name": "Motors Coffee",
+        "name:fr": "Motors Coffee",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:access": "customers"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8591620495,
+      "lat": 48.8610245,
+      "lon": 2.3411951,
+      "tags": {
+        "addr:city": "Paris",
+        "addr:postcode": "75001",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Chez Micheline",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8895180619,
+      "lat": 48.8612307,
+      "lon": 2.3202208,
+      "tags": {
+        "amenity": "cafe",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8895180620,
+      "lat": 48.8609766,
+      "lon": 2.3205332,
+      "tags": {
+        "amenity": "cafe",
+        "name": "La Dauphine",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9247842748,
+      "lat": 48.864472,
+      "lon": 2.330284,
+      "tags": {
+        "amenity": "cafe",
+        "level": "0",
+        "name": "Café Kitsuné",
+        "opening_hours": "Mo-Su 10:30-13:00, 14:00-18:00",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "toilets": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9247842754,
+      "lat": 48.866843,
+      "lon": 2.3227972,
+      "tags": {
+        "amenity": "cafe",
+        "level": "0",
+        "name": "Café Lapérouse",
+        "opening_hours": "Mo-Su 08:00-19:00",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9812980140,
+      "lat": 48.8728717,
+      "lon": 2.3348583,
+      "tags": {
+        "addr:city": "Paris",
+        "addr:housenumber": "30",
+        "addr:postcode": "75009",
+        "addr:street": "Boulevard Haussmann",
+        "amenity": "cafe",
+        "bar": "yes",
+        "name": "Cordial Café",
+        "outdoor_seating": "yes"
+      }
+    }
+  ]
+}

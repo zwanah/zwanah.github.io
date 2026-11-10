@@ -1,0 +1,629 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.57.2 48842a1b",
+  "osm3s": {
+    "timestamp_osm_base": "2022-07-04T09:18:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 6582725771,
+      "lat": 51.5292528,
+      "lon": -0.1288306,
+      "tags": {
+        "addr:city": "London",
+        "addr:housename": "Levita House",
+        "addr:postcode": "NW1 1JJ",
+        "addr:street": "Chalton Street",
+        "description": "This area has newly been upgraded for the residents of Levita house to start gardening and growing small vegetables and fruits where possible",
+        "leisure": "park",
+        "name": "Levita House Plantation",
+        "opening_hours": "24/7",
+        "operator": "Camden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 3241371,
+      "center": {
+        "lat": 51.5216943,
+        "lon": -0.126069
+      },
+      "tags": {
+        "GBV": "Active",
+        "barrier": "fence",
+        "leisure": "park",
+        "name": "Russell Square",
+        "wikidata": "Q1346906",
+        "wikimedia_commons": "Category:Russell_Square_Gardens",
+        "wikipedia": "en:Russell Square"
+      }
+    },
+    {
+      "type": "way",
+      "id": 3241840,
+      "center": {
+        "lat": 51.5250414,
+        "lon": -0.1290244
+      },
+      "tags": {
+        "access": "permissive",
+        "barrier": "fence",
+        "leisure": "park",
+        "name": "Tavistock Square",
+        "opening_hours": "07:30-sunset",
+        "source": "Survey of 2014-10-05",
+        "wikidata": "Q1936696",
+        "wikipedia": "en:Tavistock Square"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4075108,
+      "center": {
+        "lat": 51.5170075,
+        "lon": -0.1144526
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Lincoln's Inn"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4253286,
+      "center": {
+        "lat": 51.5233255,
+        "lon": -0.1296417
+      },
+      "tags": {
+        "barrier": "fence",
+        "fence_type": "railing",
+        "leisure": "park",
+        "name": "Woburn Square",
+        "wikidata": "Q8028979",
+        "wikipedia": "en:Woburn Square"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4253288,
+      "center": {
+        "lat": 51.524262,
+        "lon": -0.1308717
+      },
+      "tags": {
+        "barrier": "fence",
+        "fence_type": "railing",
+        "leisure": "park",
+        "name": "Gordon Square",
+        "wikidata": "Q5585854",
+        "wikipedia": "en:Gordon Square"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4253431,
+      "center": {
+        "lat": 51.5189796,
+        "lon": -0.1300321
+      },
+      "tags": {
+        "GBV": "InActive",
+        "leisure": "park",
+        "name": "Bedford Square",
+        "wikidata": "Q2893581",
+        "wikipedia": "en:Bedford Square"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4253511,
+      "center": {
+        "lat": 51.5265871,
+        "lon": -0.1318344
+      },
+      "tags": {
+        "access": "permissive",
+        "fee": "no",
+        "fixme": "Friends House shuts and locks this garden at times, I think overnight. It would be good to identify the hours the garden is open.",
+        "leisure": "garden",
+        "name": "Friends House Garden",
+        "operator": "Friends House",
+        "operator:type": "religious"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4253646,
+      "center": {
+        "lat": 51.5217715,
+        "lon": -0.1224453
+      },
+      "tags": {
+        "GBV": "Active",
+        "leisure": "park",
+        "name": "Queen Square Gardens",
+        "wikidata": "Q3414013",
+        "wikipedia": "en:Queen Square, London"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4253657,
+      "center": {
+        "lat": 51.5191781,
+        "lon": -0.1188798
+      },
+      "tags": {
+        "barrier": "fence",
+        "fixme": "Area of park has been mapped a bit too large, needs to be compressed in a little",
+        "leisure": "park",
+        "name": "Red Lion Square",
+        "name:en": "Red Lion Square",
+        "name:ko": "레드 라이언 광장",
+        "wikidata": "Q7304535"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4256144,
+      "center": {
+        "lat": 51.5290446,
+        "lon": -0.122248
+      },
+      "tags": {
+        "leisure": "garden",
+        "name": "Argyle Square",
+        "name:en": "Argyle Square",
+        "name:ja": "アーガイル・スクエア"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4272920,
+      "center": {
+        "lat": 51.5192383,
+        "lon": -0.1345606
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Crabtree Fields"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4315778,
+      "center": {
+        "lat": 51.5202456,
+        "lon": -0.1142015
+      },
+      "tags": {
+        "access:conditional": "permissive@(12:00-14:30)",
+        "leisure": "park",
+        "name": "Gray's Inn Fields"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4393572,
+      "center": {
+        "lat": 51.5189247,
+        "lon": -0.122874
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Bloomsbury Square",
+        "operator": "London Borough of Camden",
+        "operator:type": "government",
+        "wikidata": "Q885408",
+        "wikipedia": "en:Bloomsbury Square"
+      }
+    },
+    {
+      "type": "way",
+      "id": 14164486,
+      "center": {
+        "lat": 51.5254696,
+        "lon": -0.1161889
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "St Andrew's Gardens"
+      }
+    },
+    {
+      "type": "way",
+      "id": 23231897,
+      "center": {
+        "lat": 51.5261547,
+        "lon": -0.1210865
+      },
+      "tags": {
+        "landuse": "graveyard",
+        "leisure": "garden",
+        "name": "St George's Gardens",
+        "name:en": "St George's Gardens",
+        "name:ja": "セント・ジョージ・ガーデンズ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26784866,
+      "center": {
+        "lat": 51.529321,
+        "lon": -0.1426255
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Cumberland Market"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29206501,
+      "center": {
+        "lat": 51.5161801,
+        "lon": -0.1098463
+      },
+      "tags": {
+        "leisure": "garden",
+        "name": "St Dunstan-in-the-West Garden",
+        "note": "Former graveyard."
+      }
+    },
+    {
+      "type": "way",
+      "id": 29390531,
+      "center": {
+        "lat": 51.5268918,
+        "lon": -0.1176263
+      },
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "258-274",
+        "addr:postcode": "WC1X 8LH",
+        "addr:street": "Gray's Inn Road",
+        "garden:type": "community",
+        "leisure": "garden",
+        "name": "Calthorpe Community Garden",
+        "website": "https://www.calthorpecommunitygarden.org.uk/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 30131571,
+      "center": {
+        "lat": 51.5209016,
+        "lon": -0.1351464
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Whitfield Gardens"
+      }
+    },
+    {
+      "type": "way",
+      "id": 30275204,
+      "center": {
+        "lat": 51.5217346,
+        "lon": -0.1325235
+      },
+      "tags": {
+        "leisure": "garden",
+        "name": "Ridgmount Gardens"
+      }
+    },
+    {
+      "type": "way",
+      "id": 30613392,
+      "center": {
+        "lat": 51.5162261,
+        "lon": -0.1165851
+      },
+      "tags": {
+        "barrier": "fence",
+        "fence_type": "metal",
+        "leisure": "park",
+        "name": "Lincoln's Inn Fields",
+        "name:ru": "Линкольнс-Инн-Филдс",
+        "postal_code": "WC2",
+        "wikidata": "Q2736153",
+        "wikipedia": "en:Lincoln's Inn Fields"
+      }
+    },
+    {
+      "type": "way",
+      "id": 41180742,
+      "center": {
+        "lat": 51.5205933,
+        "lon": -0.1120473
+      },
+      "tags": {
+        "leisure": "garden",
+        "name": "Verulam Gardens"
+      }
+    },
+    {
+      "type": "way",
+      "id": 45890874,
+      "center": {
+        "lat": 51.5285949,
+        "lon": -0.1063515
+      },
+      "tags": {
+        "foot": "yes",
+        "leisure": "garden",
+        "name": "Spa Green",
+        "opening_hours": "08:00-dusk",
+        "operator": "Islington Council"
+      }
+    },
+    {
+      "type": "way",
+      "id": 55736532,
+      "center": {
+        "lat": 51.5244675,
+        "lon": -0.1217204
+      },
+      "tags": {
+        "leisure": "garden",
+        "name": "Brunswick Square Gardens",
+        "wikidata": "Q4979544",
+        "wikipedia": "en:Brunswick Square"
+      }
+    },
+    {
+      "type": "way",
+      "id": 55737057,
+      "center": {
+        "lat": 51.5243863,
+        "lon": -0.1199848
+      },
+      "tags": {
+        "access:adults": "If accompanied by a child",
+        "leisure": "park",
+        "name": "Coram's Fields",
+        "wikidata": "Q1131898",
+        "wikimedia_commons": "Category:Coram's Fields",
+        "wikipedia": "en:Coram's Fields"
+      }
+    },
+    {
+      "type": "way",
+      "id": 100190846,
+      "center": {
+        "lat": 51.5267496,
+        "lon": -0.1105187
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Wilmington Square",
+        "opening_hours": "08:00-dusk",
+        "operator": "Islington Council",
+        "operator:type": "government",
+        "operator:wikidata": "Q6084379",
+        "operator:wikipedia": "en:Islington London Borough Council",
+        "place": "square",
+        "source": "Bing;survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133160182,
+      "center": {
+        "lat": 51.5250955,
+        "lon": -0.1248333
+      },
+      "tags": {
+        "garden:type": "community",
+        "leisure": "garden",
+        "name": "Marchmont Community Garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 136145866,
+      "center": {
+        "lat": 51.5270465,
+        "lon": -0.1236166
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Bramber Green",
+        "old_name": "Judd Street Open Space"
+      }
+    },
+    {
+      "type": "way",
+      "id": 148004650,
+      "center": {
+        "lat": 51.5165076,
+        "lon": -0.145032
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Cavendish Square",
+        "source": "Bing",
+        "wikidata": "Q5055036",
+        "wikipedia": "en:Cavendish Square"
+      }
+    },
+    {
+      "type": "way",
+      "id": 160533857,
+      "center": {
+        "lat": 51.530657,
+        "lon": -0.104901
+      },
+      "tags": {
+        "landuse": "recreation_ground",
+        "leisure": "park",
+        "name": "Owens Field",
+        "opening_hours": "08:00-dusk",
+        "operator": "Islington Council"
+      }
+    },
+    {
+      "type": "way",
+      "id": 189705396,
+      "center": {
+        "lat": 51.5284389,
+        "lon": -0.1161474
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Friedrick Street Garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 368199014,
+      "center": {
+        "lat": 51.5152804,
+        "lon": -0.1321963
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Soho Square",
+        "wikidata": "Q2705335",
+        "wikimedia_commons": "Category:Soho_Square",
+        "wikipedia": "en:Soho Square"
+      }
+    },
+    {
+      "type": "way",
+      "id": 383999575,
+      "center": {
+        "lat": 51.5191276,
+        "lon": -0.1383898
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Pearson Square"
+      }
+    },
+    {
+      "type": "way",
+      "id": 433020371,
+      "center": {
+        "lat": 51.5288518,
+        "lon": -0.1085133
+      },
+      "tags": {
+        "landcover": "concrete",
+        "leisure": "park",
+        "name": "Nautilus House garden",
+        "opening_hours": "08:00-16:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 629531502,
+      "center": {
+        "lat": 51.530794,
+        "lon": -0.1290219
+      },
+      "tags": {
+        "barrier": "fence",
+        "fee": "no",
+        "garden:type": "community",
+        "leisure": "garden",
+        "name": "Story Garden",
+        "opening_hours": "Tu-Sa 10:00-16:00; Su,Mo off",
+        "operator": "Global Generation",
+        "website": "https://www.globalgeneration.org.uk/story-garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 803099035,
+      "center": {
+        "lat": 51.5268393,
+        "lon": -0.1267372
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Cartwright Gardens",
+        "name:en": "Cartwright Gardens",
+        "name:ja": "カートライト・ガーデンズ",
+        "wikidata": "Q19600673"
+      }
+    },
+    {
+      "type": "way",
+      "id": 803107582,
+      "center": {
+        "lat": 51.526853,
+        "lon": -0.1216075
+      },
+      "tags": {
+        "leisure": "garden",
+        "name": "Regent Square"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 2191175,
+      "center": {
+        "lat": 51.5255681,
+        "lon": -0.1074384
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Spa Fields",
+        "opening_hours": "08:00-sunset",
+        "operator": "Islington Council",
+        "operator:type": "government",
+        "operator:wikidata": "Q6084379",
+        "operator:wikipedia": "en:Islington London Borough Council",
+        "type": "multipolygon",
+        "wikidata": "Q15278837",
+        "wikipedia": "en:Spa Fields"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 2468782,
+      "center": {
+        "lat": 51.5301769,
+        "lon": -0.1393214
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Hampstead Road Open Space",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 8382251,
+      "center": {
+        "lat": 51.5229356,
+        "lon": -0.1400273
+      },
+      "tags": {
+        "access": "permissive",
+        "leisure": "park",
+        "name": "Fitzroy Square Garden",
+        "opening_hours": "Mo-Fr 12:00-15:00",
+        "type": "multipolygon",
+        "website": "http://cindex.camden.gov.uk/kb5/camden/cd/service.page?id=3SgWSjCRZhA"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 13922144,
+      "center": {
+        "lat": 51.5201073,
+        "lon": -0.1327522
+      },
+      "tags": {
+        "leisure": "park",
+        "name": "Alfred Place Gardens",
+        "type": "multipolygon"
+      }
+    }
+  ]
+}

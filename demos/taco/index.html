@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f8">
+  <meta name="description" content="Explore OpenStreetMap with natural language, inspect your OverpassQL, and see the places behind the answer. An interactive research demo.">
+  <title>TACO Demo · Ask the map</title>
+  <link rel="canonical" href="https://wanzhuoyue.com/demos/taco/">
+  <link rel="icon" href="./assets/scout.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/vendor/leaflet.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="./config.js"></script>
+  <script defer src="./assets/vendor/leaflet.js"></script>
+  <script defer src="./assets/vendor/osmtogeojson.js"></script>
+  <script type="module" src="./assets/app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="./" aria-label="TACO Demo home"><img src="./assets/scout.svg" width="32" height="32" alt=""><span>TACO Demo</span></a>
+    <span class="header-divider" aria-hidden="true"></span><span class="workspace-name">Map workspace</span>
+    <nav aria-label="Project links"><span class="demo-pill"><i></i> OpenStreetMap</span><a href="/demos/">All demos</a><a href="#about" id="about-link">About</a><a id="repo-link" href="https://github.com/zwanah/osm-scout" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main class="workspace">
+    <aside class="sidebar" aria-label="Questions and answers">
+      <div class="intro">
+        <div class="assistant-heading"><span class="assistant-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"/></svg></span><span>YOUR MAP ASSISTANT</span></div>
+        <h1>Ask the map.</h1>
+        <p>A question in words. An answer in places.</p>
+      </div>
+      <div class="sample-label">Try an example</div>
+      <div class="samples" id="samples">
+        <button type="button" data-sample="hamburg" class="sample active"><span class="sample-icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 6h10v5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V6ZM14 7h1a2.5 2.5 0 0 1 0 5h-1M3 17h12M6 2v2m4-2v2"/></svg></span> <span class="sample-copy"><span class="sample-title">Accessible outdoor cafés</span><small>Hamburg · three tag filters</small></span> <span class="sample-arrow" aria-hidden="true">↗</span></button>
+        <button type="button" data-sample="paris" class="sample"><span class="sample-icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 6h10v5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V6ZM14 7h1a2.5 2.5 0 0 1 0 5h-1M3 17h12M6 2v2m4-2v2"/></svg></span> <span class="sample-copy"><span class="sample-title">Cafés near metro entrances</span><small>Paris · within 50 metres</small></span> <span class="sample-arrow" aria-hidden="true">↗</span></button>
+        <button type="button" data-sample="london" class="sample"><span class="sample-icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="m10 2-5 6h3l-5 6h14l-5-6h3l-5-6Zm0 12v4M7 18h6"/></svg></span> <span class="sample-copy"><span class="sample-title">Parks & gardens, minus private</span><small>London · current view &amp; exclusions</small></span> <span class="sample-arrow" aria-hidden="true">↗</span></button>
+      </div>
+      <form id="question-form">
+        <div class="composer">
+          <label class="sr-only" for="question">Your question</label>
+          <textarea id="question" rows="2" maxlength="1500" placeholder="What would you like to find?" required>Find wheelchair-accessible cafés with outdoor seating in central Hamburg.</textarea>
+          <div class="composer-budget">
+            <div class="budget-heading"><label for="budget">DeepSeek token budget <button type="button" class="info-button" id="budget-info" aria-label="About the DeepSeek token selection budget">i</button></label><output for="budget" id="budget-value">800 <span>tokens</span></output></div>
+            <input id="budget" type="range" min="400" max="2400" step="200" value="800" aria-describedby="budget-note budget-usage">
+            <div class="range-labels"><span id="budget-min">400</span><span id="budget-max">2,400</span></div>
+            <p class="budget-note" id="budget-note">Applies to your next question · TACO / ICL selection.</p>
+            <p id="budget-usage" class="budget-usage" aria-live="polite" hidden></p>
+          </div>
+          <div class="composer-footer"><span>Search with natural language</span><button id="generate" class="button button-primary" type="submit"><span id="generate-label">Explore example</span><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></button></div>
+        </div>
+      </form>
+      <div class="mode-line"><span class="mode-dot" id="mode-dot"></span><span id="mode-label">Interactive preview</span><span class="mode-model" id="model-label">Curated OSM queries</span></div>
+      <p id="usage-limits" class="usage-limits" hidden></p>
+      <p id="service-note" class="service-note" role="status" hidden></p>
+      <p id="status" role="status" aria-live="polite">Explore a dated OSM sample, or ask your own question when connected.</p>
+      <ol id="query-stages" class="query-stages" aria-label="Query progress" hidden></ol>
+      <div id="turnstile-widget"></div>
+      <button id="retry-map" type="button" class="button button-run" hidden>Retry map search <span aria-hidden="true">→</span></button>
+
+      <section class="answer-section" aria-labelledby="result-count" aria-busy="false" id="answer-section">
+        <div class="answer-card">
+          <div class="answer-heading"><span class="eyebrow"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg> Search results</span><span class="answer-symbol" aria-hidden="true">⌖</span></div>
+          <h2 id="result-count">Ready to explore</h2>
+          <p id="answer-text">Choose an example to explore places on the map.</p>
+          <span id="result-note">Sample query loaded</span>
+        </div>
+        <div class="answer-meta"><span>Places</span><span>SELECT TO EXPLORE ↗</span></div>
+        <div id="result-list" class="result-list" aria-label="Matching places"></div>
+      </section>
+
+      <div class="secondary-tools">
+        <details id="query-details" class="tool-panel">
+          <summary><span><span class="tool-symbol" aria-hidden="true">&lt;/&gt;</span> Query code</span><span class="panel-label">OverpassQL <span class="chevron" aria-hidden="true">⌄</span></span></summary>
+          <div class="tool-content">
+            <p class="tool-description">Inspect or edit the query, then run it again.</p>
+            <div class="editor">
+              <div class="editor-toolbar"><label for="query">OverpassQL</label><button id="copy-query" type="button" class="icon-button" aria-label="Copy query" title="Copy query">Copy</button></div>
+              <textarea id="query" maxlength="12000" spellcheck="false" rows="7"></textarea>
+              <div class="editor-foot"><span id="query-source"><i></i> Curated example · editable</span><a id="turbo-link" href="https://overpass-turbo.eu/" target="_blank" rel="noopener noreferrer">Open in Turbo ↗</a></div>
+            </div>
+            <button id="run-query" type="button" disabled class="button button-run"><span>Live queries not connected</span><span aria-hidden="true">→</span></button>
+          </div>
+        </details>
+        <details id="research-details" class="tool-panel">
+          <summary><span><span class="tool-symbol" aria-hidden="true">⚙</span> Research details</span><span class="panel-label"><span id="context-count">—</span> examples <span class="chevron" aria-hidden="true">⌄</span></span></summary>
+          <div class="tool-content">
+            <h3 class="context-heading">Selected examples &amp; model context</h3>
+            <div id="context-content" class="context-content"><p>In live mode, the examples selected for your question appear here with their prompt budget.</p><p class="muted">Preview queries are curated. They do not make a model call.</p></div>
+          </div>
+        </details>
+      </div>
+      <footer class="sidebar-footer"><span class="footer-mark" aria-hidden="true">⌁</span> Built on OpenStreetMap <span>Research demo</span></footer>
+    </aside>
+
+    <section class="map-workspace" aria-label="Map and results">
+      <div class="map-toolbar">
+        <div class="location-card"><span class="location-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.4"/></svg></span><div><span class="eyebrow map-eyebrow">EXPLORING</span><h2 id="place-title">Hamburg, Germany <span id="place-type">Libraries</span></h2></div></div>
+        <button id="download-results" class="download-button" disabled>Export GeoJSON <span aria-hidden="true">↓</span></button>
+      </div>
+      <div class="map-stage" id="map-stage">
+        <div id="map" aria-label="Interactive OpenStreetMap map"></div>
+        <div class="map-badge"><span class="badge-dot"></span><span id="map-badge-text">OpenStreetMap</span></div>
+        <button id="fit-map" type="button" class="fit-map" aria-label="Fit map to results" title="Fit map to results"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m8 0h5v-5"/><circle cx="12" cy="12" r="3"/></svg></button>
+        <div class="map-empty" id="map-empty" hidden>No map features in this response.</div>
+      </div>
+      <div class="map-caption"><span><i class="legend-dot"></i> <span id="legend-label">Libraries</span></span><span id="data-origin">Run the query against project OSM data</span></div>
+    </section>
+  </main>
+  <dialog id="about-dialog" aria-labelledby="about-title"><button class="dialog-close" id="close-about" aria-label="Close about dialog">×</button><span class="eyebrow">ABOUT THE DEMO</span><h2 id="about-title">A little context.<br>A world to explore.</h2><p>TACO Demo is a research demo for asking questions about OpenStreetMap. Inspect the OverpassQL, explore the returned places, and see how in-context examples help translate a question.</p><div class="about-flow"><span>Ask</span><b>→</b><span>Inspect</span><b>→</b><span>Explore</span></div><p><strong>Preview mode</strong> loads curated queries and dated OSM snapshots. It does not run an encoder, TACO selection or a language model. Connected queries run against the project’s own Overpass services.</p><p><strong>Live mode</strong> embeds your question with the base and influence encoders, selects examples from the original pool with TACO, and sends the resulting ICL prompt to the configured OpenAI model, GPT-6 Luna by default. Selection keeps the original DeepSeek token budget; model API usage is reported separately. The ICL panel shows the returned similarity and influence scores, pool sizes, selector parameters and token counting method. Matching requests may reuse saved model or OSM responses; cache hits and historical model usage are labeled.</p><p class="muted">An independent research project using OpenStreetMap data. Not affiliated with the OpenStreetMap Foundation.</p><a class="about-osm" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a></dialog>
+</body>
+</html>

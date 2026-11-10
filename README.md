@@ -24,3 +24,9 @@ Fonts are hosted locally with their licenses in `assets/fonts/homepage`. The cam
 ## Source credits
 
 The original Jekyll structure derives from [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io), and the current design includes styles adapted from [AcaNova-X](https://github.com/yihangtao/yihangtao.github.io). Original licenses and asset source notes are retained in `LICENSE` and the relevant `assets` directories.
+
+## Research demos
+
+`/demos/` links to independent TACO and XOver pages. TACO is live at `/demos/taco/`; XOver at `/demos/xover/` is explicitly marked as not yet interactive. The homepage navigation includes Demos.
+
+The TACO public frontend is built from `zwanah/osm-scout`: run `python scripts/publish_demo.py --site-root /path/to/this/checkout` there, then inspect and commit the updated `demos/taco/` here. The source repository's Pages site redirects `/osm-scout/` to the canonical route. The existing Jekyll build copies these static files, with no change to homepage rendering or hosting configuration.

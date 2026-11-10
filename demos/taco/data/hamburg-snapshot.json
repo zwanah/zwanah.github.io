@@ -1,0 +1,905 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.57.2 48842a1b",
+  "osm3s": {
+    "timestamp_osm_base": "2022-07-04T09:18:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 319503160,
+      "lat": 53.5942962,
+      "lon": 9.9442076,
+      "tags": {
+        "amenity": "cafe",
+        "check_date:opening_hours": "2022-02-22",
+        "name": "Café Ines",
+        "opening_hours": "Apr-Oct: Mo-Fr 06:00-18:00; Nov-Mar: Mo,Fr 06:00-17:00; Nov-Mar: Tu-Th 06:00-17:30",
+        "outdoor_seating": "yes",
+        "phone": "+49 40 5488-0575",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 341788129,
+      "lat": 53.5582266,
+      "lon": 10.0126711,
+      "tags": {
+        "amenity": "cafe",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "name": "Grüneberg",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 385669383,
+      "lat": 53.567295,
+      "lon": 9.9843428,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:housenumber": "8",
+        "addr:postcode": "20146",
+        "addr:street": "Von-Melle-Park",
+        "amenity": "cafe",
+        "delivery": "no",
+        "level": "0",
+        "name": "Campusblick",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "operator": "Studierendenwerk Hamburg",
+        "outdoor_seating": "yes",
+        "payment:coins": "yes",
+        "payment:notes": "yes",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 438141513,
+      "lat": 53.581715,
+      "lon": 9.9454414,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:housenumber": "88",
+        "addr:postcode": "20255",
+        "addr:street": "Lutterothstraße",
+        "amenity": "cafe",
+        "entrance": "yes",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Chez Nathalie",
+        "opening_hours": "Fr 14:00-19:00; Sa 11:00-19:00; Su 14:30-18:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 535406042,
+      "lat": 53.5616086,
+      "lon": 9.9485084,
+      "tags": {
+        "amenity": "cafe",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Holsteinbäcker",
+        "opening_hours": "Mo-Su 05:00-20:00",
+        "outdoor_seating": "yes",
+        "shop": "bakery",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 630975409,
+      "lat": 53.5782294,
+      "lon": 9.9414659,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:housenumber": "2-4",
+        "addr:postcode": "20257",
+        "addr:street": "Langenfelder Damm",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;mediterranean;european;italian",
+        "diet:lactose_free": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Due Baristi",
+        "opening_hours": "Tu-Fr 08:00-17:00; Sa 09:00-17:00; PH,Su 10:00-17:00",
+        "outdoor_seating": "yes",
+        "phone": "+49 40 88178851",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes",
+        "wheelchair:description": "ebenerdiger Gastraum, aber Toiletten im Keller (Treppe)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 697736270,
+      "lat": 53.5594496,
+      "lon": 10.007905,
+      "tags": {
+        "amenity": "cafe",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Cafe Prüsse",
+        "opening_hours": "Mo-Fr 12:00-18:00+; PH,Sa,Su 12:00-21:00+",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 891566678,
+      "lat": 53.5775121,
+      "lon": 9.9519586,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:country": "DE",
+        "addr:housenumber": "49",
+        "addr:postcode": "20255",
+        "addr:street": "Heußweg",
+        "amenity": "cafe",
+        "check_date": "2022-01-31",
+        "contact:phone": "+49 40 409857",
+        "contact:website": "http://www.lapaz-hamburg.de/",
+        "cuisine": "spanish",
+        "indoor_seating": "yes",
+        "name": "La Paz",
+        "opening_hours": "Mo-Sa 17:00-23:00",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1391540151,
+      "lat": 53.5650739,
+      "lon": 9.9836721,
+      "tags": {
+        "amenity": "cafe",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "indoor_seating": "yes",
+        "name": "Golden Temple Teehaus",
+        "opening_hours": "Tu-Sa 10:00-20:00; Su 10:00-18:00",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "toilets:wheelchair": "no",
+        "website": "https://www.gt-teehaus.de/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561371106,
+      "lat": 53.5549678,
+      "lon": 9.991017,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Fr 07:30-20:00; Sa 07:30-21:00; Su 08:30-21:00; PH 08:30-21:00",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes",
+        "wifi:limit": "2h"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2089691179,
+      "lat": 53.5583986,
+      "lon": 10.011469,
+      "tags": {
+        "amenity": "cafe",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "email": "vegetarisch@cafekoppel.de",
+        "happycow:id": "16259",
+        "indoor_seating": "yes",
+        "name": "Café Koppel",
+        "opening_hours": "Mo-Su 10:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+49 40 249235",
+        "reservation": "yes",
+        "survey:date": "2022-04-25",
+        "toilets:wheelchair": "no",
+        "website": "https://cafekoppel.de/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2326396035,
+      "lat": 53.552503,
+      "lon": 9.930211,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:country": "DE",
+        "addr:housenumber": "116",
+        "addr:postcode": "22765",
+        "addr:street": "Bahrenfelder Straße",
+        "amenity": "cafe",
+        "cuisine": "italian",
+        "name": "Creperia Venezia",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2398743471,
+      "lat": 53.5926963,
+      "lon": 10.0010057,
+      "tags": {
+        "amenity": "cafe",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Cafe Neo",
+        "opening_hours": "Mo,We-Sa 9:00-18:00; Su 10:00-18:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2652360954,
+      "lat": 53.5516753,
+      "lon": 9.9434473,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:country": "DE",
+        "addr:housenumber": "160",
+        "addr:postcode": "22767",
+        "addr:street": "Große Bergstraße",
+        "amenity": "cafe",
+        "contact:email": "info@bergtags.de",
+        "contact:phone": "+49 40 54091724",
+        "contact:website": "http://www.bergtags.de/",
+        "cuisine": "bistro",
+        "delivery": "no",
+        "internet_access": "wlan",
+        "name": "Bergtags",
+        "opening_hours": "Mo-Sa 10:00-19:00;PH off",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:cryptocurrencies": "no",
+        "payment:debit_cards": "no",
+        "payment:electronic_purses": "no",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2940646845,
+      "lat": 53.5806355,
+      "lon": 9.9495039,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:housenumber": "70",
+        "addr:postcode": "20255",
+        "addr:street": "Hellkamp",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2021-09-06",
+        "name": "Mia Mio",
+        "opening_hours": "Fr-Su 10:00-17:00",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "website": "https://www.miamio-cafe.de/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3474793612,
+      "lat": 53.580919,
+      "lon": 10.011768,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:country": "DE",
+        "addr:housenumber": "21",
+        "addr:postcode": "22303",
+        "addr:street": "Mühlenkamp",
+        "amenity": "cafe",
+        "cuisine": "ice_cream",
+        "internet_access": "no",
+        "name": "Enjoy it",
+        "opening_hours": "PH,Mo-Su 11:00-22:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3550761678,
+      "lat": 53.5401582,
+      "lon": 10.0042816,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Café HCU",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "toilets:wheelchair": "no",
+        "website": "https://www.studierendenwerk-hamburg.de/studierendenwerk/de/essen/mensen_und_cafes/detail/?id=904",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3671884998,
+      "lat": 53.5788929,
+      "lon": 9.9467537,
+      "tags": {
+        "amenity": "cafe",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Cafe Delice",
+        "opening_hours": "Tu-Fr 08:00-19:00; Sa,Su 09:00-18:00; Mo off",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3671923065,
+      "lat": 53.5782277,
+      "lon": 9.9474205,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Café Estoril",
+        "opening_hours": "Mo-Fr 07:00-22:00; Sa 09:00-21:00; Su 10:00-19:00",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3671923080,
+      "lat": 53.5779665,
+      "lon": 9.9476688,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:country": "DE",
+        "addr:housenumber": "154",
+        "addr:postcode": "20255",
+        "addr:street": "Osterstraße",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2022-05-31",
+        "delivery": "no",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Lál Pera",
+        "opening_hours": "PH,Mo-Su 10:00-18:00+",
+        "outdoor_seating": "yes",
+        "payment:coins": "yes",
+        "payment:cryptocurrencies": "no",
+        "payment:notes": "yes",
+        "phone": "+49 40 430 95 212",
+        "smoking": "outside",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3672073235,
+      "lat": 53.5760111,
+      "lon": 9.9508221,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:housenumber": "133",
+        "addr:postcode": "20255",
+        "addr:street": "Osterstraße",
+        "amenity": "cafe",
+        "contact:phone": "+49 40 36854848",
+        "contact:website": "https://madaboutjuice.de",
+        "diet:gluten_free": "yes",
+        "diet:healthy": "yes",
+        "diet:lactose_free": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "MAD about Juice",
+        "opening_hours": "Mo-Fr 09:30-17:00; Sa 09:30-17:00; Su 10:00-17:00",
+        "opening_hours:covid19": "open",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:girocard": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3680185789,
+      "lat": 53.5293462,
+      "lon": 10.037895,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:housenumber": "1",
+        "addr:postcode": "20539",
+        "addr:street": "Entenwerder",
+        "amenity": "cafe",
+        "contact:email": "info@entenwerder.com",
+        "contact:facebook": "entenwerder1",
+        "contact:instagram": "entenwerder1",
+        "contact:phone": "+49 40 70293588",
+        "contact:website": "http://entenwerder.com",
+        "name": "Entenwerder1",
+        "opening_hours": "Mo-Th 10:00-20:00, Fr,Sa 10:00-21:00, Su 10:00-19:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3688386316,
+      "lat": 53.5771421,
+      "lon": 9.9512018,
+      "tags": {
+        "amenity": "cafe",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Café estoril",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 09:00-20:00",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4065568172,
+      "lat": 53.5787994,
+      "lon": 9.9740883,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:country": "DE",
+        "addr:housenumber": "128",
+        "addr:postcode": "20253",
+        "addr:street": "Bismarckstraße",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2022-01-23",
+        "contact:phone": "+49 40 42101373",
+        "indoor_seating": "yes",
+        "name": "Cafe Fele",
+        "opening_hours": "Mo-Su 08:00-18:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4065569790,
+      "lat": 53.5765271,
+      "lon": 9.9691881,
+      "tags": {
+        "amenity": "cafe",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Cafe Lual",
+        "opening_hours": "Mo-Fr 08:00-18:00; Sa,Su 09:00-18:00",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4853794456,
+      "lat": 53.5424113,
+      "lon": 9.9992377,
+      "tags": {
+        "access:covid19": "no",
+        "addr:city": "Hamburg",
+        "addr:country": "DE",
+        "addr:housenumber": "9",
+        "addr:postcode": "20457",
+        "addr:street": "Osakaallee",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2021-08-27",
+        "cuisine": "ice_cream",
+        "delivery": "no",
+        "description": "Drinks only, Ice Cream in the summer",
+        "email": "osaka9@hafencity.com",
+        "fair_trade": "only",
+        "internet_access": "no",
+        "name": "Nachhaltigkeitspavillon OSAKA9",
+        "opening_hours": "PH,Tu-Su 10:00-18:00",
+        "opening_hours:covid19": "Tu-Su 10:00-17:00",
+        "operator": "HafenCity Hamburg GmbH",
+        "organic": "only",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:cryptocurrencies": "no",
+        "payment:debit_cards": "no",
+        "payment:electronic_purses": "no",
+        "phone": "+49 40 37472660",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.hafencity.com/de/infocenter/osaka-9-hafencity-nachhaltigkeitspavillon.html",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4933567609,
+      "lat": 53.5496054,
+      "lon": 9.9930555,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "delivery": "no",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "elbgold",
+        "opening_hours": "Mo-Fr 08:00-18:00, Sa 09:00-18:00; PH closed",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:cryptocurrencies": "no",
+        "payment:electronic_purses": "no",
+        "payment:girocard": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5241156122,
+      "lat": 53.5778827,
+      "lon": 9.9510254,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:housenumber": "11",
+        "addr:postcode": "20255",
+        "addr:street": "Stellinger Weg",
+        "amenity": "cafe",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Caffè Toraldo",
+        "opening_hours": "Mo-Fr 08:00-19:00; Sa 09:00-18:00; Su 10:00-17:00",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5537959624,
+      "lat": 53.5577371,
+      "lon": 9.9093232,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:housenumber": "4",
+        "addr:postcode": "22763",
+        "addr:street": "Friesenweg",
+        "amenity": "cafe",
+        "cuisine": "international",
+        "level": "0",
+        "name": "Elbdeli",
+        "opening_hours": "Mo-Fr 09:00-14:30",
+        "outdoor_seating": "yes",
+        "phone": "+49 40 370 29 350",
+        "website": "https://www.elbdeli-catering.de",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5888267885,
+      "lat": 53.5745109,
+      "lon": 10.015271,
+      "tags": {
+        "amenity": "cafe",
+        "check_date:opening_hours": "2022-04-30",
+        "name": "Braakermühle",
+        "opening_hours": "Mo-Sa 06:07-19:07; Su 07:07-19:07",
+        "outdoor_seating": "yes",
+        "shop": "bakery",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5936212833,
+      "lat": 53.5681526,
+      "lon": 9.9815002,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:country": "DE",
+        "addr:housenumber": "18",
+        "addr:postcode": "20146",
+        "addr:street": "Bornstraße",
+        "amenity": "cafe",
+        "check_date": "2021-11-15",
+        "contact:phone": "+49 176 62409068",
+        "contact:website": "https://www.hangingout.de/",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Hanging Out Café",
+        "opening_hours": "Tu-Sa 09:00-17:00; Su 10:00-17:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6601169662,
+      "lat": 53.5644807,
+      "lon": 9.9753079,
+      "tags": {
+        "amenity": "cafe",
+        "drink:club-mate": "served",
+        "height": "4",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Schrødingers",
+        "opening_hours": "Tu,Th,Sa 12:00-14:00",
+        "opening_hours:covid19": "Tu,Th,Sa 12:00-14:00",
+        "operator": "SternChance Caféhaus GmbH",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:girocard": "yes",
+        "phone": "+49 40 4301168",
+        "smoking": "outside",
+        "toilets:wheelchair": "yes",
+        "website": "https://schroedingers.hamburg/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6613000709,
+      "lat": 53.5397638,
+      "lon": 10.0104049,
+      "tags": {
+        "amenity": "cafe",
+        "contact:email": "info@le-jardin.net",
+        "contact:facebook": "lejardinhafencity",
+        "contact:instagram": "le_jardin_cafe_flower",
+        "contact:phone": "+49 40 36930529",
+        "contact:tripadvisor": "le-jardin-cafeflower",
+        "contact:website": "https://le-jardin.net",
+        "cuisine": "asian",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Le Jardin Cafe Flower",
+        "official_name": "LE JARDIN CAFE FLOWER",
+        "opening_hours": "Mo-Su 10:00-20:00",
+        "operator": "Le Jardin GmbH",
+        "outdoor_seating": "yes",
+        "reservation": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6630974391,
+      "lat": 53.5491964,
+      "lon": 9.9339719,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:postcode": "22765",
+        "addr:street": "Braunschweiger Straße",
+        "amenity": "cafe",
+        "name": "Cafe Schmidtchen",
+        "opening_hours": "Mo-Fr 10:00-18:00; Sa-Su 09:00-18:00",
+        "outdoor_seating": "yes",
+        "source": "survey",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7237484519,
+      "lat": 53.5925974,
+      "lon": 9.9598853,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:housenumber": "66",
+        "addr:postcode": "22529",
+        "addr:street": "Grandweg",
+        "amenity": "cafe",
+        "cuisine": "cake",
+        "name": "Mc Queen",
+        "opening_hours": "We-Su 10:00-19:00",
+        "outdoor_seating": "yes",
+        "phone": "+49 40 50728888",
+        "smoking": "no",
+        "website": "https://mc-queen.eatbu.com",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8084280490,
+      "lat": 53.5990009,
+      "lon": 9.9138145,
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:housenumber": "573",
+        "addr:postcode": "22525",
+        "addr:street": "Kieler Straße",
+        "amenity": "cafe",
+        "branch": "REWE Stellinger Höfe",
+        "brand": "Campus Suite",
+        "brand:wikidata": "Q111205702",
+        "cuisine": "coffee_shop;sandwich",
+        "name": "Campus Suite",
+        "opening_hours": "Mo-Sa 07:00-19:00",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "website": "https://www.campussuite.de/stores/hamburg",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 60214999,
+      "center": {
+        "lat": 53.5442147,
+        "lon": 9.9901341
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "retail",
+        "building:levels": "1",
+        "contact:email": "info@barrossa.de",
+        "contact:fax": "+49 40 36091170",
+        "contact:phone": "+49 40 36090688",
+        "contact:website": "http://www.barrossa.de/",
+        "delivery": "no",
+        "name": "Barrossa Kaffeebar",
+        "opening_hours": "\"no sign for opening hours\"",
+        "outdoor_seating": "yes",
+        "roof:material": "copper",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 139226949,
+      "center": {
+        "lat": 53.5454425,
+        "lon": 9.9382145
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Altonas Balkon",
+        "outdoor_seating": "yes",
+        "website": "http://www.altonas-balkon.de",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 153885569,
+      "center": {
+        "lat": 53.5968172,
+        "lon": 10.027378
+      },
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:housenumber": "67a",
+        "addr:postcode": "22303",
+        "addr:street": "Saarlandstraße",
+        "amenity": "cafe",
+        "building": "retail",
+        "building:levels": "1",
+        "cuisine": "cake;ice_cream;coffee_shop;sandwich;tea",
+        "email": "info@lesecafe-stadtpark.de",
+        "name": "Lesecafe Stadtpark",
+        "opening_hours": "Mo 12:00+; May-Sep Tu-Su 10:00+; Oct-Apr 11:00+",
+        "outdoor_seating": "yes",
+        "phone": "+49 152 22 70 85 89",
+        "roof:levels": "1",
+        "roof:shape": "hipped",
+        "website": "https://www.lesecafe-stadtpark.de/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 242126406,
+      "center": {
+        "lat": 53.5807773,
+        "lon": 9.9467087
+      },
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:street": "Else-Rauch-Platz",
+        "amenity": "cafe",
+        "building": "retail",
+        "building:levels": "1",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Villa im Park",
+        "opening_hours": "Mo-Th 15:00-24:00+; Sa,Su 13:00-24:00+; Fr 15:00-24:00+",
+        "outdoor_seating": "yes",
+        "roof:shape": "hipped",
+        "source": "HH-LGV-2012",
+        "toilets:wheelchair": "yes",
+        "website": "http://www.villa-im-park.de",
+        "wheelchair": "yes",
+        "wheelchair:description": "die Toilette existiert, aber ist meist völlig zugestellt und ohne Hilfe nicht zu erreichen für Rollifahrer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 371481041,
+      "center": {
+        "lat": 53.5968917,
+        "lon": 10.0155311
+      },
+      "tags": {
+        "addr:city": "Hamburg",
+        "addr:country": "DE",
+        "addr:housenumber": "6a",
+        "addr:postcode": "22303",
+        "addr:street": "Otto-Wels-Straße",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Parkvilla",
+        "opening_hours": "Mo-Su 12:00-18:00+",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      }
+    }
+  ]
+}
