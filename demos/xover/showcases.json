@@ -1,82 +1,386 @@
 [
   {
+    "id": "accessible-transit",
+    "query_index": 675,
+    "label": "Accessible stations & stops",
+    "detail": "New York · accessibility filters",
+    "place": "New York, USA",
+    "category": "Accessible transit",
+    "icon": "transit",
+    "center": [
+      40.71427,
+      -74.00597
+    ],
+    "zoom": 12,
     "language": "en",
-    "question": "What cafes are in Martina Franca?",
+    "question": "Railway stations and bus stops with wheelchair access within the coordinates 40.61427, -74.10597 and 40.81427, -73.90597."
+  },
+  {
+    "id": "libraries",
+    "query_index": 570,
+    "label": "Libraries, minus “Miejska”",
+    "detail": "Wrocław · name exclusions",
+    "place": "Wrocław, Poland",
+    "category": "Libraries · filtered by name",
+    "icon": "library",
+    "center": [
+      51.108,
+      17.038
+    ],
+    "zoom": 12,
+    "language": "en",
+    "question": "What libraries in Wrocław do not have 'Miejska' in their name?"
+  },
+  {
+    "id": "cafes",
+    "query_index": 926,
     "label": "Cafés in Martina Franca",
+    "detail": "Martina Franca · city-wide search",
+    "place": "Martina Franca, Italy",
+    "category": "Cafés",
+    "icon": "cafe",
     "center": [
       40.705,
       17.339
     ],
-    "zoom": 14
+    "zoom": 14,
+    "language": "en",
+    "question": "What cafes are in Martina Franca?"
   },
   {
+    "id": "accessible-transit",
+    "query_index": 675,
+    "label": "Accessible stations & stops",
+    "detail": "New York · accessibility filters",
+    "place": "New York, USA",
+    "category": "Accessible transit",
+    "icon": "transit",
+    "center": [
+      40.71427,
+      -74.00597
+    ],
+    "zoom": 12,
     "language": "zh",
-    "question": "马丁纳弗兰卡有哪些咖啡馆？",
+    "question": "在坐标 40.61427, -74.10597 和 40.81427, -73.90597 范围内设有轮椅通道的火车站和公交站。"
+  },
+  {
+    "id": "libraries",
+    "query_index": 570,
+    "label": "Libraries, minus “Miejska”",
+    "detail": "Wrocław · name exclusions",
+    "place": "Wrocław, Poland",
+    "category": "Libraries · filtered by name",
+    "icon": "library",
+    "center": [
+      51.108,
+      17.038
+    ],
+    "zoom": 12,
+    "language": "zh",
+    "question": "弗罗茨瓦夫有哪些名字里不包含“Miejska”的图书馆？"
+  },
+  {
+    "id": "cafes",
+    "query_index": 926,
     "label": "Cafés in Martina Franca",
+    "detail": "Martina Franca · city-wide search",
+    "place": "Martina Franca, Italy",
+    "category": "Cafés",
+    "icon": "cafe",
     "center": [
       40.705,
       17.339
     ],
-    "zoom": 14
+    "zoom": 14,
+    "language": "zh",
+    "question": "马丁纳弗兰卡有哪些咖啡馆？"
   },
   {
+    "id": "accessible-transit",
+    "query_index": 675,
+    "label": "Accessible stations & stops",
+    "detail": "New York · accessibility filters",
+    "place": "New York, USA",
+    "category": "Accessible transit",
+    "icon": "transit",
+    "center": [
+      40.71427,
+      -74.00597
+    ],
+    "zoom": 12,
     "language": "yue",
-    "question": "馬丁納弗蘭卡有咩咖啡店？",
+    "question": "喺座標 40.61427, -74.10597 同 40.81427, -73.90597 範圍內，有輪椅設施嘅鐵路站同巴士站。"
+  },
+  {
+    "id": "libraries",
+    "query_index": 570,
+    "label": "Libraries, minus “Miejska”",
+    "detail": "Wrocław · name exclusions",
+    "place": "Wrocław, Poland",
+    "category": "Libraries · filtered by name",
+    "icon": "library",
+    "center": [
+      51.108,
+      17.038
+    ],
+    "zoom": 12,
+    "language": "yue",
+    "question": "喺弗羅茨瓦夫，有邊啲圖書館個名入面係冇「Miejska」呢個字嘅呢？"
+  },
+  {
+    "id": "cafes",
+    "query_index": 926,
     "label": "Cafés in Martina Franca",
+    "detail": "Martina Franca · city-wide search",
+    "place": "Martina Franca, Italy",
+    "category": "Cafés",
+    "icon": "cafe",
     "center": [
       40.705,
       17.339
     ],
-    "zoom": 14
+    "zoom": 14,
+    "language": "yue",
+    "question": "馬丁納弗蘭卡有咩咖啡店？"
   },
   {
+    "id": "accessible-transit",
+    "query_index": 675,
+    "label": "Accessible stations & stops",
+    "detail": "New York · accessibility filters",
+    "place": "New York, USA",
+    "category": "Accessible transit",
+    "icon": "transit",
+    "center": [
+      40.71427,
+      -74.00597
+    ],
+    "zoom": 12,
     "language": "fr",
-    "question": "Quels sont les cafés à Martina Franca ?",
+    "question": "Gares et arrêts de bus accessibles en fauteuil roulant entre les coordonnées 40.61427, -74.10597 et 40.81427, -73.90597"
+  },
+  {
+    "id": "libraries",
+    "query_index": 570,
+    "label": "Libraries, minus “Miejska”",
+    "detail": "Wrocław · name exclusions",
+    "place": "Wrocław, Poland",
+    "category": "Libraries · filtered by name",
+    "icon": "library",
+    "center": [
+      51.108,
+      17.038
+    ],
+    "zoom": 12,
+    "language": "fr",
+    "question": "Quelles bibliothèques de Wrocław n'ont pas « Miejska » dans leur nom ?"
+  },
+  {
+    "id": "cafes",
+    "query_index": 926,
     "label": "Cafés in Martina Franca",
+    "detail": "Martina Franca · city-wide search",
+    "place": "Martina Franca, Italy",
+    "category": "Cafés",
+    "icon": "cafe",
     "center": [
       40.705,
       17.339
     ],
-    "zoom": 14
+    "zoom": 14,
+    "language": "fr",
+    "question": "Quels sont les cafés à Martina Franca ?"
   },
   {
+    "id": "accessible-transit",
+    "query_index": 675,
+    "label": "Accessible stations & stops",
+    "detail": "New York · accessibility filters",
+    "place": "New York, USA",
+    "category": "Accessible transit",
+    "icon": "transit",
+    "center": [
+      40.71427,
+      -74.00597
+    ],
+    "zoom": 12,
     "language": "de",
-    "question": "Welche Cafés gibt es in Martina Franca?",
+    "question": "Bahnhöfe und Bushaltestellen mit Rollstuhlzugang innerhalb der Koordinaten 40.61427, -74.10597 und 40.81427, -73.90597"
+  },
+  {
+    "id": "libraries",
+    "query_index": 570,
+    "label": "Libraries, minus “Miejska”",
+    "detail": "Wrocław · name exclusions",
+    "place": "Wrocław, Poland",
+    "category": "Libraries · filtered by name",
+    "icon": "library",
+    "center": [
+      51.108,
+      17.038
+    ],
+    "zoom": 12,
+    "language": "de",
+    "question": "Welche Bibliotheken in Breslau haben nicht „Miejska“ im Namen?"
+  },
+  {
+    "id": "cafes",
+    "query_index": 926,
     "label": "Cafés in Martina Franca",
+    "detail": "Martina Franca · city-wide search",
+    "place": "Martina Franca, Italy",
+    "category": "Cafés",
+    "icon": "cafe",
     "center": [
       40.705,
       17.339
     ],
-    "zoom": 14
+    "zoom": 14,
+    "language": "de",
+    "question": "Welche Cafés gibt es in Martina Franca?"
   },
   {
+    "id": "accessible-transit",
+    "query_index": 675,
+    "label": "Accessible stations & stops",
+    "detail": "New York · accessibility filters",
+    "place": "New York, USA",
+    "category": "Accessible transit",
+    "icon": "transit",
+    "center": [
+      40.71427,
+      -74.00597
+    ],
+    "zoom": 12,
     "language": "ja",
-    "question": "マルティーナ・フランカにはどのようなカフェがありますか？",
+    "question": "座標 40.61427, -74.10597 と 40.81427, -73.90597 の範囲内にある、車椅子対応の鉄道駅とバス停はどこですか？"
+  },
+  {
+    "id": "libraries",
+    "query_index": 570,
+    "label": "Libraries, minus “Miejska”",
+    "detail": "Wrocław · name exclusions",
+    "place": "Wrocław, Poland",
+    "category": "Libraries · filtered by name",
+    "icon": "library",
+    "center": [
+      51.108,
+      17.038
+    ],
+    "zoom": 12,
+    "language": "ja",
+    "question": "ヴロツワフにある、名前に「Miejska」が含まれていない図書館を教えてください。"
+  },
+  {
+    "id": "cafes",
+    "query_index": 926,
     "label": "Cafés in Martina Franca",
+    "detail": "Martina Franca · city-wide search",
+    "place": "Martina Franca, Italy",
+    "category": "Cafés",
+    "icon": "cafe",
     "center": [
       40.705,
       17.339
     ],
-    "zoom": 14
+    "zoom": 14,
+    "language": "ja",
+    "question": "マルティーナ・フランカにはどのようなカフェがありますか？"
   },
   {
+    "id": "accessible-transit",
+    "query_index": 675,
+    "label": "Accessible stations & stops",
+    "detail": "New York · accessibility filters",
+    "place": "New York, USA",
+    "category": "Accessible transit",
+    "icon": "transit",
+    "center": [
+      40.71427,
+      -74.00597
+    ],
+    "zoom": 12,
     "language": "ko",
-    "question": "마르티나 프랑카에는 어떤 카페들이 있습니까?",
-    "label": "Cafés in Martina Franca",
-    "center": [
-      40.705,
-      17.339
-    ],
-    "zoom": 14
+    "question": "좌표 40.61427, -74.10597 및 40.81427, -73.90597 범위 내에서 휠체어 이용이 가능한 철도역과 버스 정류장은 어디입니까?"
   },
   {
-    "language": "ru",
-    "question": "Какие кафе есть в Мартина-Франка?",
+    "id": "libraries",
+    "query_index": 570,
+    "label": "Libraries, minus “Miejska”",
+    "detail": "Wrocław · name exclusions",
+    "place": "Wrocław, Poland",
+    "category": "Libraries · filtered by name",
+    "icon": "library",
+    "center": [
+      51.108,
+      17.038
+    ],
+    "zoom": 12,
+    "language": "ko",
+    "question": "브로츠와프에서 이름에 'Miejska'가 포함되지 않은 도서관은 어디입니까?"
+  },
+  {
+    "id": "cafes",
+    "query_index": 926,
     "label": "Cafés in Martina Franca",
+    "detail": "Martina Franca · city-wide search",
+    "place": "Martina Franca, Italy",
+    "category": "Cafés",
+    "icon": "cafe",
     "center": [
       40.705,
       17.339
     ],
-    "zoom": 14
+    "zoom": 14,
+    "language": "ko",
+    "question": "마르티나 프랑카에는 어떤 카페들이 있습니까?"
+  },
+  {
+    "id": "accessible-transit",
+    "query_index": 675,
+    "label": "Accessible stations & stops",
+    "detail": "New York · accessibility filters",
+    "place": "New York, USA",
+    "category": "Accessible transit",
+    "icon": "transit",
+    "center": [
+      40.71427,
+      -74.00597
+    ],
+    "zoom": 12,
+    "language": "ru",
+    "question": "Железнодорожные станции и автобусные остановки, доступные для инвалидов-колясочников, в пределах координат 40.61427, -74.10597 и 40.81427, -73.90597."
+  },
+  {
+    "id": "libraries",
+    "query_index": 570,
+    "label": "Libraries, minus “Miejska”",
+    "detail": "Wrocław · name exclusions",
+    "place": "Wrocław, Poland",
+    "category": "Libraries · filtered by name",
+    "icon": "library",
+    "center": [
+      51.108,
+      17.038
+    ],
+    "zoom": 12,
+    "language": "ru",
+    "question": "Какие библиотеки во Вроцлаве не содержат в названии слово «Miejska»?"
+  },
+  {
+    "id": "cafes",
+    "query_index": 926,
+    "label": "Cafés in Martina Franca",
+    "detail": "Martina Franca · city-wide search",
+    "place": "Martina Franca, Italy",
+    "category": "Cafés",
+    "icon": "cafe",
+    "center": [
+      40.705,
+      17.339
+    ],
+    "zoom": 14,
+    "language": "ru",
+    "question": "Какие кафе есть в Мартина-Франка?"
   }
 ]
