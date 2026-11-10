@@ -8,7 +8,7 @@ const sourceLabel={precomputed:'research precomputation',persistent:'saved cache
 function status(message,error=false){$('status').textContent=message;$('status').className=error?'error':'';}
 function stage(key,text){let li=$('stages').querySelector(`[data-stage="${key}"]`);if(!li){li=document.createElement('li');li.dataset.stage=key;$('stages').append(li);}li.textContent=text;}
 function element(tag,text,parent){const e=document.createElement(tag);e.textContent=text;parent.append(e);return e;}
-function setBusy(value){busy=value;for(const id of ['ask','question','language'])$(id).disabled=value; document.querySelectorAll('[data-sample]').forEach(b=>b.disabled=value); $('ask').textContent=value?'Working through XOver…':'Ask XOver';$('results').setAttribute('aria-busy',String(value));}
+function setBusy(value){busy=value;for(const id of ['ask','question','language','k-shot'])$(id).disabled=value; document.querySelectorAll('[data-sample]').forEach(b=>b.disabled=value); $('ask').textContent=value?'Working through XOver…':'Ask XOver';$('results').setAttribute('aria-busy',String(value));}
 const icons={transit:'<rect x="4" y="2" width="12" height="13" rx="3"/><path d="M4 9h12M7 15l-2 3m8-3 2 3M7 12h.01M13 12h.01"/>',library:'<path d="M2 7h16L10 2 2 7Zm2 2v7m4-7v7m4-7v7m4-7v7M2 18h16"/>',cafe:'<path d="M4 6h10v5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V6ZM14 7h1a2.5 2.5 0 0 1 0 5h-1M3 17h12M6 2v2m4-2v2"/>'};
 function renderSamples(){
  $('samples').replaceChildren();
@@ -26,15 +26,15 @@ function show(result,elapsed){
  const count=renderResults(result.result);$('result-count').textContent=`${count.count.toLocaleString()} ${count.isCount?'matching elements':'mapped places'}`;
  $('result-info').textContent='Project OSM snapshot · '+(result.cache?.hit?'saved map result':'executed query');$('download').disabled=count.features===0;
  $('timing').textContent=`${(elapsed/1000).toFixed(2)} s total · ${((result.timings?.server_ms||0)/1000).toFixed(2)} s server`;
- $('provenance').textContent=(result.answer_cache?'Complete query reused from cache. ':'')+`Examples: ${sourceLabel[result.selection.cache_source]||result.selection.cache_source}. Candidates: ${sourceLabel[result.generation.source]||result.generation.source} · ${result.generation.model}. `+(result.model_usage?.length?`${result.model_usage.length} new model calls.`:'No new model calls.')+` Selection: ${result.candidate_selection.method}. `+(result.revision.syntax_repaired?'One syntax repair applied.':'No syntax repair needed.')+(result.revision.hygiene_changed?' Output formatting cleaned.':'');
- $('examples').replaceChildren();$('examples-title').textContent=`${result.selection.examples.length} selected English examples`;
+ $('provenance').textContent=`K-shot used: ${result.selection.examples.length}. `+(result.answer_cache?'Complete query reused from cache. ':'')+`Examples: ${sourceLabel[result.selection.cache_source]||result.selection.cache_source}. Candidates: ${sourceLabel[result.generation.source]||result.generation.source} · ${result.generation.model}. `+(result.model_usage?.length?`${result.model_usage.length} new model calls.`:'No new model calls.')+` Selection: ${result.candidate_selection.method}. `+(result.revision.syntax_repaired?'One syntax repair applied.':'No syntax repair needed.')+(result.revision.hygiene_changed?' Output formatting cleaned.':'');
+ $('used-k').textContent=result.selection.examples.length; $('examples').replaceChildren();$('examples-title').textContent=`${result.selection.examples.length} selected English examples`;
  for(const ex of result.selection.examples){const wrap=element('article','',$('examples'));wrap.className='example';element('p',`${ex.rank}. ${ex.nl}`,wrap);element('pre',ex.ovq,wrap);}
  $('candidates').replaceChildren();for(const c of result.candidates){const card=element('article','',$('candidates'));card.className='candidate'+(c.selected?' selected':'');element('h4',`Candidate ${c.index}${c.selected?' · selected':''}`,card);element('p',c.ok?`${c.count} returned elements${c.cache?.hit?' · map cache hit':''}`:'Could not execute',card);element('pre',c.query,card);}
  stage('complete',result.answer_cache?'Completed · saved query reused':'Completed · results ready');status('XOver completed the query.');
 }
 async function run(){
  if(busy||!config)return;const question=$('question').value.trim();if(!question){status('Enter a question first.',true);return;}
- const request={question,language:$('language').value,bbox:bbox()};const start=performance.now();setBusy(true);$('stages').replaceChildren();$('results').hidden=true;clearResults();$('download').disabled=true;
+ const request={question,language:$('language').value,k_shot:Number($('k-shot').value),bbox:bbox()};const start=performance.now();setBusy(true);$('stages').replaceChildren();$('results').hidden=true;clearResults();$('download').disabled=true;
  let reader;const controller=new AbortController();let timer;
  try{
   stage('verification','1 · Waiting for browser verification');
@@ -66,3 +66,5 @@ try{initMap();setView([40.705,17.339],14);samples=await (await fetch(new URL('..
 $('fit-map').addEventListener('click',fitResults);
 $('about-link').addEventListener('click',e=>{e.preventDefault();$('about-dialog').showModal();});
 $('close-about').addEventListener('click',()=>$('about-dialog').close());
+
+$('k-shot').addEventListener('input',()=>{const k=Number($('k-shot').value);$('k-shot-value').textContent=k;$('k-shot-note').textContent=k?`Use ${k} examples for the next question · 3 candidate queries`:'Zero-shot: no example demonstrations · 3 candidate queries';});
