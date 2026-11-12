@@ -1,5 +1,6 @@
 - name: TACO
   venue: SIGMOD 2027
+  track: Research Track
   path: /demos/taco/
   paper_anchor: taco
   title: Token-Aware Context Optimization
@@ -11,6 +12,7 @@
     - Interactive map results
 - name: XOver
   venue: ICDE 2027
+  track: Research Track
   path: /demos/xover/
   paper_anchor: xover
   title: Multilingual Text-to-OverpassQL

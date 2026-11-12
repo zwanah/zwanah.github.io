@@ -1,7 +1,7 @@
 [
   {
     "venue": "ICDE 2027",
-    "image": "images/XOver_framework.png",
+    "image": "images/XOver_framework_final.png",
     "alt": "XOver framework",
     "demo": "/demos/xover/",
     "demo_id": "xover",
@@ -15,10 +15,10 @@
     "venue_name": "IEEE International Conference on Data Engineering",
     "venue_badge": "ICDE’27",
     "ranking_badge": "CCF-A",
-    "preview": "assets/images/papers/XOver_framework.webp",
+    "preview": "assets/images/papers/XOver_framework_final.webp",
     "preview_width": 1200,
-    "preview_height": 663,
-    "display": "assets/images/papers/XOver_framework-large.webp"
+    "preview_height": 346,
+    "display": "assets/images/papers/XOver_framework_final-large.webp"
   },
   {
     "venue": "SIGMOD 2027",

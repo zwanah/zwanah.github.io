@@ -10,12 +10,11 @@ permalink: /demos/
   <header class="directory-intro">
     <p class="group-label">NLP for Data Management</p>
     <h1>Research Demos</h1>
-    <p>Explore natural language interfaces to OpenStreetMap. Try the systems behind my research, inspect the generated queries, and see the results on a map.</p>
   </header>
   <div class="demo-grid">
     {% for demo in site.data.demos %}
     <article class="demo-card" aria-labelledby="{{ demo.paper_anchor }}-heading">
-      <div class="demo-card-meta"><span class="group-label">Natural Language Interfaces</span><span class="demo-venue">{{ demo.venue }}</span></div>
+      <div class="demo-card-meta"><span class="group-label">Natural Language Interfaces</span><span class="demo-venue">{{ demo.venue }} · {{ demo.track }}</span></div>
       <h2 id="{{ demo.paper_anchor }}-heading">{{ demo.name }}</h2>
       <p class="demo-subtitle">{{ demo.title }}</p>
       <p class="demo-description">{{ demo.description }}</p>

@@ -123,7 +123,7 @@ My research centers on Natural Language Processing (NLP) for Data Management, wi
   <div class="demo-summary-list">
     {% for demo in site.data.demos %}
     <article class="demo-summary">
-      <div><h3><a href="{{ demo.path | relative_url }}">{{ demo.name }}</a><span class="demo-venue">{{ demo.venue }}</span></h3><p>{{ demo.summary }}</p></div>
+      <div><h3><a href="{{ demo.path | relative_url }}">{{ demo.name }}</a><span class="demo-venue">{{ demo.venue }} · {{ demo.track }}</span></h3><p>{{ demo.summary }}</p></div>
       <a class="demo-entry" href="{{ demo.path | relative_url }}">Try demo <span aria-hidden="true">↗</span><span class="sr-only">: {{ demo.name }}</span></a>
     </article>
     {% endfor %}
