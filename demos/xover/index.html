@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f6f8">
-  <meta name="description" content="Explore OpenStreetMap with natural language, inspect your OverpassQL, and see the places behind the answer. An interactive research demo.">
-  <title>XOver Demo · Ask the map</title>
+  <meta name="theme-color" content="#f6f5f0">
+  <meta name="description" content="Translate multilingual natural-language questions in eight languages into OverpassQL using cross-lingual example selection, candidate execution voting, and conservative repair.">
+  <title>XOver Demo · Multilingual Text-to-OverpassQL for OpenStreetMap</title>
   <link rel="canonical" href="https://wanzhuoyue.com/demos/xover/">
   <link rel="icon" href="./assets/scout.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/vendor/leaflet.css">
@@ -16,40 +16,274 @@
 </head>
 <body>
   <header class="header">
-    <a class="brand" href="./" aria-label="XOver Demo home"><img src="./assets/scout.svg" width="32" height="32" alt=""><span>XOver Demo</span></a>
-    <span class="header-divider" aria-hidden="true"></span><span class="workspace-name">Map workspace</span>
-    <nav aria-label="Project links"><span class="demo-pill"><i></i> OpenStreetMap</span><a href="/demos/">All demos</a><a href="#about" id="about-link">About</a><a id="repo-link" href="https://github.com/zwanah/XOver" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></nav>
-  </header>
-  <main class="workspace"><aside class="sidebar" aria-label="Questions and answers">
-      <div class="intro">
-        <div class="assistant-heading"><span class="assistant-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"/></svg></span><span>YOUR MAP ASSISTANT</span></div>
-        <h1>Ask the map.</h1>
-        <p>A question in words. An answer in places.</p>
+    <div class="brand-cluster">
+      <a class="brand" href="./" aria-label="XOver Demo home">
+        <img src="./assets/scout.svg" width="30" height="30" alt="">
+        <span class="brand-copy">
+          <span class="brand-title">OSM XOver</span>
+          <span class="brand-sub">Multilingual Text-to-OverpassQL</span>
+        </span>
+      </a>
+      <span class="venue-pill" title="IEEE ICDE 2027 · Research Track">ICDE ’27</span>
+    </div>
+
+    <div class="header-status">
+      <div class="mode-line">
+        <span class="mode-dot" id="mode-dot"></span>
+        <span id="mode-label">Cross-lingual pipeline</span>
+        <span class="mode-sep" aria-hidden="true">·</span>
+        <span class="mode-model" id="model-label">8 languages</span>
       </div>
-      <div class="sample-label">Try an example</div>
-      <div class="samples" id="samples" aria-label="Example questions"></div>
-      <div class="composer"><label class="sr-only" for="question">Your question</label><textarea id="question" rows="2" maxlength="2000" placeholder="What would you like to find?"></textarea>
-      <div class="composer-budget"><div class="budget-heading"><label for="language">Question language</label><span class="panel-label">8 languages</span></div><select id="language"><option value="en">English</option><option value="zh">中文</option><option value="yue">粵語</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="ru">Русский</option></select><div class="budget-heading" style="margin-top:14px"><label for="k-shot">K-shot · selected examples</label><output id="k-shot-value" for="k-shot">6</output></div><input id="k-shot" type="range" min="0" max="12" step="1" value="6" aria-describedby="k-shot-note"><div class="range-labels"><span>0 · zero-shot</span><span>12 examples</span></div><p class="budget-note" id="k-shot-note">Use 6 examples for the next question · 3 candidate queries</p></div>
-      <div class="composer-footer"><span>Search with natural language</span><button id="ask" type="button" class="button button-primary" disabled>Connecting…</button></div></div>
-      <div class="mode-line"><span class="mode-dot"></span><span>Cross-lingual queries</span><span class="mode-model">XOver</span></div>
-      <p id="status" role="status" aria-live="polite">Connecting to the project service…</p><ol id="stages" class="query-stages" aria-label="Query stages"></ol><div id="turnstile-widget"></div>
-      <section id="results" aria-busy="false" hidden><section class="answer-section"><div class="answer-card"><div class="answer-heading"><span class="eyebrow">✓ Search results</span><span class="answer-symbol">⌖</span></div><h2 id="result-count">Ready to explore</h2><p id="timing"></p><span>Project OSM snapshot</span></div><div class="answer-meta"><span>Places</span><span>SELECT TO EXPLORE ↗</span></div><div id="result-list" class="result-list" aria-label="Matching places"></div></section>
-      <div class="secondary-tools"><details class="tool-panel"><summary><span><span class="tool-symbol">&lt;/&gt;</span> Query code</span><span class="panel-label">OverpassQL ⌄</span></summary><div class="tool-content"><div class="editor"><div class="editor-toolbar">OverpassQL</div><pre id="query"></pre><div class="editor-foot"><span>Selected candidate</span><a id="turbo" target="_blank" rel="noopener">Open in Turbo ↗</a></div></div></div></details>
-      <details class="tool-panel"><summary><span><span class="tool-symbol">⚙</span> Research details</span><span class="panel-label"><span id="used-k">—</span> examples ⌄</span></summary><div class="tool-content"><h3 id="examples-title" class="context-heading">Selected examples</h3><p id="provenance" class="tool-description"></p><div id="examples" class="context-content"></div></div></details>
-      <details class="tool-panel"><summary><span><span class="tool-symbol">≋</span> Candidate comparison</span><span class="panel-label">3 candidates ⌄</span></summary><div class="tool-content"><div id="candidates"></div></div></details></div></section>
-      <footer class="sidebar-footer"><span class="footer-mark">⌁</span> Built on OpenStreetMap <span>Research demo</span></footer></aside>
+    </div>
+
+    <nav aria-label="Project links">
+      <a href="/demos/" class="nav-link"><span aria-hidden="true">←</span> Demos</a>
+      <a href="#about" id="about-link" class="nav-link">About</a>
+      <a id="repo-link" class="nav-link nav-link-out" href="https://github.com/zwanah/XOver" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main class="workspace">
+    <aside class="sidebar" aria-label="Questions and answers">
+      <div class="composer-shell">
+        <div class="section-bar">
+          <span class="sample-label">Question language</span>
+          <span class="section-hint">8 languages · English ICL pool</span>
+        </div>
+
+        <label class="sr-only" for="language">Question language</label>
+        <select id="language" class="sr-only">
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+          <option value="yue">粵語</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="ru">Русский</option>
+        </select>
+
+        <div class="lang-pills" id="lang-pills" role="group" aria-label="Select question language">
+          <button type="button" class="lang-pill active" data-lang="en">English</button>
+          <button type="button" class="lang-pill" data-lang="zh">中文</button>
+          <button type="button" class="lang-pill" data-lang="yue">粵語</button>
+          <button type="button" class="lang-pill" data-lang="fr">Français</button>
+          <button type="button" class="lang-pill" data-lang="de">Deutsch</button>
+          <button type="button" class="lang-pill" data-lang="ja">日本語</button>
+          <button type="button" class="lang-pill" data-lang="ko">한국어</button>
+          <button type="button" class="lang-pill" data-lang="ru">Русский</button>
+        </div>
+
+        <div class="section-bar">
+          <span class="sample-label">Multilingual showcases</span>
+          <span class="section-hint">Click to load region &amp; prompt</span>
+        </div>
+        <div class="samples" id="samples" role="group" aria-label="Example questions"></div>
+
+        <div class="composer">
+          <div class="composer-input-wrap">
+            <label class="sr-only" for="question">Your question</label>
+            <textarea id="question" rows="2" maxlength="2000" placeholder="Ask OpenStreetMap in any of the 8 supported languages…"></textarea>
+          </div>
+
+          <div class="composer-budget">
+            <div class="budget-heading">
+              <label for="k-shot">
+                K-shot · selected examples
+                <button type="button" class="info-button" id="k-shot-info" aria-label="About K-shot cross-lingual example selection" title="How C2 Profile-DPP selects K English examples">?</button>
+              </label>
+              <output id="k-shot-value" for="k-shot">6 <span>examples</span></output>
+            </div>
+            <div class="range-track-wrap">
+              <input id="k-shot" type="range" min="0" max="12" step="1" value="6" aria-describedby="k-shot-note">
+            </div>
+            <div class="budget-ticks" role="group" aria-label="Quick K-shot presets">
+              <button type="button" class="budget-tick" data-k-preset="0">0 · zero-shot</button>
+              <button type="button" class="budget-tick" data-k-preset="3">3</button>
+              <button type="button" class="budget-tick is-active" data-k-preset="6">6</button>
+              <button type="button" class="budget-tick" data-k-preset="9">9</button>
+              <button type="button" class="budget-tick" data-k-preset="12">12</button>
+            </div>
+            <p class="budget-note" id="k-shot-note">Use 6 English examples for the next question · 3 candidate queries.</p>
+          </div>
+
+          <div class="composer-footer">
+            <span class="shortcut-hint"><kbd>⌘</kbd><kbd>↵</kbd> to submit</span>
+            <button id="ask" type="button" class="button button-primary" disabled>
+              <span id="ask-label">Connecting…</span>
+              <svg viewBox="0 0 20 20" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 10h12m-4.5-4.5L16 10l-4.5 4.5"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="telemetry-strip">
+          <p id="status" role="status" aria-live="polite">Connecting to the project service…</p>
+          <p id="usage-limits" class="usage-limits" hidden></p>
+          <ol id="stages" class="query-stages" aria-label="Query stages"></ol>
+          <div id="turnstile-widget"></div>
+        </div>
+      </div>
+
+      <section class="answer-section" id="results" aria-labelledby="result-count" aria-busy="false">
+        <div class="answer-card">
+          <div class="answer-top">
+            <div>
+              <span class="eyebrow">Matched OSM Features</span>
+              <h2 id="result-count">Ready to explore</h2>
+            </div>
+            <span id="result-note" class="provenance-tag">C2–C4 pipeline</span>
+          </div>
+          <p id="timing">Choose a language and showcase above, then click Ask XOver to execute.</p>
+        </div>
+
+        <div class="list-toolbar">
+          <div class="filter-box">
+            <svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="9" r="5.8"/><path d="m13.5 13.5 3.8 3.8"/></svg>
+            <label class="sr-only" for="place-filter">Filter matched places</label>
+            <input id="place-filter" type="search" placeholder="Filter places, streets, or tags…" autocomplete="off">
+            <span id="filter-count" class="filter-count" hidden></span>
+          </div>
+          <div class="inspector-jumps" aria-label="Jump to inspector panels">
+            <button type="button" class="jump-pill" data-jump-panel="query" title="Inspect selected OverpassQL">&lt;/&gt; Query</button>
+            <button type="button" class="jump-pill" data-jump-panel="research" title="Inspect C2 cross-lingual examples">⚙ C2</button>
+            <button type="button" class="jump-pill" data-jump-panel="candidates" title="Compare 3 executed candidates">≋ 3 Cand.</button>
+          </div>
+        </div>
+
+        <div id="result-list" class="result-list" aria-label="Matching places">
+          <p class="list-empty">Run Ask XOver to compare three candidate queries and display verified OpenStreetMap places here.</p>
+        </div>
+      </section>
+
+      <div class="secondary-tools">
+        <details id="query-details" class="tool-panel">
+          <summary>
+            <span class="summary-title"><span class="tool-symbol" aria-hidden="true">&lt;/&gt;</span> Query code</span>
+            <span class="panel-label">OverpassQL <span class="chevron" aria-hidden="true">▾</span></span>
+          </summary>
+          <div class="tool-content">
+            <p class="tool-description">Selected winning OverpassQL after C3 execution voting and C4 hygiene/syntax verification.</p>
+            <div class="editor">
+              <div class="editor-toolbar">
+                <span>OverpassQL</span>
+                <div class="editor-actions">
+                  <button id="copy-query" type="button" class="icon-button" aria-label="Copy query" title="Copy OverpassQL">Copy</button>
+                  <a id="turbo" class="turbo-pill" href="https://overpass-turbo.eu/" target="_blank" rel="noopener noreferrer">Overpass Turbo ↗</a>
+                </div>
+              </div>
+              <pre id="query">// Run Ask XOver to generate and select OverpassQL.</pre>
+              <div class="editor-foot">
+                <span id="query-source"><i></i> Selected candidate · execution-verified</span>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="research-details" class="tool-panel">
+          <summary>
+            <span class="summary-title"><span class="tool-symbol" aria-hidden="true">⚙</span> Research details</span>
+            <span class="panel-label"><span id="used-k">—</span> examples <span class="chevron" aria-hidden="true">▾</span></span>
+          </summary>
+          <div class="tool-content">
+            <h3 id="examples-title" class="context-heading">C2 cross-lingual selection &amp; provenance</h3>
+            <p id="provenance" class="tool-description">XOver retrieves English demonstrations with multilingual ml_8x embeddings + Profile-DPP, executes 3 candidates, and votes by non-empty denotation.</p>
+            <div id="examples" class="context-content">
+              <p class="muted">Selected English demonstration examples appear here once a query runs.</p>
+            </div>
+          </div>
+        </details>
+
+        <details id="candidates-details" class="tool-panel">
+          <summary>
+            <span class="summary-title"><span class="tool-symbol" aria-hidden="true">≋</span> Candidate comparison</span>
+            <span class="panel-label">3 candidates <span class="chevron" aria-hidden="true">▾</span></span>
+          </summary>
+          <div class="tool-content">
+            <p class="tool-description">All three decoded candidate queries, their execution counts on the project Overpass snapshot, and the C3 voting winner.</p>
+            <div id="candidates" class="candidates-list">
+              <p class="muted">Candidate execution results appear here once a query runs.</p>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <footer class="sidebar-footer">
+        <span><span class="footer-mark" aria-hidden="true">⌁</span> OpenStreetMap Research Interface</span>
+        <span>XOver · ICDE 2027</span>
+      </footer>
+    </aside>
+
     <section class="map-workspace" aria-label="Map and results">
       <div class="map-toolbar">
-        <div class="location-card"><span class="location-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.4"/></svg></span><div><span class="eyebrow map-eyebrow">EXPLORING</span><h2 id="place-title">Martina Franca, Italy <span id="place-type">Cafés</span></h2></div></div>
-        <button id="download" class="download-button" disabled>Export GeoJSON <span aria-hidden="true">↓</span></button>
+        <div class="location-card">
+          <span class="location-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+          </span>
+          <div class="location-meta">
+            <div class="location-eyebrow-row">
+              <span class="eyebrow map-eyebrow">EXPLORING</span>
+              <span class="map-badge-inline"><span class="badge-dot"></span><span id="map-badge-text">OpenStreetMap</span></span>
+            </div>
+            <h2 id="place-title">New York, USA <span id="place-type">Accessible transit</span></h2>
+          </div>
+        </div>
+
+        <div class="map-controls-bar">
+          <div class="basemap-switcher" role="group" aria-label="Map theme">
+            <button type="button" class="basemap-btn active" data-basemap="paper" title="Warm editorial cartographic theme">Atlas</button>
+            <button type="button" class="basemap-btn" data-basemap="standard" title="Original OpenStreetMap colors">Standard</button>
+            <button type="button" class="basemap-btn" data-basemap="mono" title="Muted monochrome theme for pin focus">Mono</button>
+          </div>
+          <button id="fit-map" type="button" class="map-action-btn" aria-label="Fit map to results" title="Fit map to all results">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m8 0h5v-5"/><circle cx="12" cy="12" r="2.8"/></svg>
+            <span>Fit</span>
+          </button>
+          <button id="download" class="download-button" disabled>
+            <span>Export GeoJSON</span>
+            <span aria-hidden="true">↓</span>
+          </button>
+        </div>
       </div>
+
       <div class="map-stage" id="map-stage">
         <div id="map" aria-label="Interactive OpenStreetMap map"></div>
-        <div class="map-badge"><span class="badge-dot"></span><span id="map-badge-text">OpenStreetMap</span></div>
-        <button id="fit-map" type="button" class="fit-map" aria-label="Fit map to results" title="Fit map to results"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m8 0h5v-5"/><circle cx="12" cy="12" r="3"/></svg></button>
         <div class="map-empty" id="map-empty" hidden>No map features in this response.</div>
       </div>
-      <div class="map-caption"><span><i class="legend-dot"></i> <span id="legend-label">Cafés</span></span><span id="result-info">Run the query against project OSM data</span></div>
+
+      <div class="map-caption">
+        <span><i class="legend-dot"></i> <span id="legend-label">Accessible transit</span></span>
+        <span id="result-info">Run the query against project OSM data</span>
+      </div>
     </section>
   </main>
-<dialog id="about-dialog" aria-labelledby="about-title"><button class="dialog-close" id="close-about" aria-label="Close about dialog">×</button><span class="eyebrow">ABOUT THE DEMO</span><h2 id="about-title">A little context.<br>A world to explore.</h2><p>XOver Demo translates multilingual questions into OverpassQL using cross-lingual example selection, candidate execution and conservative repair.</p><p><strong>ICDE 2027 · Research Track</strong></p><div class="about-flow"><span>Ask</span><b>→</b><span>Inspect</span><b>→</b><span>Explore</span></div><p>Choose 0–12 examples (K-shot). Zero-shot uses no demonstration examples. The demo generates three candidate queries. Research experiments use eight candidates. Historical selections and generated queries can be reused; their sources are displayed in Research details.</p><p>Results use the project’s OSM snapshot, not a live world feed. Valid empty results are not repaired.</p><p class="muted">An independent research project using OpenStreetMap data. Not affiliated with the OpenStreetMap Foundation.</p><a class="about-osm" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a></dialog></body></html>
+
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <button class="dialog-close" id="close-about" aria-label="Close about dialog">×</button>
+    <div class="dialog-badges">
+      <span class="eyebrow">ABOUT THE DEMO</span>
+      <span class="venue-pill">ICDE 2027 · Research Track</span>
+    </div>
+    <h2 id="about-title">Multilingual Text-to-OverpassQL.<br>Cross-lingual retrieval &amp; execution voting.</h2>
+    <p><strong>OSM XOver</strong> translates natural-language questions across eight languages into executable OverpassQL using cross-lingual example selection, multi-candidate execution voting, and conservative syntax repair.</p>
+    <div class="about-flow">
+      <div class="flow-step"><strong>1 · C2 Select</strong><span>ml_8x + Profile-DPP</span></div>
+      <b aria-hidden="true">→</b>
+      <div class="flow-step"><strong>2 · Decode</strong><span>3 candidate queries</span></div>
+      <b aria-hidden="true">→</b>
+      <div class="flow-step"><strong>3 · C3 &amp; C4</strong><span>Execution vote &amp; repair</span></div>
+    </div>
+    <div class="about-cards">
+      <div class="about-card">
+        <h3>K-shot &amp; candidate budget</h3>
+        <p>Choose <code>0–12</code> English demonstrations (default <code>6</code>; <code>0</code> runs zero-shot). The public demo executes <strong>3 candidates</strong> (research benchmarks use 8) and selects via non-empty execution voting.</p>
+      </div>
+      <div class="about-card">
+        <h3>Provenance &amp; conservative C4</h3>
+        <p>Results execute against the project’s dated OpenStreetMap snapshot. Valid empty results are never rewritten; C4 applies output hygiene and at most one bounded syntax repair on parser errors.</p>
+      </div>
+    </div>
+    <p class="muted">Historical selections and generated queries are labeled in Research details when reused. Independent academic research project using OpenStreetMap data; not affiliated with the OpenStreetMap Foundation.</p>
+    <a class="about-osm" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL ↗</a>
+  </dialog>
+</body>
+</html>
