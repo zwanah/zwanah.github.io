@@ -163,6 +163,7 @@
           </summary>
           <div class="tool-content">
             <p class="tool-description">Selected winning OverpassQL after C3 execution voting and C4 hygiene/syntax verification.</p>
+            <div id="query-anatomy" class="query-anatomy" aria-label="OverpassQL query anatomy" hidden></div>
             <div class="editor">
               <div class="editor-toolbar">
                 <span>OverpassQL</span>
@@ -234,6 +235,9 @@
             <button type="button" class="basemap-btn" data-basemap="standard" title="Original OpenStreetMap colors">Standard</button>
             <button type="button" class="basemap-btn" data-basemap="mono" title="Muted monochrome theme for pin focus">Mono</button>
           </div>
+          <button id="toggle-cluster" type="button" class="map-action-btn is-toggled" aria-pressed="true" title="Cluster nearby overlapping map pins">
+            <span>Cluster</span>
+          </button>
           <button id="fit-map" type="button" class="map-action-btn" aria-label="Fit map to results" title="Fit map to all results">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m8 0h5v-5"/><circle cx="12" cy="12" r="2.8"/></svg>
             <span>Fit</span>
@@ -251,7 +255,7 @@
       </div>
 
       <div class="map-caption">
-        <span><i class="legend-dot"></i> <span id="legend-label">Accessible transit</span></span>
+        <span><i class="legend-dot"></i> <span id="legend-label">Accessible transit</span> <span id="geom-summary" class="geom-summary" hidden></span></span>
         <span id="result-info">Run the query against project OSM data</span>
       </div>
     </section>

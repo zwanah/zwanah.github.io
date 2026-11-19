@@ -1,5 +1,6 @@
 import {discoverBackend, generate, queryMap, execute, request, PREVIEW_TOKEN_BUDGET, tokenBudgetSettings} from './api.js';
-import {initMap, setBasemap, setView, bbox, fitResults, clearResults, renderResults, filterResults, exportGeoJSON} from './map.js';
+import {initMap, setBasemap, setClustering, setActiveQueryForTags, setView, bbox, fitResults, clearResults, renderResults, filterResults, exportGeoJSON} from './map.js';
+import {renderAnatomyBar, highlightOverpassInto} from './osm-tools.js';
 
 const $ = id => document.getElementById(id);
 let samples = [];
@@ -191,7 +192,11 @@ function setBusy(value, action = '') {
 }
 
 function turboLink() {
-  $('turbo-link').href = `https://overpass-turbo.eu/?Q=${encodeURIComponent($('query').value)}`;
+  const q = $('query').value;
+  $('turbo-link').href = `https://overpass-turbo.eu/?Q=${encodeURIComponent(q)}`;
+  highlightOverpassInto($('query-highlight'), q);
+  renderAnatomyBar($('query-anatomy'), q);
+  setActiveQueryForTags(q);
 }
 
 function clearContext() {
@@ -228,7 +233,7 @@ function resetResults() {
 
 function resultSummary(result, source) {
   clearFilterInput();
-  const info = renderResults(result);
+  const info = renderResults(result, $('query').value);
   $('result-count').textContent = `${info.count.toLocaleString()} ${info.isCount ? 'matches' : 'places found'}`;
   $('result-note').textContent = source;
   $('answer-text').textContent = info.isCount
@@ -353,7 +358,7 @@ function renderContext(data) {
     summary.textContent = `${ex.rank}. ${ex.nl}`;
 
     const pre = document.createElement('pre');
-    pre.textContent = ex.ovq;
+    highlightOverpassInto(pre, ex.ovq);
 
     const scores = [];
     if (Number.isFinite(ex.similarity_score)) scores.push(`Base similarity ${ex.similarity_score.toFixed(4)}`);
@@ -398,6 +403,13 @@ $('question').addEventListener('keydown', event => {
   if ((event.metaKey || event.ctrlKey) && event.key === 'Enter') {
     event.preventDefault();
     $('question-form').requestSubmit();
+  }
+});
+$('query').addEventListener('scroll', () => {
+  const hl = $('query-highlight');
+  if (hl) {
+    hl.scrollTop = $('query').scrollTop;
+    hl.scrollLeft = $('query').scrollLeft;
   }
 });
 $('query').addEventListener('input', () => {
@@ -580,6 +592,13 @@ $('copy-query').addEventListener('click', async () => {
     $('query').select();
     status('Select and copy the query from the editor.');
   }
+});
+$('toggle-cluster')?.addEventListener('click', event => {
+  const btn = event.currentTarget;
+  const next = btn.getAttribute('aria-pressed') !== 'true';
+  setClustering(next);
+  btn.setAttribute('aria-pressed', String(next));
+  btn.classList.toggle('is-toggled', next);
 });
 $('fit-map').addEventListener('click', fitResults);
 $('download-results').addEventListener('click', exportGeoJSON);

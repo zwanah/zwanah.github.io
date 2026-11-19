@@ -1,5 +1,6 @@
-import {initMap, setBasemap, setView, bbox, renderResults, clearResults, filterResults, exportGeoJSON, fitResults} from './map.js';
+import {initMap, setBasemap, setClustering, setView, bbox, renderResults, clearResults, filterResults, exportGeoJSON, fitResults} from './map.js';
 import {verificationToken} from './verification.js';
+import {renderAnatomyBar, highlightOverpassInto} from './osm-tools.js';
 
 const $ = id => document.getElementById(id);
 const API = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
@@ -142,6 +143,8 @@ function renderSamples() {
 function resetPendingPlaceholder() {
   clearFilterInput();
   clearResults();
+  if ($('query-anatomy')) $('query-anatomy').hidden = true;
+  highlightOverpassInto($('query'), '// Run Ask XOver to generate and select OverpassQL.');
   const list = $('result-list');
   element('p', 'Run Ask XOver to compare three candidate queries and display verified OpenStreetMap places here.', list, 'list-empty');
   $('download').disabled = true;
@@ -172,11 +175,12 @@ function applySample() {
 
 function show(result, elapsed) {
   clearFilterInput();
-  $('query').textContent = result.query;
+  highlightOverpassInto($('query'), result.query);
+  renderAnatomyBar($('query-anatomy'), result.query);
   $('turbo').href = 'https://overpass-turbo.eu/?Q=' + encodeURIComponent(result.query);
   $('query-source').lastChild.textContent = ` ${result.answer_cache ? 'Cached complete answer' : 'Selected winner'} · ${result.generation?.model || 'XOver'}`;
 
-  const count = renderResults(result.result);
+  const count = renderResults(result.result, result.query);
   $('result-count').textContent = `${count.count.toLocaleString()} ${count.isCount ? 'matching elements' : 'mapped places'}`;
   $('result-note').textContent = result.answer_cache ? 'Cached XOver answer' : (result.cache?.hit ? 'Cached OSM snapshot' : 'Project OSM snapshot');
   $('map-badge-text').textContent = 'Project OSM · verified';
@@ -211,7 +215,8 @@ function show(result, elapsed) {
       const val = Number.isFinite(ex.similarity) ? ex.similarity : ex.score;
       element('small', `Cross-lingual similarity ${val.toFixed(4)}`, details);
     }
-    element('pre', ex.ovq, details);
+    const exPre = element('pre', '', details);
+    highlightOverpassInto(exPre, ex.ovq);
     exContainer.append(details);
   }
   if (!kUsed) {
@@ -226,7 +231,8 @@ function show(result, elapsed) {
     element('h4', `Candidate ${c.index}`, head);
     element('span', c.selected ? '✓ Selected winner' : (c.ok ? 'Executed' : 'Failed'), head, 'candidate-badge');
     element('p', c.ok ? `${c.count.toLocaleString()} returned elements${c.cache?.hit ? ' · map cache hit' : ''}` : 'Could not execute on Overpass', card, 'candidate-meta');
-    element('pre', c.query, card);
+    const cPre = element('pre', '', card);
+    highlightOverpassInto(cPre, c.query);
   }
 
   stage('complete', result.answer_cache ? 'Completed · saved query reused' : 'Completed · results ready');
@@ -378,6 +384,13 @@ $('copy-query').addEventListener('click', async () => {
   }
 });
 
+$('toggle-cluster')?.addEventListener('click', event => {
+  const btn = event.currentTarget;
+  const next = btn.getAttribute('aria-pressed') !== 'true';
+  setClustering(next);
+  btn.setAttribute('aria-pressed', String(next));
+  btn.classList.toggle('is-toggled', next);
+});
 $('download').addEventListener('click', exportGeoJSON);
 $('fit-map').addEventListener('click', fitResults);
 $('about-link').addEventListener('click', e => { e.preventDefault(); $('about-dialog').showModal(); });
